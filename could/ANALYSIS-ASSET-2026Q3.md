@@ -9,6 +9,11 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
+CUSTOM PROMPT:
+
+
+URLS:
+
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
 ## ASSET:linkedin:hawkinsnz 2026-07-05 06:54 → New detail beyond prior snapshot: the Auckland Airport Domestic Jet Terminal project is specifically using sustainable cross-laminated timber (CLT), an added sustainability angle not previously logged. Also newly dated: the Build NZ Construction League panel appearance is confirmed for 15 July 2026 (upcoming, not yet held). Follower count ticked up slightly to 61,265 (from 61,262). Source: nz.linkedin.com/company/hawkinsnz (public snapshot); linkedin.com/company/hawkinsnz/posts remains authwalled.
 ## ASSET:linkedin:hawkinsnz 2026-07-04 18:30 → Public LinkedIn snapshot now readable (61,262 followers; 769 employees listed; parent: Downer; HQ Parnell, Auckland). New activity in the past ~3 weeks not previously logged: completed a two-storey learning facility at Hutt Valley High School; multiple projects recognized at the Property Industry Awards incl. The Court Theatre and Beca House; 40+ students given learning opportunities via the Auckland Airport Domestic Jet Terminal partnership; EGM Craig Treloar represented Hawkins at the Parliament launch of the Built Environment Career Streams initiative (4 days ago); sponsoring Site Manager of the Year at the Building Institute Aotearoa People Awards 2026; panel participation at Build NZ Construction League discussion. Source: nz.linkedin.com/company/hawkinsnz (public snapshot).
