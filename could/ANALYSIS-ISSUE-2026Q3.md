@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:linkedin:hawkinsnz 2026-07-06 06:58 → Authwall and size discrepancy persist (third consecutive check); no new posts or press coverage since last snapshot
+
+**Finding — Primary URL still authwalled; targets.json repoint still pending**
+The targets.json URL (linkedin.com/company/hawkinsnz/posts/?feedView=all) again returned a login-only page with zero data. Monitoring continues solely via the nz.linkedin.com public snapshot fallback. The repoint suggested in the 2026-07-04 18:30 entry has now gone unactioned across three checks.
+
+**Finding — Company-size discrepancy persists; listed staff ticked down**
+Self-reported size remains 201–500 employees while the platform now lists 768 staff (down from 769 on 2026-07-05). The discrepancy itself is unchanged; the one-person drop is noted only for trend continuity.
+
+**Finding — Activity plateau since last check**
+No new posts since the Build NZ Construction League panel announcement (still the newest item, now ~4 days old); every post in the current snapshot was already logged on 2026-07-04/05. Web search likewise surfaces no press coverage newer than April 2026 (b2bnews.co.nz league-table analysis remains the latest substantive item), consistent with the ~10-month official-site comms lag already on file.
 ## ISSUE:linkedin:hawkinsnz 2026-07-05 09:54 → Authwall, size discrepancy, and stale official-site news all persist; league-table coverage flags single-project revenue concentration
 
 **Finding — Persistent access and consistency issues (no change)**
