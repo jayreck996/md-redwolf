@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:linkedin:hawkinsnz 2026-07-06 06:58 → Piripiri Lane surfaces as a fourth awarded project; Build NZ panel peers named; followers up to 61,277
+
+**Finding — Piripiri Lane added to Property Industry Awards haul**
+The public snapshot now shows Piripiri Lane developments among the recognized projects at the Property Industry Awards, alongside the previously logged Court Theatre (Judges' Choice), Te Ara Mātauranga library, and Beca House. Piripiri Lane had not appeared in any prior entry — a fourth awarded project and a previously unmapped item in Hawkins' portfolio.
+
+**Finding — Build NZ panel peers identified**
+The 15 July 2026 Build NZ Construction League panel post now names the co-panellists: Naylor Love and Dominion Constructors, with the discussion framed around industry disruption and market conditions. Useful competitive-set signal — Hawkins is being platformed alongside the two other major NZ tier-one builders.
+
+**Finding — Metrics and minor detail updates**
+Followers rose to 61,277 (from 61,268 on 2026-07-05). The Hutt Valley High School completion post adds facility detail not previously captured (kitchen areas, soundproofed music rooms, creative spaces). The CLT pier flooring is described as Rotorua-manufactured, consistent with the Red Stag supplier attribution logged 2026-07-05. Source: nz.linkedin.com/company/hawkinsnz public snapshot.
 ## ASSET:linkedin:hawkinsnz 2026-07-05 09:54 → Three previously unlogged posts (Tauranga Court pour, Minister Penk site visit, Massey University outreach) plus new supplier/award detail
 
 **Finding — Tauranga High and District Court milestone**
