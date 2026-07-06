@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:linkedin:hawkinsnz 2026-07-07 06:55 → Authwall persists (fourth consecutive check); new Christchurch Girls' High School post lands on a project with a documented multi-year delay history
+
+**Finding — Primary target URL still authwalled**
+linkedin.com/company/hawkinsnz/posts/?feedView=all again returned a login-only page with zero data. The targets.json repoint to the nz.linkedin.com public snapshot, first suggested 2026-07-04, remains unactioned across four consecutive checks.
+
+**Finding — Christchurch Girls' High School carries known rebuild-programme risk**
+The newly posted project (structural steel/foundations underway, Hawkins-stated completion 2027) sits inside the wider Christchurch Schools Rebuild programme, which per NZ Herald (March 2025) has already slipped from an original 2020 target for this specific school to a programme-wide 2028 target, following a halted 2019 strengthening attempt and a disputed capacity cut (rebuilt facility sized for 1,100 students vs current enrollment, which the school disputes). Hawkins' 2027 completion claim sits inside a programme with a documented history of multi-year overruns and stakeholder disputes — worth tracking against Hawkins' own stated timeline as the project progresses.
 ## ISSUE:linkedin:hawkinsnz 2026-07-06 06:58 → Authwall and size discrepancy persist (third consecutive check); no new posts or press coverage since last snapshot
 
 **Finding — Primary URL still authwalled; targets.json repoint still pending**
