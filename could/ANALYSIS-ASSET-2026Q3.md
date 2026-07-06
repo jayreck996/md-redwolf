@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:linkedin:hawkinsnz 2026-07-07 06:55 → New Christchurch Girls' High School post surfaces; followers climb to 61,295
+
+**Finding — New project post: Christchurch Girls' High School**
+The public snapshot shows a new post (~15 hours old) covering progress on structural steel and foundation work at Christchurch Girls' High School, with completion scheduled for 2027 — a project not previously logged in any prior entry.
+
+**Finding — Follower growth continues**
+Followers rose to 61,295, up from 61,277 on 2026-07-06, continuing the steady weekly uptick already on file. Source: nz.linkedin.com/company/hawkinsnz public snapshot.
 ## ASSET:linkedin:hawkinsnz 2026-07-06 06:58 → Piripiri Lane surfaces as a fourth awarded project; Build NZ panel peers named; followers up to 61,277
 
 **Finding — Piripiri Lane added to Property Industry Awards haul**
