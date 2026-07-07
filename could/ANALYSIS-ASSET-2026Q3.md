@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:linkedin:hawkinsnz 2026-07-08 07:00 → Wakefield Hospital surfaces as new project with MATES safety accreditation; individual Site Safe award; followers up to 61,311
+
+**Finding — Wakefield Hospital redevelopment + MATES in Construction NZ Accreditation**
+Not previously logged in any prior entry: Hawkins' Wakefield Hospital site (Acurity Health Group redevelopment) achieved MATES in Construction NZ Accreditation, meeting criteria including General Awareness Training across the workforce, a minimum ratio of Connector-trained staff, and access to an ASIST-trained resource. This is both a new project win (healthcare sector, alongside the existing schools/airport/courts portfolio) and a fresh safety/wellbeing credential extending the safety-engagement theme already on file (Massey University outreach, Parliament Career Streams launch).
+
+**Finding — Individual-level Site Safe recognition**
+Graham Jones, Site Manager for Hawkins Special Projects, was recognized at the Auckland Site Safe New Zealand Awards and Graduation Ceremony for completing 40 Site Safe training credits. Prior asset entries have logged company- and project-level awards (Property Industry Awards, Building People Awards sponsorship); this is the first individual-employee recognition captured.
+
+**Finding — Follower growth continues**
+Followers rose to 61,311, up from 61,295 logged 2026-07-07, continuing the steady weekly uptick already on file. Source: nz.linkedin.com/company/hawkinsnz public snapshot.
 ## ASSET:linkedin:hawkinsnz 2026-07-07 06:55 → New Christchurch Girls' High School post surfaces; followers climb to 61,295
 
 **Finding — New project post: Christchurch Girls' High School**
