@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:linkedin:hawkinsnz 2026-07-08 07:00 → Authwall persists (fifth consecutive check); newly surfaced WP1 posts lack verifiable dates, raising a freshness-confirmation risk
+
+**Finding — Primary target URL still authwalled**
+linkedin.com/company/hawkinsnz/posts/?feedView=all again returned a login-only page with zero extractable data. The targets.json repoint to the nz.linkedin.com public snapshot, first suggested 2026-07-04, remains unactioned across five consecutive checks.
+
+**Finding — WebSearch-sourced posts lack confirmed publish dates**
+Search results surfaced a "New Year, New Toolboxes" safety-engagement initiative and a women-in-construction post, both tied to the WP1 Auckland Airport team but with no verifiable publish date attached to either result. Given hawkins.co.nz/news remains stale and the primary feed URL is blocked, there is a risk these are older evergreen posts being resurfaced by search rather than genuinely new activity for this reporting window — worth confirming against the public snapshot's dated feed before treating as current signal.
 ## ISSUE:linkedin:hawkinsnz 2026-07-07 06:55 → Authwall persists (fourth consecutive check); new Christchurch Girls' High School post lands on a project with a documented multi-year delay history
 
 **Finding — Primary target URL still authwalled**
