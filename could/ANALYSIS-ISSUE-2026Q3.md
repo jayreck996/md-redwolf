@@ -15,6 +15,19 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:linkedin:hawkinsnz 2026-07-09 06:15 → Authwall persists (sixth consecutive check); follower count posts its first tracked decline; employee count drops to 767; legacy pre-Downer Hawkins entity resurfaces in new $11m litigation report
+
+**Finding — Primary target URL still authwalled (sixth consecutive check)**
+linkedin.com/company/hawkinsnz/posts/?feedView=all again returned a login-only page with zero extractable data. The targets.json repoint to the nz.linkedin.com public snapshot, first suggested 2026-07-04, remains unactioned across six consecutive checks.
+
+**Finding — Follower count declines for the first time in the tracked series**
+Followers fell to 61,308, down from 61,311 logged 2026-07-08. Every prior snapshot since 2026-07-04 (61,262 → 61,265 → 61,268 → 61,277 → 61,295 → 61,311) showed steady growth; this is the first recorded dip in the series, worth watching for whether it is noise or a trend reversal.
+
+**Finding — Employee count continues a multi-check decline**
+The platform-listed staff count dropped to 767, extending the sequence 769 (2026-07-04/05) → 768 (2026-07-06) → 767 (today) — a third consecutive one-person-or-more decrease. The self-reported 201–500 size band vs. actual listed headcount discrepancy, on file since 2026-07-04, persists unchanged.
+
+**Finding — Legacy pre-Downer Hawkins entity resurfaces in a new $11m litigation report**
+An NBR article dated 2026-07-08 ("Reports reveal Hawkins director settlements totalling $11m") reports that liquidators' filings for H Construction North Island Ltd — the pre-2018, pre-Downer Hawkins Group entity that went into liquidation/receivership in 2018 (separate from the current Downer-owned Hawkins NZ operating company that runs this LinkedIn page) — reveal $11m in settlements paid by former directors John and David McConnell over breach-of-duty claims. This is a distinct legal entity from the current business, but shares the "Hawkins" brand name; not previously logged, and worth tracking as a brand-adjacent reputational/search-confusion risk given the wind-up story continues generating press in 2026.
 ## ISSUE:linkedin:hawkinsnz 2026-07-08 07:00 → Authwall persists (fifth consecutive check); newly surfaced WP1 posts lack verifiable dates, raising a freshness-confirmation risk
 
 **Finding — Primary target URL still authwalled**
