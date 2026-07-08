@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:linkedin:hawkinsnz 2026-07-09 06:15 → Multi-front project cadence independently reconfirmed via public snapshot; follower base holds near record levels
+
+**Finding — Active project cadence corroborated via independent public-snapshot fetch**
+A fresh fetch of the nz.linkedin.com/company/hawkinsnz public snapshot (used since the primary URL remains authwalled) reconfirms the multi-front project activity already on file: Christchurch Girls' High School progressing from groundwork into vertical construction (2027 completion), Property Council New Zealand awards recognition including Court Theatre, the Tauranga High and District Court sustainable concrete pour, the Hutt Valley High School facility handover, and the 40+ student Auckland Airport Domestic Jet Terminal youth partnership. All items independently corroborate entries logged 2026-07-04 through 2026-07-08, adding confidence that the project pipeline is genuinely broad and current rather than a single-source artifact.
+
+**Finding — Follower base holds near record levels despite this check's dip**
+Despite the small decline logged on the ISSUE side this check, followers remain at 61,308 — within 0.05% of the 61,311 peak recorded 2026-07-08 — indicating the platform audience is essentially stable at scale even as headcount figures fluctuate.
 ## ASSET:linkedin:hawkinsnz 2026-07-08 07:00 → Wakefield Hospital surfaces as new project with MATES safety accreditation; individual Site Safe award; followers up to 61,311
 
 **Finding — Wakefield Hospital redevelopment + MATES in Construction NZ Accreditation**
