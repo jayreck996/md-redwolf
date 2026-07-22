@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-07-22 13:40 → Trade coverage flags a persistent skills-shortage overhang and an automation transition risk for firms that don't plan ahead
+
+**Finding — Large forecast shortfall in core trades through 2030**
+"Digital trades are changing the future of apprenticeships" (published 2026-07-21) cites 6,000 forecast electrician openings and over 5,000 plumbing positions through 2030 despite the government doubling secondary school Trades Academy places to 20,000. The pipeline expansion is a response to, not yet a fix for, a substantial existing shortage that could constrain project delivery timelines industry-wide.
+
+**Finding — Automation adoption requires workforce planning firms may not have in place**
+"Manufacturing's automation moment is here" (published 2026-07-21) warns that successful technology adoption depends on early workforce-planning conversations rather than equipment procurement alone. Firms that adopt automation/robotics without parallel retraining and career-pathway investment risk retention problems and skills mismatches as roles shift toward monitoring and maintenance work.
 ## ISSUE:linkedin:hawkinsnz 2026-07-09 06:15 → Authwall persists (sixth consecutive check); follower count posts its first tracked decline; employee count drops to 767; legacy pre-Downer Hawkins entity resurfaces in new $11m litigation report
 
 **Finding — Primary target URL still authwalled (sixth consecutive check)**
