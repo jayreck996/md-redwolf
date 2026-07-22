@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-07-22 13:40 → Industry coverage highlights apprenticeship expansion and automation-driven upskilling, both framed as workforce growth opportunities
+
+**Finding — Trades Academy expansion doubles secondary apprenticeship places**
+"Digital trades are changing the future of apprenticeships" (published 2026-07-21) reports the government is doubling secondary school Trades Academy places to 20,000, with apprenticeships now incorporating VR training, AR on-site guidance, and AI-driven troubleshooting systems. A positive signal for the sector's talent pipeline, an area the industry has been actively investing in.
+
+**Finding — Automation reframed as a reskilling opportunity rather than a job-loss threat**
+"Manufacturing's automation moment is here" (published 2026-07-21) argues that autonomous systems and collaborative robots rarely eliminate roles outright, instead creating emerging positions such as predictive-maintenance technicians and robotics specialists — a constructive framing for firms proactively investing in workforce planning around new technology.
 ## ASSET:linkedin:hawkinsnz 2026-07-09 06:15 → Multi-front project cadence independently reconfirmed via public snapshot; follower base holds near record levels
 
 **Finding — Active project cadence corroborated via independent public-snapshot fetch**
