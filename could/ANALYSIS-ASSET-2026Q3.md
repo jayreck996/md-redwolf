@@ -15,6 +15,10 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:test:email-delivery-check 2026-07-24 09:53 → Manual test entry to verify could-update-eml.yml email delivery after Brevo credential rotation
+
+**Finding — Test entry, safe to ignore**
+This entry exists only to give could-update-eml.yml something dated today to find and email, confirming whether the SMTP credential fix (MAIL_USERNAME/MAIL_PASSWORD rotated 2026-07-23) actually resolves the previous silent no-op. Not a real analysis finding.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-07-22 13:40 → Industry coverage highlights apprenticeship expansion and automation-driven upskilling, both framed as workforce growth opportunities
 
 **Finding — Trades Academy expansion doubles secondary apprenticeship places**
