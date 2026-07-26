@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-07-27 07:20 → Coverage highlights a proactive, prevention-first biosecurity posture that limits systemic supply-chain disruption risk
+
+**Finding — Prevention-first framing reduces uncertainty for adjacent industries**
+"Farmers warned of bird flu" (published 2026-07-26) reports officials are treating the Petone Beach H5 detection with an active prevention strategy rather than waiting to manage a larger outbreak, which — if effective — limits the risk of prolonged regional restrictions that could otherwise ripple into trades and construction labour/material movement.
+
+**Finding — Early, transparent public communication**
+The rapid public disclosure of New Zealand's first H5 case, ahead of any confirmed spread to commercial flocks, reflects a functioning early-warning system that industry observers can treat as a positive signal for how the sector's information channels, including this source, surface emerging risks promptly.
 ## ASSET:test:email-delivery-check 2026-07-24 09:53 → Manual test entry to verify could-update-eml.yml email delivery after Brevo credential rotation
 
 **Finding — Test entry, safe to ignore**
