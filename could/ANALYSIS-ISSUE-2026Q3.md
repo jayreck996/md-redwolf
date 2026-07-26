@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-07-27 07:20 → First domestic H5 bird flu detection raises biosecurity and workforce-disruption risk exposure for trades-adjacent sectors
+
+**Finding — New Zealand's first H5 avian influenza detection**
+"Farmers warned of bird flu" (published 2026-07-26) reports H5 bird flu was detected in a wild seabird at Petone Beach, New Zealand's first confirmed case. While the immediate risk is agricultural, biosecurity responses (site access restrictions, movement controls) can create knock-on disruption for adjacent trades and construction supply chains that depend on unimpeded regional movement and labour availability.
+
+**Finding — Government stance signals limited compensation backstop if outbreak spreads**
+Officials are prioritizing prevention over outbreak-response planning, explicitly deprioritizing compensation frameworks in favor of keeping the virus out of commercial flocks. If containment fails, affected operators — and by extension any adjacent supply chains — would face limited government financial backstop, an emerging tail risk worth monitoring rather than an immediate construction-sector issue today.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-07-22 13:40 → Trade coverage flags a persistent skills-shortage overhang and an automation transition risk for firms that don't plan ahead
 
 **Finding — Large forecast shortfall in core trades through 2030**
