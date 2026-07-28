@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-07-29 07:41 → Fuel-driven inflation spike raises input and logistics cost-pressure risk for construction and trades operations
+
+**Finding — Headline inflation reaches 4.1%, overwhelmingly fuel-driven**
+"Inflation hits 4.1%, but fuel is doing most of the damage" (published 2026-07-28) reports NZ annual inflation hit 4.1% in the June 2026 quarter, with petrol up 27.5% and diesel up 71% year-on-year, accounting for the bulk of the increase. Diesel in particular is a direct input cost for construction plant, machinery, and freight/logistics, so this is a material cost-pressure risk for contractors' margins rather than a general economy-wide concern only.
+
+**Finding — Not yet reflected in prior sector-outlook entries**
+Earlier entries on file (e.g. 2026-07-22 sector coverage) discuss skills shortages and automation but do not account for fuel-cost inflation; this is a new cost variable worth tracking alongside labour-availability risk already logged.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-07-27 07:20 → First domestic H5 bird flu detection raises biosecurity and workforce-disruption risk exposure for trades-adjacent sectors
 
 **Finding — New Zealand's first H5 avian influenza detection**
