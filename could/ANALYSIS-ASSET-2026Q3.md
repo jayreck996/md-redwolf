@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-07-29 07:41 → Research signals a lower-cost, lower-risk future pathway for asbestos remediation relevant to the trades/construction sector
+
+**Finding — Bioremediation research targets a costly compliance pain point**
+"Could fungi be the future of asbestos disposal?" (published 2026-07-28) reports Unitec's Environmental Solutions Research Centre is investigating fungi and bacteria that can break down asbestos fibers, framed as an "asbestos compost heap" approach to contaminated soil. Asbestos remediation is a persistent cost and compliance burden on renovation/demolition work; a viable bioremediation pathway would be a positive long-term input-cost and safety signal for the sector, though the work is still at the research stage.
+
+**Finding — Institutional backing lends early credibility**
+The research originates from a named academic centre (Unitec) rather than a commercial claim, giving the finding more credibility as an emerging option to track rather than speculative coverage.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-07-27 07:20 → Coverage highlights a proactive, prevention-first biosecurity posture that limits systemic supply-chain disruption risk
 
 **Finding — Prevention-first framing reduces uncertainty for adjacent industries**
