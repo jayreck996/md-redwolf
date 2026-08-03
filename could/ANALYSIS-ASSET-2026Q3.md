@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-04 07:46 → 20th NZVETRF forum reconvenes construction/trades stakeholders around workforce reskilling, extending the sector's talent-pipeline investment theme
+
+**Finding — Milestone forum brings employers, researchers and policymakers together on reskilling**
+"Vocational education forum marks 20 years" (published 2026-08-03) reports the New Zealand Vocational Education and Training Research Forum (NZVETRF) is holding its 20th edition, co-hosted by Skills Group and BCITO under the theme "Building Bridges," 12–13 October 2026 at Te Papa, Wellington. Abstract submissions and registrations are now open. This extends the workforce-development/talent-pipeline theme already on file (Trades Academy expansion, digital-trades upskilling logged 2026-07-21) with a dedicated cross-industry research venue.
+
+**Finding — Sustained institutional continuity is itself a positive signal**
+A 20-year unbroken run for a sector-specific research forum, co-hosted by two established bodies (Skills Group, BCITO), indicates durable institutional commitment to trades workforce development — a stability signal worth noting alongside the more transactional apprenticeship-place and funding announcements already logged.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-07-29 07:41 → Research signals a lower-cost, lower-risk future pathway for asbestos remediation relevant to the trades/construction sector
 
 **Finding — Bioremediation research targets a costly compliance pain point**
