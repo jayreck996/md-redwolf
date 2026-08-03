@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-04 07:46 → 20th vocational-education forum reconvenes on the same reskilling themes flagged as unresolved shortages in prior entries, raising a question of translation from research to workforce outcomes
+
+**Finding — Forum's stated focus mirrors an already-logged, unresolved shortage**
+"Vocational education forum marks 20 years" (published 2026-08-03) frames the 20th NZVETRF forum's "Building Bridges" theme explicitly around "rapid technological shifts, changing industry demands, and workforce reskilling needs." This is the same shortage problem already on file from the 2026-07-22 13:40 ISSUE entry — approximately 6,000 forecast electrician and 5,000+ plumbing/gasfitting shortfalls through 2030 — logged despite the government's Trades Academy expansion. Two decades of a dedicated research forum addressing this exact issue, with the shortfall still current as of the most recent inflation/sector coverage on file, raises a fair question of how much forum output has translated into workforce-supply outcomes.
+
+**Finding — Event is at the call-for-abstracts stage; no concrete deliverables yet**
+The item only confirms registrations and abstract submissions are open for an October 2026 event — there is no content yet on outcomes, commitments, or funded initiatives. Until the forum proceedings are published, this should be tracked as an intent signal rather than a resolved contribution to the labour-shortage risk already logged.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-07-29 07:41 → Fuel-driven inflation spike raises input and logistics cost-pressure risk for construction and trades operations
 
 **Finding — Headline inflation reaches 4.1%, overwhelmingly fuel-driven**
