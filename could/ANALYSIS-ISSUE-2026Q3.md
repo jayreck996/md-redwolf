@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-05 07:46 → Second consecutive day of conference/forum announcement-stage coverage, with no field outcomes yet to weigh against prior sector risks
+
+**Finding — Announcement-stage coverage repeats a pattern flagged the prior day**
+"Why Concrete NZ Conference 2026 should be in your calendar" (published 2026-08-04) is, like the NZVETRF forum item logged 2026-08-04, a registration/call-for-attendance announcement (event not until 21-23 October 2026) rather than a report of outcomes. Two consecutive days of forward-looking event coverage, with no accompanying deliverables, continues the "intent signal vs. resolved contribution" gap already noted for the vocational forum against the standing electrician/plumbing shortfall risk on file.
+
+**Finding — No new information on standing cost or labour-supply risks**
+The item is materials/technical-conference content and does not address the fuel-driven input-cost inflation (2026-07-28) or trades-shortage forecasts (2026-07-21) already logged as open risks — those remain unresolved and untouched by this cycle's coverage.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-04 07:46 → 20th vocational-education forum reconvenes on the same reskilling themes flagged as unresolved shortages in prior entries, raising a question of translation from research to workforce outcomes
 
 **Finding — Forum's stated focus mirrors an already-logged, unresolved shortage**
