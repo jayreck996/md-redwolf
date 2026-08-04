@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-05 07:46 → Concrete NZ Conference 2026 draws 400+ industry professionals and international keynotes, extending the sector's knowledge-investment theme
+
+**Finding — Major sector conference with international keynote lineup**
+"Why Concrete NZ Conference 2026 should be in your calendar" (published 2026-08-04) reports the Concrete NZ Conference 2026 runs 21-23 October at Wellington's Tākina Convention Centre, drawing over 400 industry professionals. Confirmed keynotes include Michelle L. Wilson (American Cement Association), Professor Andrzej Ćwirzeń (Luleå University, Sweden), and economist Brad Olsen, with technical content spanning low-carbon concrete, seismic resilience, structural innovation, and construction economics.
+
+**Finding — Extends the sector's cross-industry knowledge-sharing theme**
+This is the second cross-industry event announcement in as many days, following the NZVETRF vocational-education forum logged 2026-08-04. Together they indicate active institutional investment in sector knowledge-sharing (materials innovation, seismic resilience) alongside the workforce-development theme already on file, rather than a one-off event.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-04 07:46 → 20th NZVETRF forum reconvenes construction/trades stakeholders around workforce reskilling, extending the sector's talent-pipeline investment theme
 
 **Finding — Milestone forum brings employers, researchers and policymakers together on reskilling**
