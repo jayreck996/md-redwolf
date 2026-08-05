@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-06 07:45 → Sector media escalates occupational-disease awareness with a quantified risk comparison, building on the asbestos-research coverage already on file
+
+**Finding — Quantified framing elevates disease risk from background concern to headline metric**
+"The long-term cost of site exposure" (published 2026-08-05) puts a specific multiplier on chronic-exposure risk (disease killing ~15x more workers than accidents), moving the conversation beyond general awareness into a citable industry statistic. Public quantification of this kind typically precedes regulatory or insurance-driven pressure for monitoring investment, which is a leading indicator worth tracking rather than the risk finding itself.
+
+**Finding — Third consecutive asbestos/occupational-health item in under two weeks signals sustained editorial attention**
+Following the craft-sand asbestos findings (2026-07-29) and fungi-bioremediation research (2026-07-28), this is the third item on health/exposure risk from this source inside an 8-day span. Sustained trade-press attention on a single risk theme is itself a positive signal — it increases the likelihood the underlying issue (monitoring and dust-control gaps) gets addressed by industry bodies or regulators rather than going unremarked.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-05 07:46 → Concrete NZ Conference 2026 draws 400+ industry professionals and international keynotes, extending the sector's knowledge-investment theme
 
 **Finding — Major sector conference with international keynote lineup**
