@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-06 07:45 → Occupational-disease coverage quantifies a chronic, under-addressed risk that dwarfs accident risk, extending the asbestos-exposure thread already on file
+
+**Finding — Disease risk framed as 15x accident risk, with silica dust and asbestos named as primary drivers**
+"The long-term cost of site exposure" (published 2026-08-05) reports work-related disease kills approximately 15 times more construction workers than workplace accidents, citing silica dust and asbestos as leading causes, and calls for expanded health monitoring and dust-control measures. This reframes the sector's dominant safety risk away from acute incidents toward long-latency chronic exposure — a category that is harder to track, harder to attribute, and not covered by the accident-focused safety metrics (e.g. Site Safe awards) already logged in prior ASSET entries.
+
+**Finding — Extends, but does not resolve, the standing asbestos-exposure risk thread**
+Two asbestos items are already on file: the 2026-07-29 craft-sand findings (supplier-claim-only safety assurances, fibers releasing under normal play) and the 2026-07-28 fungi-bioremediation research (still lab-stage, not a deployed control). This new item adds occupational-exposure severity data on top of those unresolved contamination-detection and disposal-cost risks, but the article's own call for "expanded health monitoring and dust control" indicates current measures are viewed as insufficient — none of the three items report an implemented fix.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-05 07:46 → Second consecutive day of conference/forum announcement-stage coverage, with no field outcomes yet to weigh against prior sector risks
 
 **Finding — Announcement-stage coverage repeats a pattern flagged the prior day**
