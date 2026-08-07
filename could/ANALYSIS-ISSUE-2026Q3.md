@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-08 07:06 → Landslide-hazard education content is schools-outreach framed, leaving the sector's own geotechnical-monitoring gap unaddressed by this cycle's coverage
+
+**Finding — Item is public-science education, not sector risk data**
+"Free virtual field trip explores landslide science" (published 2026-08-07) promotes a free LEARNZ virtual field trip through Central Otago for Years 5-10 students (running from 17 August 2026), covering landslide science, environmental impacts, and how scientists monitor natural hazards. Unlike the 2026-08-06 seismic-hazard item already on file, this is curriculum-oriented outreach aimed at school students rather than industry-facing risk reporting — it raises public awareness of landslide/slope-stability hazards but contains no data on construction-sector exposure, monitoring practice, or regulatory response.
+
+**Finding — Geotechnical/slope-stability risk remains untracked alongside the standing seismic thread**
+The 2026-08-07 12:09 entry opened a seismic/structural risk thread (revised hazard model, 40% strengthening gap). This item touches an adjacent hazard category — landslides/slope stability — but offers no equivalent sector-specific data (no assessment coverage, no standard revision, no construction-industry commentary). Until trade-press coverage of landslide risk with sector relevance appears, this remains a public-education signal only, not an addition to the standing hazard-risk register.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-07 12:09 → Revised seismic hazard model and new design standard expose a large existing-building strengthening gap, opening a new risk thread not previously on file
 
 **Finding — National hazard estimates revised up 50%, but building stock hasn't caught up**
