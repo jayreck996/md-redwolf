@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-07 12:09 → Sector coverage frames seismic resilience as a design-stage discipline, signalling proactive regulatory and industry investment ahead of the next major earthquake
+
+**Finding — Regulatory response already underway, not merely reactive commentary**
+"Building for the next big one" (published 2026-08-06) reports a revised structural design standard (DZ TS 1170.5:2024) is in active development in direct response to the 2022 hazard-model update, and that 85% of buildings nationally have already been assessed for seismic risk. Coverage explicitly frames resilience as something to "design in from inception," rather than retrofit later — a constructive shift in industry messaging that pairs with the sustained trade-press attention on risk/monitoring themes already on file (asbestos and occupational-exposure coverage, 2026-07-28 through 2026-08-06).
+
+**Finding — High assessment coverage is a credible baseline for future tracking**
+An 85% national assessment rate gives a concrete, citable baseline against which future strengthening progress (currently 40% of earthquake-prone buildings addressed) can be measured in later entries — useful for tracking whether the sector closes the gap identified on the ISSUE side of this cycle.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-06 07:45 → Sector media escalates occupational-disease awareness with a quantified risk comparison, building on the asbestos-research coverage already on file
 
 **Finding — Quantified framing elevates disease risk from background concern to headline metric**
