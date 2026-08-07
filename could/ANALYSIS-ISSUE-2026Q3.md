@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-07 12:09 → Revised seismic hazard model and new design standard expose a large existing-building strengthening gap, opening a new risk thread not previously on file
+
+**Finding — National hazard estimates revised up 50%, but building stock hasn't caught up**
+"Building for the next big one" (published 2026-08-06), prompted by a magnitude 6.3 quake near Te Anau, reports the 2022 National Seismic Hazard Model revision raised countrywide seismic hazard estimates by 50% on average (roughly doubling in some urban centres), while a tougher structural design standard (DZ TS 1170.5:2024) is still only in draft. Only 40% of earthquake-prone buildings have been strengthened or removed against the old hazard baseline, leaving a substantial retrofit gap against a materially higher current risk estimate — a standing structural-safety liability for any asset owner relying on pre-2022 assessments.
+
+**Finding — First seismic-risk item on file; distinct from the standing occupational-health and cost-inflation threads**
+Prior open risks on file are occupational-disease exposure (2026-08-06 entry), fuel-driven input-cost inflation (2026-07-28), and trades-labour shortages (2026-07-21). This is a new, unrelated risk category — structural/seismic — with its own unresolved gap (60% of earthquake-prone stock still unaddressed and a design standard not yet finalised) that should be tracked independently going forward.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-06 07:45 → Occupational-disease coverage quantifies a chronic, under-addressed risk that dwarfs accident risk, extending the asbestos-exposure thread already on file
 
 **Finding — Disease risk framed as 15x accident risk, with silica dust and asbestos named as primary drivers**
