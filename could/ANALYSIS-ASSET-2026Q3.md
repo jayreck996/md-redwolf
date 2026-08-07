@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-08 07:06 → Free LEARNZ virtual field trip extends public geohazard-science literacy, complementing the sector's own seismic-resilience messaging already on file
+
+**Finding — Structured, free public-science programme on natural-hazard monitoring**
+"Free virtual field trip explores landslide science" (published 2026-08-07) reports the LEARNZ programme is offering a free virtual journey through Central Otago from 17 August 2026, teaching Years 5-10 students how scientists monitor landslides and other natural hazards. Free, curriculum-aligned access to real hazard-monitoring science is a positive public-literacy signal, building general awareness of geohazard risk among the next generation entering trades and engineering pathways.
+
+**Finding — Complements the sector's own resilience-messaging theme**
+This lands one day after the seismic-resilience "design in from inception" messaging logged 2026-08-07, extending a broader pattern of public-facing natural-hazard science communication (seismic and now landslide) across independent sources within the same week — a mutually reinforcing signal that hazard-awareness content is gaining sustained attention beyond just industry trade press.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-07 12:09 → Sector coverage frames seismic resilience as a design-stage discipline, signalling proactive regulatory and industry investment ahead of the next major earthquake
 
 **Finding — Regulatory response already underway, not merely reactive commentary**
