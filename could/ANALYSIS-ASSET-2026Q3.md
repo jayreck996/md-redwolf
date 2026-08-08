@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-09 06:47 → Gen Z interest in trades framed as a structural shift industry could capture, extending the sector's talent-pipeline theme
+
+**Finding — Generational preference shift favours trades over university debt**
+"How countries are attracting Gen Z into skilled trades" (published 2026-08-08) reports young workers are increasingly choosing apprenticeships over university degrees, drawn by paid training, faster income without student debt, tangible work outcomes, and perceived resistance to automation — a demand-side tailwind that, if it reaches New Zealand, would help close the labour-pipeline gap already on file.
+
+**Finding — Employer-side playbook identified: structured apprenticeships plus modern equipment and workplace respect**
+The article credits successful Canadian employers with combining structured apprenticeship programmes, modern equipment, and workplace-culture investment to attract younger workers — a concrete, actionable template that complements the Trades Academy expansion and digital-trades upskilling already logged (2026-07-21, 2026-08-04) as the sector's existing pipeline investments.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-08 07:06 → Free LEARNZ virtual field trip extends public geohazard-science literacy, complementing the sector's own seismic-resilience messaging already on file
 
 **Finding — Structured, free public-science programme on natural-hazard monitoring**
