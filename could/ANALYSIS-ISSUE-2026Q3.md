@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-09 06:47 → Gen Z trades-interest coverage cites only US/Canada data, leaving NZ's own electrician/plumbing shortfall unconfirmed as benefiting from any equivalent shift
+
+**Finding — Sourcing is overseas-only; no NZ-specific demand or uptake data**
+"How countries are attracting Gen Z into skilled trades" (published 2026-08-08) draws its central claim — "six in ten Gen Z workers plan to pursue a trade career this year" — from US survey data, with successful recruitment examples cited from Canada. The article frames New Zealand's aging tradesperson workforce as a reason this shift "would be valuable," but reports no domestic survey data, apprenticeship application trend, or Trades Academy enrolment figures confirming the same generational shift is occurring locally.
+
+**Finding — Standing shortfall thread remains unresolved by this item**
+The 2026-07-22 13:40 entry logged a forecast shortfall of roughly 6,000 electricians and 5,000+ plumbing/gasfitting roles through 2030, and the 2026-08-04 07:46 entry flagged the 20th NZVETRF forum reconvening on the same reskilling theme without concrete deliverables yet. This item adds an interest-signal data point from overseas markets but, absent NZ-specific figures, does not move the standing shortfall risk from "unresolved" to "improving."
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-08 07:06 → Landslide-hazard education content is schools-outreach framed, leaving the sector's own geotechnical-monitoring gap unaddressed by this cycle's coverage
 
 **Finding — Item is public-science education, not sector risk data**
