@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-11 07:05 → Landfill levy rises 14% to $40/tonne, adding a second compounding cost-pressure input alongside the fuel-driven inflation spike already on file
+
+**Finding — Levy increase lands directly on a large, unavoidable waste stream**
+"Landfill levy sharpens case for reclaimed timber" (published 2026-08-10) reports the construction/demolition waste landfill levy rose from $35 to $40 per tonne on 1 July 2026, a 14% increase. Construction and demolition waste already accounts for 40-50% of New Zealand's total landfill intake, and the article cites an average of four tonnes of waste per new home built — meaning this is a fixed, largely unavoidable per-project cost increase rather than a discretionary input.
+
+**Finding — Second cost-pressure item since the fuel-inflation entry, no relief in sight**
+The 2026-07-28 entry logged a 4.1% headline inflation print driven by 27.5%/71% petrol/diesel increases as a margin risk for contractors. This item adds a second, independent cost lever (waste disposal) rising on top of that fuel pressure, with no indication of any offsetting relief — the piece's own recommendation to sort waste on-site and re-price reclaimed materials at quoting stage is presented as a mitigation firms must actively adopt rather than a change already underway.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-09 06:47 → Gen Z trades-interest coverage cites only US/Canada data, leaving NZ's own electrician/plumbing shortfall unconfirmed as benefiting from any equivalent shift
 
 **Finding — Sourcing is overseas-only; no NZ-specific demand or uptake data**
