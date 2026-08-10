@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-11 07:05 → Rising disposal costs strengthen the economic (not just aesthetic) case for reclaimed timber, extending the sector's materials-innovation theme
+
+**Finding — Reclaimed timber shifts from a sustainability nice-to-have to a cost-avoidance decision**
+"Landfill levy sharpens case for reclaimed timber" (published 2026-08-10) reports that as landfill levies rise, reclaimed structural timber — previously chosen mainly for aesthetics and sustainability — now also avoids tangible, quantifiable disposal costs given timber makes up roughly 20% of construction/demolition waste by weight. Framing a materials choice as a direct cost lever, rather than a values-driven one, is likely to broaden its adoption beyond sustainability-focused builders.
+
+**Finding — Concrete, actionable guidance extends the sector's practical-mitigation pattern**
+The article offers specific operational guidance — sorting waste at the skip to divert at least half of project waste from landfill, and pricing reclaimed timber against new material at the quoting stage — continuing the pattern already on file of trade press pairing cost/risk coverage with actionable mitigation steps (e.g. the fungi-based asbestos remediation research logged 2026-07-28, also framed as a future cost-reduction pathway for a compliance burden).
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-09 06:47 → Gen Z interest in trades framed as a structural shift industry could capture, extending the sector's talent-pipeline theme
 
 **Finding — Generational preference shift favours trades over university debt**
