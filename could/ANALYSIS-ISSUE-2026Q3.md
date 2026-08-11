@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-12 07:11 → Dunedin property boom intensifies earthquake-compliance cost pressure on heritage building stock, extending the standing seismic-strengthening gap risk
+
+**Finding — Heritage stock faces preservation-vs-cost tension amid demand surge**
+"Property boom tests Dunedin's heritage buildings" (published 2026-08-11) reports Dunedin home values rising 3.3% annually as the city draws affordability-driven demand now rivaling Christchurch. Nearly 800 heritage-listed Victorian/Edwardian buildings face intensified compliance costs from updated earthquake regulations, with heritage advocates warning restoration expense may lead owners to let buildings deteriorate rather than maintain them — a market-driven risk to heritage stock distinct from general nationwide strengthening.
+
+**Finding — Extends the standing seismic-strengthening gap already on file**
+The 2026-08-07 12:09 entry logged that only 40% of earthquake-prone buildings nationally have been strengthened or removed against a hazard model revised 50% higher. This item adds a heritage-specific economic disincentive (compliance cost vs. property value) layered on top of that structural gap, in a segment — pre-20th-century heritage buildings — that is typically costlier and harder to retrofit than standard building stock.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-11 07:05 → Landfill levy rises 14% to $40/tonne, adding a second compounding cost-pressure input alongside the fuel-driven inflation spike already on file
 
 **Finding — Levy increase lands directly on a large, unavoidable waste stream**
