@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-12 07:11 → Air NZ's Hangar 4 wins Timber Design Awards' top prize, extending the sector's timber-material and seismic-resilience credibility themes
+
+**Finding — Flagship project demonstrates timber's structural and environmental case**
+"Celebrating the best in timber design" (published 2026-08-11) reports Air New Zealand's Hangar 4, designed by Studio Pacific Architecture using laminated veneer lumber and cross-laminated timber, won the Resene Supreme Award at the 2026 Timber Design Awards from a field of 132 entries across 52 projects. The award citation highlights timber's environmental benefits and seismic resilience versus steel — a high-profile validation reinforcing engineered timber as a credible structural material choice.
+
+**Finding — Builds on the sector's reclaimed-timber economics thread already on file**
+The 2026-08-11 07:05 entry logged how the landfill levy increase strengthens the economic case for reclaimed timber. This award adds a complementary signal — engineered/structural timber gaining top industry recognition — broadening timber's positive narrative in the sector from a waste-cost argument to a design-excellence and seismic-performance one within the same week.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-11 07:05 → Rising disposal costs strengthen the economic (not just aesthetic) case for reclaimed timber, extending the sector's materials-innovation theme
 
 **Finding — Reclaimed timber shifts from a sustainability nice-to-have to a cost-avoidance decision**
