@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-13 07:10 → New earthquake-prone building reform grants remediation-deadline extensions up to 15 years, risking further delay to the standing strengthening gap concentrated in Wellington's ~468 affected buildings
+
+**Finding — Reform loosens timelines just as the hazard model was revised upward**
+"Earthquake law reset lands hardest on Wellington" (published 2026-08-12) reports the Building (Earthquake-prone Building System Reform) Amendment Bill, moving through Parliament ahead of the 2026 election, lets councils grant remediation deadline extensions of up to 15 years and shifts assessment to a risk-based model that removes low-risk buildings and regions from scope entirely. This directly intersects the standing seismic-risk thread on file: the 2026-08-07 12:09 entry logged the 2022 National Seismic Hazard Model revision raising countrywide hazard estimates ~50%, with only 40% of earthquake-prone buildings strengthened or removed against the old baseline. A policy mechanism that extends compliance deadlines by up to 15 years — even if risk-targeted — creates a plausible path for owners to defer remediation further against a hazard estimate that has already moved materially against them.
+
+**Finding — Wellington's exposure is concentrated in older, harder-to-retrofit stock**
+The article identifies approximately 468 affected Wellington buildings, predominantly pre-war masonry and mid-century concrete structures — categories that are typically costlier and slower to strengthen, echoing the heritage-stock cost/compliance tension logged in the 2026-08-12 07:11 Dunedin entry. Wellington carrying the largest reform impact, combined with its well-documented seismic exposure, makes any deadline-extension provision a higher-stakes risk here than the reform's national framing suggests.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-12 07:11 → Dunedin property boom intensifies earthquake-compliance cost pressure on heritage building stock, extending the standing seismic-strengthening gap risk
 
 **Finding — Heritage stock faces preservation-vs-cost tension amid demand surge**
