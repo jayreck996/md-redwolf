@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-13 07:10 → Earthquake-prone building reform decouples seismic strengthening from fire-safety/disability upgrades and moves to a risk-based model, a pragmatic policy shift that could unlock stalled remediation work
+
+**Finding — Removing bundled-upgrade requirements lowers the cost barrier to starting work**
+"Earthquake law reset lands hardest on Wellington" (published 2026-08-12) reports the Building (Earthquake-prone Building System Reform) Amendment Bill permits seismic strengthening to proceed independently of fire safety and disability access upgrades, which have historically been bundled into remediation projects and inflated their cost and complexity. Decoupling these requirements is a constructive, pragmatic policy response that could make starting strengthening work more financially viable for owners who have deferred it, complementing the sector's own resilience-messaging theme logged 2026-08-07 (85% national assessment coverage, design standard in development).
+
+**Finding — Risk-based targeting focuses regulatory attention where it matters most**
+The reform's shift away from blanket rules toward a risk-based model — removing low-risk buildings and regions from scope — is a more efficient use of compliance resources than the prior uniform approach, concentrating regulatory and owner attention on genuinely high-risk stock like Wellington's ~468 identified buildings rather than spreading effort thinly across low-risk regions. Active legislative movement on this file ahead of the 2026 election also signals sustained institutional attention to the earthquake-prone building issue rather than it stalling as a policy priority.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-12 07:11 → Air NZ's Hangar 4 wins Timber Design Awards' top prize, extending the sector's timber-material and seismic-resilience credibility themes
 
 **Finding — Flagship project demonstrates timber's structural and environmental case**
