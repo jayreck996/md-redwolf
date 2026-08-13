@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-14 07:11 → $60m Crown deal secures NZ's only integrated cement plant through 2040 with a $150m resilience/decarbonisation investment, protecting over 600 direct and regional jobs and domestic supply security
+
+**Finding — Long-horizon supply security for a foundational construction input**
+"Golden Bay Cement stays open under $60m Crown deal" (published 2026-08-13) reports the government's up-to-$60 million commitment secures continued operation of the Portland cement works — supplier of roughly 60% of national cement demand — through at least 2040, avoiding the import-only transition Fletcher Building had flagged as likely from 2030. For a sector already tracking materials-cost and supply themes (the 2026-08-11 landfill levy/reclaimed-timber entry, the 2026-08-12 timber design award), this removes a tail risk around import dependency and shipping-disruption exposure for one of construction's most fundamental inputs.
+
+**Finding — Matched private investment and accountability structure, not an open-ended subsidy**
+In exchange for funding, Golden Bay Cement committed a minimum $150 million of its own investment into operations, resilience, and decarbonisation, with clawback provisions allowing the government to recover funds if commitments aren't met. Officials also confirmed the deal supports over 150 direct jobs and roughly 450 additional regional positions. Structuring the intervention as conditional, clawback-backed co-investment — rather than unconditional support — is a constructive template that ties public funding directly to delivered decarbonisation and employment outcomes.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-13 07:10 → Earthquake-prone building reform decouples seismic strengthening from fire-safety/disability upgrades and moves to a risk-based model, a pragmatic policy shift that could unlock stalled remediation work
 
 **Finding — Removing bundled-upgrade requirements lowers the cost barrier to starting work**
