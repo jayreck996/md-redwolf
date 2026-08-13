@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-14 07:11 → $60m Crown bailout keeps NZ's only integrated cement plant open, but government declined tariff/ETS relief, leaving the same carbon-cost pressure that nearly closed it unresolved past 2030
+
+**Finding — Funding treats the symptom, not the cost structure that caused it**
+"Golden Bay Cement stays open under $60m Crown deal" (published 2026-08-13) reports the government committed up to $60 million on 20 July to keep the Portland works near Whangārei operating, after Fletcher Building (the prior owner) warned that escalating costs — particularly carbon/ETS costs — would force a shift to an import-only model from 2030. Officials explicitly declined Golden Bay Cement's requests for both tariff protection on imported cement and ETS relief, meaning the underlying cost pressure that produced the original closure warning remains in place; the $60m and the company's own $150m commitment buy time and secure the 2040 operating horizon, but do not resolve the carbon-cost trajectory Fletcher cited as the reason a transition to imports looked inevitable.
+
+**Finding — Single point of failure for 60% of national cement supply, now conditional on continued taxpayer-linked funding**
+Portland is described as New Zealand's only fully integrated cement facility (local clinker from local limestone, not just grinding imported clinker), supplying roughly 60% of national demand. Concentrating that much of a foundational construction-material supply chain in one facility was already a latent concentration risk; this deal makes continuity through 2040 explicitly conditional on Golden Bay Cement meeting operating and investment obligations under a clawback structure — a new dependency for the sector to track, distinct from the standing input-cost threads already on file (fuel inflation 2026-07-28, landfill levy 2026-08-11).
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-13 07:10 → New earthquake-prone building reform grants remediation-deadline extensions up to 15 years, risking further delay to the standing strengthening gap concentrated in Wellington's ~468 affected buildings
 
 **Finding — Reform loosens timelines just as the hazard model was revised upward**
