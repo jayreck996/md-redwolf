@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-15 07:02 → Record solar milestone is framed as a dry-year hydro hedge rather than a resolved grid-security risk; apprenticeship award remains an individual outlier against the standing trades-shortage forecast
+
+**Finding — Record solar capacity responds to, but does not resolve, dry-year hydro vulnerability**
+"Nation's largest solar farm switches on, again" (published 2026-08-14) reports the Tauhei Solar Farm near Te Aroha (202MWp, ~280GWh/year, ~35,000 homes) became New Zealand's largest solar facility in under 15 months, with the article explicitly citing "dry-year hydro concerns" as a driver of the accelerating build-out. Naming dry-year hydro risk as the motivation confirms that underlying grid-security exposure (hydro generation variability) remains unresolved; solar's own intermittency — no output overnight, weather-dependent generation — means this addition only partially offsets that risk rather than closing it, and the item reports no corresponding growth in battery storage or transmission capacity to firm up the new solar output.
+
+**Finding — Apprenticeship award extends the standing pattern of individual wins without moving the shortage forecast**
+"A different path to success earns national apprenticeship honour" (published 2026-08-14) profiles Lexiga Pritchard's 2026 Bunnings Women in Apprenticeships Award win at Auckland's NCS Acoustics. This continues the pattern already on file (2026-07-22 13:40, 2026-08-04 07:46, 2026-08-09 06:47 entries): individual or award-level recruitment/interest signals keep appearing in coverage, but none of these items — including this one — report any data moving the standing forecast of roughly 6,000 electrician and 5,000+ plumbing/gasfitting shortfalls through 2030 from "unresolved" toward "improving."
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-14 07:11 → $60m Crown bailout keeps NZ's only integrated cement plant open, but government declined tariff/ETS relief, leaving the same carbon-cost pressure that nearly closed it unresolved past 2030
 
 **Finding — Funding treats the symptom, not the cost structure that caused it**
