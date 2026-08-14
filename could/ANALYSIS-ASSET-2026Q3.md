@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-15 07:02 → Tauhei Solar Farm delivers NZ's largest solar facility ahead of schedule; Bunnings Women in Apprenticeships winner extends the sector's talent-pipeline storytelling
+
+**Finding — Fast-delivered, record-breaking renewable infrastructure**
+"Nation's largest solar farm switches on, again" (published 2026-08-14) reports the Tauhei Solar Farm reached energisation in late June, ahead of schedule, after just 15 months of construction — surpassing the previous largest facility in under 15 months and becoming New Zealand's biggest solar plant at 202MWp / ~280GWh annually (~35,000 homes). Rapid, on-time delivery of record-scale renewable-energy infrastructure is a positive construction-sector execution signal, continuing an accelerating investment pattern the article attributes partly to improved power-purchase-agreement financing.
+
+**Finding — Individual apprenticeship win adds a concrete recruitment-messaging asset**
+"A different path to success earns national apprenticeship honour" (published 2026-08-14) reports Lexiga Pritchard, a 25-year-old Production Supervisor at NCS Acoustics who left school at 16, won the 2026 Bunnings Women in Apprenticeships Award via a fees-free mechanical engineering pathway into fabrication, now leading a 13-person team; her $12,000 prize funds equipment for a personal furniture-restoration business. This extends the sector's talent-pipeline theme already on file (Trades Academy expansion 2026-07-21, Gen Z recruitment coverage 2026-08-08) with a usable, concrete individual-success story for recruitment and diversity messaging.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-14 07:11 → $60m Crown deal secures NZ's only integrated cement plant through 2040 with a $150m resilience/decarbonisation investment, protecting over 600 direct and regional jobs and domestic supply security
 
 **Finding — Long-horizon supply security for a foundational construction input**
