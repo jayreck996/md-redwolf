@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-16 06:37 → Industry coverage surfaces proven peer-support mental health models as a template New Zealand construction could adopt
+
+**Finding — Established overseas programs offer a concrete template**
+"Help inside the hard hat" (published 2026-08-15) highlights three operating peer-support programs — Australia's MATES in Construction, the UK's Mates in Mind, and the UK's Lighthouse Construction Industry Charity — as working examples of workplace mental health support built on training, peer connectors, and accessible helplines. Their existence and the article's framing of them as adaptable to New Zealand is a positive signal: a proven, exportable model is already available rather than something the sector has to build from scratch.
+
+**Finding — Active trade-press engagement with a sector wellbeing topic**
+The publication devoting a feature to construction-specific mental health support, drawing on international best practice, reflects continued industry attention to workforce wellbeing alongside the sector's more commonly covered commercial and regulatory news.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-15 07:02 → Tauhei Solar Farm delivers NZ's largest solar facility ahead of schedule; Bunnings Women in Apprenticeships winner extends the sector's talent-pipeline storytelling
 
 **Finding — Fast-delivered, record-breaking renewable infrastructure**
