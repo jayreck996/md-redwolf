@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-16 06:37 → Construction-sector suicide risk is documented as disproportionately high with no NZ-specific program yet in place, only overseas models being cited
+
+**Finding — Elevated risk is stated as fact, not as a problem already being addressed domestically**
+"Help inside the hard hat" (published 2026-08-15) states that construction workers in Australia and New Zealand face suicide rates disproportionately higher than other sectors. The article does not cite any current New Zealand-specific program, funding commitment, or rollout timeline addressing this — it only describes overseas peer-support models (Australia's MATES in Construction, the UK's Mates in Mind and Lighthouse Construction Industry Charity) as examples NZ "can" draw on, meaning the underlying risk remains unresolved domestically as of this item.
+
+**Finding — Reliance on peer-connector and training models assumes uptake that isn't yet evidenced locally**
+The piece frames training, peer connectors, and accessible helplines as the mechanism for improvement, following the structure of the cited overseas charities. No adoption, pilot, or funding figures for a comparable New Zealand scheme are reported, so the gap between "successful models exist elsewhere" and "a working model exists here" stands as an open risk for the sector.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-15 07:02 → Record solar milestone is framed as a dry-year hydro hedge rather than a resolved grid-security risk; apprenticeship award remains an individual outlier against the standing trades-shortage forecast
 
 **Finding — Record solar capacity responds to, but does not resolve, dry-year hydro vulnerability**
