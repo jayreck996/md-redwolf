@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-17 06:36 → Guidance confirms construction-site drone use typically requires Part 102 certification, not the lighter Part 101 rules, with CAA signalling further rule changes are still coming
+
+**Finding — Most site drone operations cross into the certified-operator tier by default**
+"The drone is the easy part" (published 2026-08-16) explains that New Zealand's CAA drone rules split into Part 101 (no certification, but capped at 25kg/120m altitude/daylight/visual-line-of-sight, and requiring consent from people and property owners below) and Part 102 (certificated operator required for anything exceeding those limits — flying over people/property without consent, beyond-visual-line-of-sight, or controlled airspace). The article states construction sites "tend to cross at least one of those lines," meaning routine site survey/inspection flying is likely to require Part 102 certification by default, not the assumption-friendly Part 101 tier — a compliance exposure for any firm currently flying drones on the basis that "no certification needed" rules apply.
+
+**Finding — Regulatory settings are still moving, adding an ongoing compliance-tracking burden**
+The CAA updated drone/advanced-aviation rules on 22 December 2025 and introduced a new Part 107 framework letting approved organisations trial emerging aviation technology, with a trial advisory circular still only expected "early 2026." The article notes the regulator "has signalled the rules will keep moving" — meaning site operators face a moving compliance target rather than a settled rule set, layered on top of separate Privacy Commissioner guidance (drones treated like CCTV, requiring notice and necessity justification for filming) and Health and Safety at Work Act obligations (drones as plant, requiring worker notification of flight timing/location and maintained boundaries) that must all be satisfied concurrently.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-16 06:37 → Construction-sector suicide risk is documented as disproportionately high with no NZ-specific program yet in place, only overseas models being cited
 
 **Finding — Elevated risk is stated as fact, not as a problem already being addressed domestically**
