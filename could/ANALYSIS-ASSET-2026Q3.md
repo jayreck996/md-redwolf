@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-17 06:36 → Trade press publishes a concrete compliance checklist for construction-site drone use, spanning CAA certification, privacy, and H&S obligations in one reference
+
+**Finding — Actionable, three-part verification checklist for site operators**
+"The drone is the easy part" (published 2026-08-16) gives site operators a specific action list rather than general awareness content: verify whether Part 101 compliance or current Part 102 certification applies, confirm proof of insurance, and document footage-handling procedures. This continues the sector's established pattern of trade-press coverage pairing a regulatory/risk topic with concrete mitigation steps, echoed in the reclaimed-timber quoting guidance (2026-08-11 07:05 entry) and the fungi-based asbestos remediation research (2026-07-29 07:41 entry).
+
+**Finding — Regulator actively expanding capability, not just restricting it**
+Alongside the compliance-tier rules, the CAA's 22 December 2025 update introduced a new Part 107 framework allowing approved organisations to trial emerging aviation technology, with a trial advisory circular due early 2026. An active regulatory sandbox for new aviation technology is a constructive signal that the regime is expanding useful drone capability for industry (e.g. future beyond-visual-line-of-sight or higher-altitude use cases) rather than only tightening restrictions.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-16 06:37 → Industry coverage surfaces proven peer-support mental health models as a template New Zealand construction could adopt
 
 **Finding — Established overseas programs offer a concrete template**
