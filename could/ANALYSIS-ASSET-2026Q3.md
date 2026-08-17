@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-18 06:49 → Labour, ACT, the Greens and TOP signal cross-party willingness to keep planning/RMA reform rather than reverse it, addressing the sector's top-cited risk
+
+**Finding — Rare political alignment on the sector's biggest structural complaint**
+"Cross-party consensus emerges" (published 2026-08-17) reports that at the BuildNZ conference, representatives from Labour (Arena Williams), ACT (Simon Court), the Greens (Lawrence Xu-Nan) and The Opportunity Party all agreed that planning delays are a serious problem, even while disagreeing on the specific fix. For a sector employing 10% of the workforce and 6% of GDP that has endured what the article calls decades of policy "flip-flopping," a signal that opposition parties won't simply unwind the National-led Resource Management Act overhaul after a change of government is itself a material positive — it reduces the regulatory-reversal risk that firms cite as their top planning concern.
+
+**Finding — Reform substance plus early activity data**
+The RMA overhaul consolidates over 100 regional plans into one per region and collapses numerous consent categories down to a few, aimed at streamlining infrastructure delivery without weakening building standards. The article ties this to recent consenting data showing 39,800 new dwelling consents, up 19% year-on-year — early evidence that reform momentum is starting to translate into build activity rather than remaining purely rhetorical.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-17 06:36 → Trade press publishes a concrete compliance checklist for construction-site drone use, spanning CAA certification, privacy, and H&S obligations in one reference
 
 **Finding — Actionable, three-part verification checklist for site operators**
