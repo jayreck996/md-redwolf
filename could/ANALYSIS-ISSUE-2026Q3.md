@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-18 06:49 → Cross-party talk papers over unresolved fights on imported-product quality, energy-efficiency standards and workforce capacity ahead of the RMA overhaul
+
+**Finding — Consensus is on the problem, not the solution**
+The same BuildNZ conference report notes the four parties agreed planning delays are a problem but explicitly disagreed on how to fix it — described as "a contest of ideas." That leaves open which specific consenting/RMA mechanics survive negotiation, so firms planning around the reform timeline face residual uncertainty about the final rule set even if the broad direction holds.
+
+**Finding — Named risks the reform hasn't resolved**
+The article flags three unresolved exposures: imported building-product quality controls, where reviewers explicitly draw a parallel to the leaky-homes era; contested energy-efficiency standards that differ by party; and workforce shortages that need addressing before consenting-driven demand (39,800 new dwelling consents, +19% YoY) fully lands. None of these are covered by the political consensus on planning delays, so they remain live risk items for the sector even as the headline reform narrative improves.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-17 06:36 → Guidance confirms construction-site drone use typically requires Part 102 certification, not the lighter Part 101 rules, with CAA signalling further rule changes are still coming
 
 **Finding — Most site drone operations cross into the certified-operator tier by default**
