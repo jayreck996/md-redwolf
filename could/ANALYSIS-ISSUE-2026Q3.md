@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-19 06:46 → Sharp South/North Island frost (down to -7.5°C) creates concrete-curing, ground-stability and material-moisture defect risk not previously tracked as a weather thread
+
+**Finding — Cold snap breaches the concrete-curing threshold outright**
+"How building sites feel the deep freeze" (Ben O'Connell, buildersandcontractors.co.nz) reports MetService-recorded temperatures of -7°C at Mount Cook and Pukaki, -7.5°C at Twizel, and -5.1°C at Taupo. Industry specification requires fresh concrete stay above 5°C for 48 hours post-placement, and the article states curing "relies on a chemical reaction that slows dramatically as temperatures drop," with freezing before adequate strength gain causing permanent internal damage from water expansion. At -7.5°C, any uninsulated pour during this event risks falling well outside spec, a latent structural-quality exposure rather than a delay-only inconvenience.
+
+**Finding — Ground stability and trapped material moisture compound the single weather event into two further defect pathways**
+The article separately flags that frozen or partially thawed ground behaves unpredictably during foundation/slab work, risking uneven settling, and that overnight frost trapped in stacked timber and building wrap can prevent moisture evaporation, creating dampness risk inside finished walls and roofs if installed without inspection. This is the first frost/cold-weather item on file for this source — a new seasonal risk thread, distinct from the standing fuel-cost, labour-shortage, and seismic threads already tracked, worth revisiting each time a comparable cold event is reported.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-18 06:49 → Cross-party talk papers over unresolved fights on imported-product quality, energy-efficiency standards and workforce capacity ahead of the RMA overhaul
 
 **Finding — Consensus is on the problem, not the solution**
