@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-19 06:46 → Trade press pairs the cold-snap risk with a concrete seven-point site mitigation checklist, extending the sector's established pattern of actionable risk guidance
+
+**Finding — Specific, operational mitigation list rather than general awareness content**
+"How building sites feel the deep freeze" accompanies its -7°C to -7.5°C frost reporting (Mount Cook, Pukaki, Twizel, Taupo) with concrete site actions: insulating blankets and heated enclosures for pours, delaying pours until conditions improve, checking ground temperature before footings, inspecting materials before installation, staggering work start times, maintaining ground-cover stock, and running morning site safety walks for black-ice and frostnip hazards. Naming a specific pre-pour temperature spec (above 5°C for 48 hours) alongside the mitigation steps gives site managers a directly usable compliance threshold rather than only a weather warning.
+
+**Finding — Continues the source's risk-plus-mitigation coverage pattern**
+This follows the same structure already on file for other hazard topics — the drone compliance checklist (2026-08-17 06:36 entry) and the reclaimed-timber/landfill-levy guidance (2026-08-11 07:05 entry) — where the publication pairs a specific operational risk with concrete, adoptable steps rather than leaving it as an open problem. Sustained use of this format across unrelated hazard categories (aviation, materials cost, now weather) is itself a positive signal about the trade press's practical usefulness to site operators.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-18 06:49 → Labour, ACT, the Greens and TOP signal cross-party willingness to keep planning/RMA reform rather than reverse it, addressing the sector's top-cited risk
 
 **Finding — Rare political alignment on the sector's biggest structural complaint**
