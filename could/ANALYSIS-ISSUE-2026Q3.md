@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-20 06:44 → Falls-from-height reform highlights that current site protection still relies on individually-secured equipment, with residential builds flagged as the weakest point
+
+**Finding — Falls remain a disproportionate cause of serious harm despite being a known, planned-for risk**
+"Height Safety Reform Targets Falls" (buildersandcontractors.co.nz) reports that fall-related incidents "still account for a disproportionate number of notifiable events reported to WorkSafe each year," with the article specifically calling out residential builds as sites "where scaffolding, edge protection or netting was either absent or installed incorrectly." This frames falls not as a rare event but as a persistent, largely preventable gap in current standard practice — a risk pattern not previously tracked in this log.
+
+**Finding — Default fall protection depends on individual compliance, a single point of failure**
+The article notes personal fall arrest equipment (harnesses, lanyards) "depends entirely on workers correctly securing themselves every time to the right anchor point," and that "falls are rarely the result of a single failure, but rather small gaps in a site's overall protection strategy compounding under pressure." This is a structural weakness in the sector's default safety approach, exposed just as government reform raises the compliance bar.
+
+**Finding — Legislative reform adds a compliance-timeline pressure point**
+The Government's workplace health and safety law amendments are "expected to pass before Parliament rises later this year," with falls from height explicitly named among hazards "most likely to cause serious harm or death." Contractors still relying on individual-securement equipment rather than passive/engineered systems face rising regulatory exposure on a fixed timeline.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-19 06:46 → Sharp South/North Island frost (down to -7.5°C) creates concrete-curing, ground-stability and material-moisture defect risk not previously tracked as a weather thread
 
 **Finding — Cold snap breaches the concrete-curing threshold outright**
