@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-20 06:44 → Trade press promotes passive safety-netting systems (EN 1263-1) as an engineered alternative that removes reliance on individual worker compliance
+
+**Finding — Passive protection method offers a concrete engineering upgrade path**
+The article details safety netting systems built to the European EN 1263-1 standard, using "high-tensile, knotless polypropylene mesh engineered to sit flatter under load, shortening fall distance and reducing force on both worker and structure." Unlike harness-and-lanyard systems, netting "removes this dependence on individual action almost entirely by creating a continuous safety envelope around a site" — a specific, standards-referenced solution rather than general awareness content.
+
+**Finding — Operational efficiency gain alongside the safety benefit**
+Because the netting system "doesn't depend on individual securing or supervision, crews can work above and below the net line simultaneously, avoiding the stop-start disruption other fall protection methods create." This pairs a safety upgrade with a productivity argument, strengthening the case for adoption ahead of the incoming reform.
+
+**Finding — Reform framed as sharpening focus on the highest-harm risks, not blanket compliance burden**
+The article frames the incoming law change as "shifting focus toward hazards most likely to cause serious harm or death," continuing the source's pattern (seen in prior cross-party RMA and earthquake-law coverage) of framing regulatory change as risk-targeted rather than purely burdensome.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-19 06:46 → Trade press pairs the cold-snap risk with a concrete seven-point site mitigation checklist, extending the sector's established pattern of actionable risk guidance
 
 **Finding — Specific, operational mitigation list rather than general awareness content**
