@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-21 06:49 → NZCBIA's 2026 Building Construction Sector Report, co-sponsored by Mitre 10 and BCITO, sets out a concrete cross-value-chain collaboration agenda rather than leaving workforce risk as an unaddressed finding
+
+**Finding — Named institutional backers publish a report with specific, actionable recommendations**
+"When the Work Returns, Will We Be Ready?" (published 2026-08-20) draws on the 2026 Building Construction Sector Report, explicitly co-sponsored by Mitre 10 and BCITO through NZCBIA, which sets out five concrete recommendations: collaboration across the full value chain (builders, merchants, manufacturers, distributors, trainers), giving apprentices meaningful work from day one to improve retention, supply-chain innovation and data-driven planning, government streamlining of overlapping regulation, and coordinated infrastructure project sequencing to smooth demand through downturns. Naming specific sponsoring organisations and a defined recommendation set is a more actionable industry response than the awareness-only coverage logged for prior workforce items.
+
+**Finding — Extends the sector's institutional knowledge-investment theme with a retention-specific lens**
+This continues the pattern of sustained institutional engagement already on file — the NZVETRF 20th forum (2026-08-04) and Concrete NZ Conference 2026 (2026-08-05) — but is the first item to pair that institutional attention directly with the retention side of the labour-shortage thread (as opposed to intake/training-place expansion), broadening the sector's response toolkit beyond apprenticeship-place growth alone.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-20 06:44 → Trade press promotes passive safety-netting systems (EN 1263-1) as an engineered alternative that removes reliance on individual worker compliance
 
 **Finding — Passive protection method offers a concrete engineering upgrade path**
