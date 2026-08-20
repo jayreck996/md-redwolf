@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-21 06:49 → New sector report puts a stark number on trades attrition — only 6% of workers remain in the same job after five years — sharpening the standing labour-shortage risk from a recruitment-gap framing into a retention-failure one
+
+**Finding — Retention, not just recruitment, is the newly quantified gap**
+"When the Work Returns, Will We Be Ready?" (Mark Moffit, Head of Trade at Mitre 10, published 2026-08-20) cites the 2026 Building Construction Sector Report (NZCBIA, co-sponsored by Mitre 10 and BCITO) finding that "only 6 per cent" of construction workers remain in the same role after five years, with many exiting the sector entirely or relocating to Australia. Every prior labour-supply item on file (2026-07-21, 2026-08-04, 2026-08-09) framed the shortage as an intake/pipeline problem — apprenticeship places, Trades Academy expansion, Gen Z interest. A 6% five-year retention rate reframes the standing ~6,000 electrician / 5,000+ plumbing-gasfitting shortfall as being driven at least as much by people leaving as by too few entering, a distinct failure mode the pipeline-expansion measures already logged do not address.
+
+**Finding — Article's own framing concedes demand isn't the constraint, capability is**
+The piece states directly: "the biggest challenge facing construction is not a lack of future work... the real question is whether the industry will have the people and capability to respond when that work arrives." Combined with the report's finding that roughly 70% of the sector's economic contribution flows through supplier industries, this signals that any future demand upswing (e.g. the 39,800 dwelling consents, +19% YoY, logged in the 2026-08-18 entry) is capability-constrained on the labour side — extending, not resolving, every recruitment/retention risk already tracked in this log.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-20 06:44 → Falls-from-height reform highlights that current site protection still relies on individually-secured equipment, with residential builds flagged as the weakest point
 
 **Finding — Falls remain a disproportionate cause of serious harm despite being a known, planned-for risk**
