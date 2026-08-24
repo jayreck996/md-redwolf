@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-25 06:49 → Gas Transition Loan Guarantee Scheme's 1000 GJ/year minimum usage threshold and fixed 3-year application window create an access gap for smaller trades businesses and a hard adoption deadline
+
+**Finding — Eligibility floor likely excludes smaller construction/trades operators**
+The scheme requires businesses to currently use at least 1000 GJ annually of reticulated gas to qualify, alongside achieving a minimum 15% savings while maintaining production. This is a materially high usage bar — it targets larger industrial/commercial gas consumers, not the smaller trades and construction firms that make up much of the sector already tracked in this log (e.g. the workforce-retention and cost-inflation threads). Firms below that threshold get no access to the 80%-Crown-backed loan risk-sharing even if they face the same gas-cost exposure.
+
+**Finding — Three-year application window against a ten-year repayment term creates a use-it-or-lose-it deadline**
+The scheme itself runs for three years, while approved loans are repayable within ten years. Businesses that don't apply within that initial three-year window lose access to Crown-backed financing permanently under current scheme terms, meaning uptake is time-pressured in a way separate from the underlying economic case for switching — a compliance/timing risk not present in the NZGBC savings analysis the article cites.
+
+**Finding — Compliance consequence of missing the 15% savings target is unstated**
+The article does not report what happens if a participating business fails to hit the required minimum 15% savings while maintaining production — no clawback, penalty, or grace-period mechanism is described. This leaves an open question for any business weighing the scheme against the guaranteed savings figures cited (e.g. the ~$17,260/15-year household heat-pump comparison), since the commercial-scale savings threshold carries an unclear downside if targets are missed.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-21 06:49 → New sector report puts a stark number on trades attrition — only 6% of workers remain in the same job after five years — sharpening the standing labour-shortage risk from a recruitment-gap framing into a retention-failure one
 
 **Finding — Retention, not just recruitment, is the newly quantified gap**
