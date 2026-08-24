@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-25 06:49 → New Gas Transition Loan Guarantee Scheme opens with $1.2b lending capacity, 80% Crown default backing across five major banks, and EECA support services to de-risk business electrification
+
+**Finding — Substantial, risk-shared financing pool now open for applications**
+The Government has opened applications for the Gas Transition Loan Guarantee Scheme, with potential lending of up to $1.2 billion and the Crown backing 80% of loan default risk. Five major banks — ANZ, ASB, BNZ, Kiwibank, and Westpac — are participating, giving eligible businesses broad access to concessional financing for moving off reticulated gas, a concrete funding mechanism rather than awareness-only messaging.
+
+**Finding — Independent research backs the economic case, and EECA adds complementary technical support**
+New Zealand Green Building Council research cited in the article finds a typical household could save approximately $17,260 over 15 years switching from gas heating to heat pumps, giving the scheme a quantified savings baseline. The Energy Efficiency and Conservation Authority additionally offers technical analysis and regional workshops alongside the loan scheme, pairing financing with practical implementation support rather than leaving businesses to plan the transition unassisted.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-21 06:49 → NZCBIA's 2026 Building Construction Sector Report, co-sponsored by Mitre 10 and BCITO, sets out a concrete cross-value-chain collaboration agenda rather than leaving workforce risk as an unaddressed finding
 
 **Finding — Named institutional backers publish a report with specific, actionable recommendations**
