@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-26 06:47 → Strait of Hormuz shipping disruption flagged as a fresh trigger for the fuel-cost risk already tracked since the 2026-07-28 inflation entry, with road maintenance/resealing work singled out as most exposed
+
+**Finding — New external shock reopens the standing fuel-cost thread**
+"Fuel price volatility: Managing uncertainty in the infrastructure construction sector" (Peter Nunns, Te Waihanga, published 2026-08-25) cites recent disruption to shipping through the Strait of Hormuz as evidence that "fuel prices can change rapidly in response to global events," and notes global oil price rises transmit into New Zealand "almost immediately." This is a distinct triggering event from the 27.5%/71% petrol/diesel increases logged in the 2026-07-28 entry and the follow-on 14% landfill levy rise logged 2026-08-11 — it adds a geopolitical supply-shock vector on top of the domestic cost-pressure inputs already on file, rather than resolving them.
+
+**Finding — Road maintenance and resealing exposure is more concentrated than general construction**
+The article states diesel is only the fourth-largest material input to heavy/civil construction (under 2% of direct spend) for new-build work, but flags that road maintenance and resealing carry materially larger exposure because bitumen is itself an oil derivative, compounding the diesel cost on top of the bitumen cost. Firms concentrated in resealing/maintenance contracts therefore carry higher margin risk from the same shock than the sector-wide average would suggest, a distinction not present in the earlier, more general fuel-inflation entry.
+
+**Finding — Mitigation advice places the burden on individual firms, not the source of relief**
+The recommended responses — monitoring prices, evaluating forward contracts, and ensuring contracts explicitly price in input escalation beyond oil — are all firm-level actions. The article offers no indication of any government or supply-chain relief mechanism, meaning the risk stays open and unmitigated at the sector level, consistent with the "no relief in sight" framing already used for the landfill levy entry.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-25 06:49 → Gas Transition Loan Guarantee Scheme's 1000 GJ/year minimum usage threshold and fixed 3-year application window create an access gap for smaller trades businesses and a hard adoption deadline
 
 **Finding — Eligibility floor likely excludes smaller construction/trades operators**
