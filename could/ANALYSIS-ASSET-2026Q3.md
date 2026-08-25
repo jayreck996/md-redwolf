@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-26 06:47 → Te Waihanga (Infrastructure Commission) publishes practical fuel-cost risk-management guidance for construction firms, a proactive knowledge-sharing signal from a public infrastructure body
+
+**Finding — Official infrastructure body proactively addresses a live cost risk**
+The article is authored by Peter Nunns, General Manager Strategy at the New Zealand Infrastructure Commission (Te Waihanga), and was published the same week fuel-price volatility became newsworthy via the Strait of Hormuz disruption. A public infrastructure agency publishing timely, sector-specific risk guidance (rather than only after-the-fact commentary) is a positive signal of active engagement with contractor-level cost pressures.
+
+**Finding — Guidance is concrete and actionable, not generic**
+Recommendations go beyond "monitor prices" to specific mechanisms: evaluating forward contracts where volatility risk is significant, understanding project-specific exposure (e.g. resealing vs. new-build), and ensuring contract terms address input-price escalation beyond oil costs alone. This level of specificity gives firms already exposed to the fuel/landfill cost-pressure threads on file (2026-07-28, 2026-08-11) a concrete tool set to act on, rather than leaving the risk purely as commentary.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-25 06:49 → New Gas Transition Loan Guarantee Scheme opens with $1.2b lending capacity, 80% Crown default backing across five major banks, and EECA support services to de-risk business electrification
 
 **Finding — Substantial, risk-shared financing pool now open for applications**
