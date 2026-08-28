@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-08-28 14:07 → Manufacturing Apprentice of the Year win for a Culham Engineering apprentice adds a concrete, ministerially-presented individual success story to the sector's standing talent-pipeline coverage
+
+**Finding — Named award with a credentialed, high-precision technical benchmark**
+"From finding his feet to Manufacturing Apprentice of the Year" (published 2026-08-27) reports Devin Gibson, an apprentice at Culham Engineering in Waipū, won the 2026 New Zealand Manufacturing Apprentice of the Year, presented by Hon. Cameron Brewer, Minister for Small Business and Manufacturing. The article cites a specific technical benchmark — fabricating complex square-to-round transitions from 25mm steel to a 2mm tolerance — as evidence of demonstrable skill progression, and quotes Work-Based Assessor Gary Stables describing Gibson's shift from an unfocused first year to becoming a standout tradesperson.
+
+**Finding — Extends the standing apprenticeship/retention-messaging pattern with a durable employer track record**
+Culham Engineering is reported to have trained over 800 apprentices since 1958 and currently runs 27 active apprentices. This continues the individual-award pattern already on file (Lexiga Pritchard's Bunnings Women in Apprenticeships win, 2026-08-15 entry) but adds a long-run employer credibility signal — a company with a multi-decade training record — that the 2026-08-21 NZCBIA sector report's retention recommendations (giving apprentices meaningful work from day one) can point to as an existing example rather than only an aspiration.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-26 06:47 → Te Waihanga (Infrastructure Commission) publishes practical fuel-cost risk-management guidance for construction firms, a proactive knowledge-sharing signal from a public infrastructure body
 
 **Finding — Official infrastructure body proactively addresses a live cost risk**
