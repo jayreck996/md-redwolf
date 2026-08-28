@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-08-28 14:07 → NZGBC's revised C&D waste reporting standard will show lower recovery rates from mixed loads starting April 2027, a measurement-only change that risks being read as declining sector performance against the standing waste-cost thread
+
+**Finding — Methodology change, not a performance change, but the optics cut the wrong way**
+"A new era of construction and demolition waste reporting" (published 2026-08-27) reports the New Zealand Green Building Council released updated C&D Waste Reporting Criteria on 30 June 2026, taking full effect 1 April 2027. The change requires facilities to report recovery rates specifically from mixed loads rather than blending them with pre-separated single-stream materials, which previously allowed facilities to inflate headline recovery figures. The article's own framing concedes reported recovery percentages will likely fall under the new standard even though "actual recovery volumes haven't changed—just measurement methodology" — a gap between real-world performance and the number Green Star projects will be judged against.
+
+**Finding — Lands on top of the standing landfill-levy/waste-cost thread with an 8-month compliance runway**
+The 2026-08-11 entry logged the construction/demolition waste landfill levy rising 14% to $40/tonne, with C&D waste already 40-50% of national landfill intake. This item adds a reporting-integrity dimension to that same waste stream: firms and Green Star projects still reporting under mixed-load blending between now and the 1 April 2027 deadline face a compliance cliff, and those relying on mixed-bin collection rather than source-separating timber, metal, cardboard and plasterboard will show comparatively worse documented recovery performance under the new criteria — even without any change in actual site practice.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-26 06:47 → Strait of Hormuz shipping disruption flagged as a fresh trigger for the fuel-cost risk already tracked since the 2026-07-28 inflation entry, with road maintenance/resealing work singled out as most exposed
 
 **Finding — New external shock reopens the standing fuel-cost thread**
