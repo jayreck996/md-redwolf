@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-03 08:53 → CCNZ, an 80-year-old body representing 530+ civil construction businesses, publishes a structured five-point election manifesto grounded in 12 nationwide member workshops
+
+**Finding — Established, broad-based industry body backs the ask with real consultation reach**
+"CCNZ on the cost of stopping" (published 2026-09-02) reports Civil Contractors New Zealand, founded in 1944 and representing over 800 organisations including 530+ civil construction businesses, built its manifesto from 12 member workshops held nationwide, under Chief Executive Alan Pollard. A long-established, high-membership body grounding policy demands in direct nationwide consultation — rather than a single office's opinion — gives the resulting five-point ask (stable pipeline, consistent procurement, risk-based compliance, workforce support, formal resilience planning) more institutional weight than typical single-source commentary.
+
+**Finding — Concrete, quantified case for reform rather than general advocacy**
+The manifesto's headline $11.8 billion stop-start cost figure over 25 years gives the sector's long-standing "certainty" complaint (echoed in the 2026-08-18 cross-party RMA entry's quote that "certainty, more than any one rule change, is what the sector says it is after") a specific, citable number to rally around. Pollard's framing — "contractors have practical knowledge that can inform whether policy that works in theory works in practice" — positions CCNZ as offering constructive, workshop-tested input into the RMA reform process rather than only reactive criticism.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-08-28 14:07 → Manufacturing Apprentice of the Year win for a Culham Engineering apprentice adds a concrete, ministerially-presented individual success story to the sector's standing talent-pipeline coverage
 
 **Finding — Named award with a credentialed, high-precision technical benchmark**
