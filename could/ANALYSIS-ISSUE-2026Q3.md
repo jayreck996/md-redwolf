@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-03 08:53 → CCNZ's election manifesto quantifies a $11.8b boom-bust cost but remains a lobbying ask with no political commitment secured, landing on the same RMA-reform uncertainty already on file
+
+**Finding — $11.8b figure documents the risk, but doesn't resolve it**
+"CCNZ on the cost of stopping" (published 2026-09-02) reports Civil Contractors New Zealand's election manifesto, built from its "Cost of Stopping" report, estimates stop-start infrastructure investment has cost New Zealand $11.8 billion over 25 years through higher costs, lost productivity, and delayed public benefits. This puts a concrete number on a risk pattern the sector has long complained about, but as an industry-authored advocacy document released ahead of an election, it is an ask for cross-party commitment rather than an enacted policy change — the underlying boom-bust exposure remains open until parties actually adopt the "depoliticized pipeline" the manifesto calls for.
+
+**Finding — Lands on top of the standing cross-party RMA-consensus thread with an unresolved compliance-approach gap**
+The 2026-08-18 entry logged Labour, ACT, the Greens and TOP agreeing planning delays are a problem while disagreeing on the fix, ahead of the RMA overhaul. This manifesto adds a fifth demand — "common-sense, risk-based" compliance rather than universal safety mandates — that sits alongside, but is not addressed by, the reform mechanics already reported (consolidating regional plans, collapsing consent categories). Whether the eventual RMA settlement adopts CCNZ's risk-based compliance framing, or a more uniform approach, remains an open question the reform's current cross-party framing hasn't resolved.
+
+**Finding — Nearly two-month gap between report release and this coverage**
+The manifesto was released 1 July 2026, built from 12 nationwide member workshops, but this trade-press coverage runs 2 September 2026 — roughly a nine-week lag. Given prior entries have flagged official-site/press comms lags for other sources (e.g. the hawkins.co.nz news lag logged through July), a near two-month gap between a sector body's manifesto launch and its first substantive trade-press treatment is itself a minor visibility-lag data point worth noting for this source.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-08-28 14:07 → NZGBC's revised C&D waste reporting standard will show lower recovery rates from mixed loads starting April 2027, a measurement-only change that risks being read as declining sector performance against the standing waste-cost thread
 
 **Finding — Methodology change, not a performance change, but the optics cut the wrong way**
