@@ -15,6 +15,16 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-04 08:51 → 2026 Building People Awards draws a record 600+ guests, with winners spanning apprenticeship-scale programs (90 trainees) to project leadership on a major stadium build
+
+**Finding — Record attendance signals sustained industry engagement**
+"Record numbers celebrate the people behind the construction industry" (published 2026-09-03) reports the 2026 Building People Awards drew over 600 guests in Auckland, described as a record turnout — sustained industry-wide engagement with talent recognition even as the standing labour-retention thread (2026-08-21 entry: only 6% of workers remain in the same job after five years) continues to flag workforce churn as an open risk.
+
+**Finding — Supreme winner's program ties recognition directly to apprenticeship scale**
+Brian Hayes of BESIX Watpac won the Supreme Building People Award for his leadership on the One New Zealand Stadium project in Christchurch, where he managed over 110 subcontractors and established apprenticeship programs that trained 90 trainees. This gives the sector's standing apprenticeship-investment pattern (Culham Engineering's 800+ apprentices since 1958, logged 2026-08-27; Lexiga Pritchard's Bunnings Women in Apprenticeships win, logged 2026-08-15) a large-project-scale example — structured training investment operating within a major infrastructure build rather than only at firm level.
+
+**Finding — Award categories span the sector's already-tracked risk themes**
+Category winners covered emerging leadership, innovation, and health & safety — directly touching threads already open in this log (workforce retention/capability, and the falls-from-height/height-safety-reform risk logged 2026-08-20). Public recognition in these categories is a positive signal the industry is actively rewarding progress in areas the standing risk entries flag as unresolved, though none of the winners' specific initiatives are detailed enough here to confirm measurable improvement against those risks.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-03 08:53 → CCNZ, an 80-year-old body representing 530+ civil construction businesses, publishes a structured five-point election manifesto grounded in 12 nationwide member workshops
 
 **Finding — Established, broad-based industry body backs the ask with real consultation reach**
