@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-04 08:51 → 2026 Building People Awards coverage omits any Hawkins mention despite the sponsorship tracked since July, and its Sept 3 publish date sits three weeks past the 14 August ceremony date logged earlier — extending the standing official-comms-lag pattern
+
+**Finding — Sponsored event's coverage carries no Hawkins visibility**
+"Record numbers celebrate the people behind the construction industry" (published 2026-09-03) reports on the 2026 Building People Awards, held in Auckland with over 600 guests, where Brian Hayes of BESIX Watpac won the Supreme Building People Award for his leadership on the One New Zealand Stadium project. The 2026-07-05 06:54 linkedin:hawkinsnz entry logged this same ceremony (then under the name "Building People Awards," ceremony date 14 August 2026) as a sponsored/promoted event on Hawkins' own channel. This trade-press writeup of the event, however, makes no mention of Hawkins as sponsor, nominee, or winner across any category — a sponsorship investment that produced no visible earned-media return in this coverage.
+
+**Finding — Publish date trails the logged ceremony date by three weeks**
+This article runs 2026-09-03, but the ceremony date previously logged (2026-07-05 06:54 entry) was 14 August 2026 — a roughly three-week gap between the event occurring and trade-press coverage appearing. That extends the pattern already on file of measurable lag between activity and press coverage for Hawkins-adjacent content (the ~10-month hawkins.co.nz/news freeze logged across the 2026-07-04 through 2026-07-08 entries), though here the lag sits in third-party trade coverage rather than the company's own site.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-03 08:53 → CCNZ's election manifesto quantifies a $11.8b boom-bust cost but remains a lobbying ask with no political commitment secured, landing on the same RMA-reform uncertainty already on file
 
 **Finding — $11.8b figure documents the risk, but doesn't resolve it**
