@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-05 08:39 → Confidence survey shows a 9% YoY drop and 59% of firms fearing insolvency within 12 months, sharpening the standing cost-pressure and labour-shortage threads into a near-term solvency risk
+
+**Finding — Headline confidence figure masks a year-over-year decline**
+"Industry resilient despite headwinds" (published 2026-09-04) reports 84% of surveyed construction leaders remain confident in the industry's five-year growth prospects, but that figure is down 9 percentage points year-over-year. The article attributes the drop to cost pressures, labour shortages, and margin instability — the same three risk categories already tracked in this log (fuel/input-cost inflation since 2026-07-28, the landfill levy rise logged 2026-08-11, and the electrician/plumbing shortfall thread running since 2026-07-22) — but this is the first item to show sentiment among industry leaders themselves moving against those pressures rather than only reporting the pressures in isolation.
+
+**Finding — Insolvency concern reaches a majority of respondents**
+59% of businesses surveyed report concern about potential insolvencies within the next 12 months. This lands directly on top of the standing margin-risk exposure already logged (fuel-cost inflation, the 14% landfill levy increase, and CCNZ's $11.8b boom-bust cost figure from the 2026-09-02 entry), but is the first data point in this log to quantify how many firms see that pressure as a near-term solvency threat rather than a general cost headwind — a majority-of-respondents figure that raises the standing cost-pressure thread from a margin concern to a business-continuity one.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-04 08:51 → 2026 Building People Awards coverage omits any Hawkins mention despite the sponsorship tracked since July, and its Sept 3 publish date sits three weeks past the 14 August ceremony date logged earlier — extending the standing official-comms-lag pattern
 
 **Finding — Sponsored event's coverage carries no Hawkins visibility**
