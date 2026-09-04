@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-05 08:39 → Survey majority (84%) still backs the sector's five-year growth outlook, naming private investment, housing demand and infrastructure spending as the drivers — reinforcing the standing pipeline-demand threads already on file
+
+**Finding — Majority confidence persists despite the acknowledged headwinds**
+"Industry resilient despite headwinds" (published 2026-09-04) reports 84% of surveyed construction leaders remain confident in the industry's five-year growth prospects even amid cost pressures, labour shortages, and margin instability. A clear majority holding a positive multi-year outlook, even as this same survey logs a 9-point year-over-year confidence decline, indicates leaders view current pressures as cyclical headwinds rather than a structural reversal of demand.
+
+**Finding — Named growth drivers corroborate demand-side threads already tracked**
+Respondents cite private investment, housing demand, and infrastructure spending as the three key growth drivers. This directly reinforces two standing threads already on file: the 39,800 new dwelling consents (+19% YoY) logged in the 2026-08-18 entry, and CCNZ's push for a "stable, depoliticized" infrastructure pipeline in the 2026-09-02 manifesto entry. Having industry leaders independently name the same demand sources as their basis for confidence gives both of those earlier data points corroborating, sentiment-level support rather than resting on policy-body or consent-statistic sources alone.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-04 08:51 → 2026 Building People Awards draws a record 600+ guests, with winners spanning apprenticeship-scale programs (90 trainees) to project leadership on a major stadium build
 
 **Finding — Record attendance signals sustained industry engagement**
