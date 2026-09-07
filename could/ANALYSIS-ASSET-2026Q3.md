@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-08 09:23 → Same Kennards Hire survey shows the sector already mobilising three concrete responses to its productivity problem — workforce upskilling, project-management investment, and equipment-leasing flexibility
+
+**Finding — Multi-pronged adaptive response underway**
+"Smarter construction delivery is the real competitive edge" (published 2026-09-07) reports that, in response to the coordination/productivity problems identified in the same Kennards Hire survey, 40% of surveyed construction decision-makers are pursuing workforce upskilling, 34% are improving project management practices, and 32% are adopting equipment leasing strategies. Rather than sitting on the problem, respondents report specific, actionable investments already underway.
+
+**Finding — Equipment leasing signals flexible capital allocation**
+The 32% citing equipment leasing as a productivity strategy suggests firms are choosing flexible, asset-light responses to project-delay risk over capital-heavy ownership — a hedging behaviour not previously captured in this log's cost-pressure or capability threads, and one that reduces exposure to the fuel/input-cost volatility already tracked since 2026-07-28.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-05 08:39 → Survey majority (84%) still backs the sector's five-year growth outlook, naming private investment, housing demand and infrastructure spending as the drivers — reinforcing the standing pipeline-demand threads already on file
 
 **Finding — Majority confidence persists despite the acknowledged headwinds**
