@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-08 09:23 → New Kennards Hire survey finds 96% of construction decision-makers link rising costs directly to project delays and productivity failures, with supplier-coordination breakdowns the leading cause — sharpening the standing productivity/labour-capacity risk into a named root cause
+
+**Finding — Near-unanimous attribution of cost inflation to delivery failure**
+"Smarter construction delivery is the real competitive edge" (published 2026-09-07) reports a Kennards Hire survey in which 96% of surveyed New Zealand construction decision-makers attribute rising costs to project delays and productivity problems rather than external inputs alone. This reframes the cost-pressure thread already on file (fuel-cost inflation since 2026-07-28, the 14% landfill levy rise logged 2026-08-11) by locating a large share of cost inflation inside delivery execution rather than external material/energy prices.
+
+**Finding — Supplier coordination named as the leading cause**
+67% of respondents cite coordination challenges across multiple suppliers as the primary driver of delay and productivity loss. This lands directly on the capability-constraint risk flagged in the 2026-08-20 entry — that roughly 70% of the sector's economic contribution flows through supplier industries — but shifts the framing from a future labour-supply gap to a present-day coordination failure with suppliers already engaged, indicating the productivity risk is structural rather than solely a headcount problem.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-05 08:39 → Confidence survey shows a 9% YoY drop and 59% of firms fearing insolvency within 12 months, sharpening the standing cost-pressure and labour-shortage threads into a near-term solvency risk
 
 **Finding — Headline confidence figure masks a year-over-year decline**
