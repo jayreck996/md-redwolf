@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-09 09:01 → Seasonally adjusted consent figures fell in both June and July, masked by the annual 21% headline growth figure — echoing the standing pattern of a strong topline hiding a weaker recent trend
+
+**Finding — Headline annual growth conceals a recent-month decline**
+"New home consents surge 21%" (published 2026-09-08) reports that while the year-ended-July annual consent count rose 21% to 40,908, seasonally adjusted monthly figures declined in both June and July 2026, which the article flags as a signal of potential softening ahead. This mirrors the pattern already logged in the 2026-09-05 entry, where an 84% headline confidence figure masked a 9-point year-over-year decline — a second instance of this source's reporting showing a strong annual/headline number sitting on top of a weaker underlying recent trend.
+
+**Finding — Lands on top of the standing consent-growth thread with an unresolved trajectory question**
+The 2026-08-18 entry logged 39,800 new dwelling consents (+19% YoY) as a demand-side counterweight to the labour-capacity risk already on file (the 2026-08-21 entry's 6% five-year trades retention rate, and the 2026-09-08 09:23 entry's supplier-coordination findings). Whether the two-month seasonally adjusted softening is noise or the start of a trend reversal is not resolved by this article, leaving open whether the capacity-constrained labour thread will need to absorb sustained consent growth going forward, or a cooling one.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-08 09:23 → New Kennards Hire survey finds 96% of construction decision-makers link rising costs directly to project delays and productivity failures, with supplier-coordination breakdowns the leading cause — sharpening the standing productivity/labour-capacity risk into a named root cause
 
 **Finding — Near-unanimous attribution of cost inflation to delivery failure**
