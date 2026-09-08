@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-09 09:01 → Annual dwelling consents climb to 40,908 (+21% YoY), extending the standing consent-growth thread with a stronger headline figure and a multi-unit majority
+
+**Finding — Updated consent count strengthens the standing demand-pipeline thread**
+"New home consents surge 21%" (published 2026-09-08) reports New Zealand consented 40,908 new homes in the year ended July 2026, a 21% year-on-year increase — a step up from the 39,800 consents (+19% YoY) logged in the 2026-08-18 entry, and consistent with the 84% leader confidence in five-year growth logged 2026-09-05, which named housing demand as a key growth driver.
+
+**Finding — Auckland and Canterbury concentration, multi-unit majority**
+The article states Auckland and Canterbury drove the bulk of the growth, and multi-unit homes comprised over half of all consents — a structural shift in build mix toward higher-density product that the standing dwelling-demand thread has not previously captured.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-08 09:23 → Same Kennards Hire survey shows the sector already mobilising three concrete responses to its productivity problem — workforce upskilling, project-management investment, and equipment-leasing flexibility
 
 **Finding — Multi-pronged adaptive response underway**
