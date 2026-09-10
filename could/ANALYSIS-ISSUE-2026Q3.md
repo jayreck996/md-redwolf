@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-11 08:43 → HERA's 57% carbon-reduction result rests on a single pilot building and depends on lower-carbon steel/concrete supply whose cost and availability remain unconfirmed, landing on the standing carbon/ETS cost-pressure thread already on file
+
+**Finding — Single case study, not yet a sector-wide benchmark**
+"HERA maps a practical pathway to net-zero emissions for New Zealand's steel industry" (published 2026-09-10) reports the 57% carbon-footprint reduction as the result of one three-storey Christchurch commercial building test, not a survey or rollout across multiple projects. The specification guide needed to generalise the result — HERA's "How to specify low-carbon structural steel," with carbon benchmarks by steelmaking route — is still described as being developed, meaning the framework is not yet an operational standard firms can specify against today.
+
+**Finding — Reduction depends on lower-carbon material inputs whose cost is an open question on the standing carbon-cost thread**
+The article attributes 46 of the 57 percentage points to lower-carbon concrete and steel specification, but reports no pricing, supply-availability, or procurement-lead-time data for those lower-carbon material routes. This lands directly on the carbon-cost thread already logged in the 2026-08-14 entry, where Golden Bay Cement's owner warned escalating ETS/carbon costs could force New Zealand's only integrated cement plant toward an import-only model, and government explicitly declined the ETS relief the producer sought. A framework that depends on lower-carbon concrete and steel becoming standard specification sits on top of a domestic materials-cost structure this log has already flagged as under unresolved carbon-cost pressure, leaving open whether the inputs the framework recommends will be cost-competitive at scale.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-09 09:01 → Seasonally adjusted consent figures fell in both June and July, masked by the annual 21% headline growth figure — echoing the standing pattern of a strong topline hiding a weaker recent trend
 
 **Finding — Headline annual growth conceals a recent-month decline**
