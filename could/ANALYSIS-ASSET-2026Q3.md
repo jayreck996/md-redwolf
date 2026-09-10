@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-11 08:43 → HERA's new Low-Carbon Circular Design Framework demonstrates a 57% carbon-footprint reduction on a real Christchurch commercial building, giving the sector its first quantified low-carbon steel/concrete design methodology
+
+**Finding — Framework moves from concept to a measured case-study result**
+"HERA maps a practical pathway to net-zero emissions for New Zealand's steel industry" (published 2026-09-10) reports that HERA researchers Dr Kaveh Andisheh, Amir ShahMohammadi and Dr Troy Coyle developed a Low-Carbon Circular Design Framework combining lower-carbon material specification, design efficiency and circular-economy principles, and tested it on a three-storey Christchurch commercial building, achieving a 57% carbon-footprint reduction against a conventional baseline. This is the first item on file to put a concrete, project-level emissions-reduction figure against New Zealand's 2050 net-zero commitment for the steel/construction sector, rather than reporting the commitment or research direction in the abstract.
+
+**Finding — Material specification drives the bulk of the gain, with a specification guide now in development**
+Lower-carbon concrete, structural steel and reinforcing steel accounted for 46 of the 57 percentage points, with design efficiency and circular strategies (retaining/repurposing existing buildings, designing for longevity, planning for disassembly and reuse) contributing the remainder. HERA is following up with an updated "How to specify low-carbon structural steel" guide setting carbon benchmarks by steelmaking route, specification targets, example clauses and evidence requirements — moving the framework from a single case study toward a reusable specification tool for the wider sector.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-09 09:01 → Annual dwelling consents climb to 40,908 (+21% YoY), extending the standing consent-growth thread with a stronger headline figure and a multi-unit majority
 
 **Finding — Updated consent count strengthens the standing demand-pipeline thread**
