@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-12 08:48 → WorkSafe prohibits hydrodemolition on asbestos-containing materials and requires pre-2000 building assessment, gating the same technique offered as a silica-exposure mitigation
+
+**Finding — Hard compliance boundary intersects the standing asbestos-exposure thread**
+"When is hydrodemolition necessary?" (published 2026-09-11) reports "WorkSafe warns that high-pressure water spraying on asbestos-containing materials is prohibited," and that "buildings constructed before 2000 should be assessed for asbestos presence before any disturbance work begins." This lands on the asbestos-contamination risk already on file (the 2026-07-29 craft-sand entry's supplier-claim-only safety assurances, and the 2026-08-06 occupational-disease entry naming asbestos as a leading cause of work-related disease) — the very technique presented elsewhere in this article as a silica-dust mitigation is itself barred outright on a large share of New Zealand's older building stock without a prior asbestos assessment step the article does not describe as currently standard practice.
+
+**Finding — Economics restrict adoption to large-scale jobs, limiting how widely the exposure benefit actually applies**
+The article notes hydrodemolition "requires reliable water supply and space, making it economical for substantial removal quantities," implying smaller or space-constrained jobs will continue relying on mechanical breaking — the higher silica-dust-exposure method. The ASSET entry logged alongside this one notes the technique's dust-reduction benefit; this finding narrows that benefit to a subset of projects with the scale and site conditions to justify the water-supply and space requirements, leaving typical smaller-scope work outside its reach.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-11 08:43 → HERA's 57% carbon-reduction result rests on a single pilot building and depends on lower-carbon steel/concrete supply whose cost and availability remain unconfirmed, landing on the standing carbon/ETS cost-pressure thread already on file
 
 **Finding — Single case study, not yet a sector-wide benchmark**
