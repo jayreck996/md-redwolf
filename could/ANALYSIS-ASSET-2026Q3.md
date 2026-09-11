@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-12 08:48 → Hydrodemolition offers a silica-dust-reduction alternative to mechanical concrete removal, extending the standing occupational-disease mitigation thread with a technique-level option
+
+**Finding — Directly mitigates the exposure already flagged as a high-severity risk**
+"When is hydrodemolition necessary?" (published 2026-09-11) reports that high-pressure water jetting "reduces respirable crystalline silica dust exposure compared to mechanical breaking, addressing workplace health concerns." Silica dust was named alongside asbestos in the 2026-08-06 07:45 entry as a leading driver of a disease toll the article there described as roughly 15x the sector's accident-death toll, with that entry noting existing measures were viewed as insufficient. This is the first item on file to describe a concrete technique-level substitution that reduces that specific exposure pathway, rather than only calling for "expanded health monitoring and dust control" in the abstract.
+
+**Finding — Preserves sound material and reinforcing steel for higher-value repair work**
+The article states the water jet "removes weaker, damaged concrete while leaving sound material and reinforcing steel intact," making it suited to patchy, irregular damage such as bridge decks and wharf beams, and leaves a "rough, clean jetted surface" that bonds well with repair pours. This is a technical capability not previously logged — a selective-removal method suited to infrastructure repair/maintenance work rather than full demolition.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-11 08:43 → HERA's new Low-Carbon Circular Design Framework demonstrates a 57% carbon-footprint reduction on a real Christchurch commercial building, giving the sector its first quantified low-carbon steel/concrete design methodology
 
 **Finding — Framework moves from concept to a measured case-study result**
