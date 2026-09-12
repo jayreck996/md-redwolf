@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-13 08:26 → New internal-waterproofing LBP licence leaves scope and transition arrangements unsettled, landing on the standing weathertightness/leaky-homes risk thread with a widely-supported but unfinished consultation
+
+**Finding — Consultation majority doesn't resolve open scope/transition questions**
+"A new waterproofing licence is coming for internal wet areas" (published 2026-09-12) reports the government is establishing a new Licensed Building Practitioner class covering internal wet-area work such as bathrooms and level-entry showers, with 261 of 329 submissions (79%) supporting the proposal. Despite that consultation majority, the article states the final scope and transition arrangements remain unsettled — meaning practitioners currently doing this work have no confirmed rule set to plan against, only advance notice that documentation requirements for restricted building work will likely apply.
+
+**Finding — First item on file naming weathertightness/wet-area defect risk directly, echoing the leaky-homes parallel already flagged**
+The 2026-08-18 06:49 entry logged industry reviewers drawing an explicit parallel to "the leaky-homes era" when discussing imported building-product quality controls under the RMA overhaul. Internal wet-area waterproofing failure is a core defect category from that same era, and this is the first item on file to address it directly via a dedicated licensing response — extending, rather than resolving, the standing quality-control uncertainty already noted for the wider reform package until the scope and transition timeline are finalised.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-12 08:48 → WorkSafe prohibits hydrodemolition on asbestos-containing materials and requires pre-2000 building assessment, gating the same technique offered as a silica-exposure mitigation
 
 **Finding — Hard compliance boundary intersects the standing asbestos-exposure thread**
