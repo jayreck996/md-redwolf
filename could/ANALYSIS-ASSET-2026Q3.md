@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-13 08:26 → Proposed internal-waterproofing LBP licence draws strong consultation support (79%), targeting a defect category tied to New Zealand's historic leaky-homes risk
+
+**Finding — Strong, measured consultation backing for a new competency-based licence**
+"A new waterproofing licence is coming for internal wet areas" (published 2026-09-12) reports 261 of 329 submissions (79%) supported the proposed Licensed Building Practitioner class for internal wet-area work, requiring practitioners to demonstrate and maintain competence. A near four-fifths majority backing a new licensing class is a stronger consultation result than the cross-party RMA planning-delay consensus logged 2026-08-18, which involved agreement on the problem but explicit disagreement on the fix — here, both the problem and the licensing mechanism draw broad support.
+
+**Finding — Proactive, actionable guidance for practitioners ahead of finalisation**
+The article advises practitioners to start keeping detailed records now — products used, training completed, specifications, substrate preparation, and site photographs — ahead of the scheme's finalisation, continuing the sector trade-press pattern already on file of pairing regulatory change with concrete, adoptable steps (e.g. the drone compliance checklist logged 2026-08-17, the frost-season mitigation checklist logged 2026-08-19). Formal documentation requirements for restricted building work would also create a clearer accountability trail for wet-area work than currently exists.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-12 08:48 → Hydrodemolition offers a silica-dust-reduction alternative to mechanical concrete removal, extending the standing occupational-disease mitigation thread with a technique-level option
 
 **Finding — Directly mitigates the exposure already flagged as a high-severity risk**
