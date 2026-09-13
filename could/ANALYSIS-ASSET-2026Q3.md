@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-14 08:36 → New critical-risk regime consolidates existing safety controls rather than imposing net-new requirements, with an 18-month runway and a safe-harbour code-of-practice pathway for compliant firms
+
+**Finding — Framework applies existing, familiar controls rather than a wholesale new regime**
+"What critical risk means for your site from 1 April 2027" (published 2026-09-13) reports the restructured framework "applies existing controls—proper guarding, isolation before maintenance, trained operators, and current hazardous substance inventories—across all sectors uniformly." Firms already running standard safety practice face consolidation under a single critical-risk framing rather than an entirely new compliance burden, with an 18-month-plus runway between Royal Assent (9 July 2026) and the 1 April 2027 effective date to prepare.
+
+**Finding — Safe-harbour code-of-practice mechanism extends a codified-compliance precedent already on file**
+Industry bodies can develop approved codes of practice conferring safe harbour to businesses that comply, giving the sector a defined, lower-cost route instead of case-by-case regulatory interpretation. This mirrors the "Alternative Solution" pathway already logged for the SNZ TS 1170.5:2025 seismic loadings standard (2026-09-09 retaining-walls entry) — a second standing instance of regulators offering a pre-approved, codified compliance route rather than requiring ad hoc risk assessment.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-13 08:26 → Proposed internal-waterproofing LBP licence draws strong consultation support (79%), targeting a defect category tied to New Zealand's historic leaky-homes risk
 
 **Finding — Strong, measured consultation backing for a new competency-based licence**
