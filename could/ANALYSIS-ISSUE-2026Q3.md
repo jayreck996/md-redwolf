@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->
+## ISSUE:rss:buildersandcontractors.co.nz 2026-09-15 09:43 → PPTA raises staffing concerns over delivering the new construction curriculum subject, echoing the standing pattern of pipeline initiatives outrunning delivery capacity
+
+**Finding — Teachers' union flags capacity concerns on a subject that depends on partner delivery**
+"Schools don't have to do it all. And they shouldn't." (published 2026-09-14) reports the PPTA (secondary teachers' union) has raised staffing concerns about implementing the nine new industry-led subjects, including Construction and Built Environment. The article's own proposed fix — leaning on tertiary providers and employers such as Skills Group rather than school staff — is presented as the solution to that concern, but no funding, timeline, or resourcing commitment for those partnerships is reported in this item.
+
+**Finding — Extends the standing "initiative vs. translation to outcome" risk pattern**
+This lands on the same unresolved thread as the 2026-08-03 NZVETRF forum entry (20 years of workforce-reskilling forums with the 6,000-electrician/5,000+-plumbing shortfall still current) and the 2026-08-20 entry reframing the shortage as a retention failure, not just an intake gap. A new curriculum subject adds another intake-side pipeline measure without addressing either the staffing capacity to deliver it or the standing five-year retention problem already on file — leaving open whether this becomes a repeat of the pattern where pipeline announcements do not translate into measurable workforce-supply gains.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-09-14 08:36 → New critical-risk safety framework takes effect 1 April 2027 with no approved codes of practice yet developed, landing on the standing asbestos/WorkSafe compliance thread and placing first-priority duties on businesses under 20 workers
 
 **Finding — No approved code of practice exists yet, compliance path undefined for the sector's standing asbestos risk**
