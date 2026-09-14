@@ -15,6 +15,13 @@ CUSTOM PROMPT:
 URLS:
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->
+## ASSET:rss:buildersandcontractors.co.nz 2026-09-15 09:43 → Construction becomes a standalone senior-secondary subject under nine new industry-led curriculum offerings, extending the talent-pipeline thread beyond Trades Academy places into core timetabled learning
+
+**Finding — Construction gets curriculum-level status, not just extra places**
+"Schools don't have to do it all. And they shouldn't." (Rosanne Graham, CEO of Skills Group, published 2026-09-14) reports nine new industry-led subjects — including Construction and Built Environment, Applied Intelligent Systems, Energy and Infrastructure, and Next-Gen Manufacturing — are being introduced as fully integrated senior-secondary options, positioned alongside English, maths and science. Every prior pipeline item on file (2026-07-21 Trades Academy doubling to 20,000 places, 2026-08-03/08-04 NZVETRF forum, 2026-08-08 Gen Z recruitment coverage) addressed capacity or interest around existing pathways; this is the first item logging construction being embedded directly into the core curriculum structure rather than as an adjacent programme.
+
+**Finding — Delivery model leans on existing Gateway/Trades Academy partnerships**
+The article states schools "won't, and... shouldn't have to" deliver these subjects alone, with Skills Group positioning its existing Gateway and Trades Academies relationships — training expertise, facilities, employer networks — as the delivery mechanism. It also cites that more than half of last year's apprentice/trainee intake already held tertiary qualifications. This builds directly on the standing pipeline-partnership pattern already logged (BCITO/Skills Group co-hosting NZVETRF, 2026-08-04), reusing established infrastructure rather than requiring new institutions to stand up the offering.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-09-14 08:36 → New critical-risk regime consolidates existing safety controls rather than imposing net-new requirements, with an 18-month runway and a safe-harbour code-of-practice pathway for compliant firms
 
 **Finding — Framework applies existing, familiar controls rather than a wholesale new regime**
