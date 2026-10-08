@@ -10,6 +10,16 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->## ASSET:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Industry promotes gaming-to-trades pipeline ("Joystick Trades") as a source of tech-ready apprentices
+## ASSET:rss:buildersandcontractors.co.nz 2026-10-09 12:10 → Driver-monitoring technology and survey data offer fleet safety tools; feed now publishing daily
+
+**Finding — Driver-monitoring technology is available**
+AutoSense promotes Guardian Generation 3, a system developed by Seeing Machines. It uses a camera to track where the driver is looking. It sounds an in-cab alert when the driver looks away from the road for a total of 10 seconds within any 30-second period. The company can review each event afterwards. Contractors running vehicle fleets could use tools like this to manage distraction risk and record evidence of how they meet health and safety duties.
+
+**Finding 2 — Data to guide vehicle and control choices**
+Asked which controls are easiest to use while driving, 49% of respondents chose physical knobs and buttons, compared with 6% for touchscreens. This gives fleet buyers clear evidence to prefer vehicles with physical controls, and to set policies on in-cab devices and job alerts.
+
+**Finding 3 — Feed is publishing steadily**
+This is the third item on three days in a row, after the 18-day gap in September. Another item, on National Road Carriers' 90th anniversary, appeared on 2026-10-09 NZ time, which is outside this window. The source is back to regular daily output.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-10-08 11:58 → September construction costs up only 0.2% as GIB prices fall 1.9%
 
 **Finding — Cost growth stays modest**
