@@ -10,6 +10,19 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->## ISSUE:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Only item in the window is a trade-workforce feature with no Hawkins-specific news
+## ISSUE:rss:buildersandcontractors.co.nz 2026-10-09 12:10 → Survey finds 93% of Kiwi drivers distracted by touchscreens; risk for fleet and site-vehicle operators; Hawkins not mentioned
+
+**Finding — Touchscreens are a common source of driver distraction**
+"Touchscreens distract 93% of Kiwi drivers surveyed" was published 2026-10-08 (NZ time). AutoSense, a fleet safety company, polled 476 New Zealanders. Of drivers with touchscreen vehicles, 93% said touchscreens had distracted them: 22.9% said it happens often and 48.5% said it happens sometimes. Almost 61% named at least one screen, device or vehicle control that often takes their attention off the road.
+
+**Finding 2 — Commercial drivers face added risk**
+The article says commercial drivers also deal with navigation, dispatch systems, work tablets and job alerts. Short, repeated glances away from the road ("attention sharing") are hard to notice. Contractors whose staff drive company utes, plant transport or heavy vehicles face a growing health and safety exposure. This fits with the critical-risk changes taking effect from 1 April 2027, which the feed covered on 13 Sep 2026.
+
+**Finding 3 — Vehicle standards are moving away from touchscreens**
+Euro NCAP's 2026 protocols now assess how essential controls are placed and how easy they are to use, including whether common functions have physical buttons. Fleet vehicles bought now may score worse on safety ratings if they rely mainly on touchscreens.
+
+**Finding 4 — No direct coverage of the target**
+As in earlier windows, the item is about the industry in general. It does not mention Hawkins or any of its projects.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-10-08 11:58 → Timber-led cost rises in September update; Hawkins itself not mentioned
 
 **Finding — Timber prices are rising sharply**
