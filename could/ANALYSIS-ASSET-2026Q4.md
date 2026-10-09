@@ -10,6 +10,16 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->## ASSET:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Industry promotes gaming-to-trades pipeline ("Joystick Trades") as a source of tech-ready apprentices
+## ASSET:rss:buildersandcontractors.co.nz 2026-10-10 11:30 → National Road Carriers marks 90 years; HPMV rules allowing heavier, longer trucks support construction logistics
+
+**Finding — Heavier, longer trucks are allowed on approved routes**
+The article says National Road Carriers' main achievement was championing the High Productivity Motor Vehicle (HPMV) rules, enacted in 2010. These rules let heavier and longer trucks run on approved routes. For large contractors, this means bulk materials, precast elements and plant can be moved with fewer trips, which supports logistics efficiency on major sites.
+
+**Finding 2 — Strong advocacy for the freight supply chain**
+The organisation was founded in 1936 by 29 Auckland owner-carriers. It credits containerisation, GPS technology and better vehicle safety standards with modernising the sector. A well-established freight lobby helps keep the supply chain that construction relies on stable. Z Energy is the platinum sponsor of the anniversary programme, which ends with a black-tie dinner in September 2027.
+
+**Finding 3 — Feed is publishing steadily**
+This is the fourth item on four days in a row, after the 18-day gap in September. A further item, on directors' duties when a business is failing, appeared on 2026-10-10 NZ time, which is outside this window. The source is keeping up regular daily output.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-10-09 12:10 → Driver-monitoring technology and survey data offer fleet safety tools; feed now publishing daily
 
 **Finding — Driver-monitoring technology is available**
