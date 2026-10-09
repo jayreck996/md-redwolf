@@ -10,6 +10,19 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->## ISSUE:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Only item in the window is a trade-workforce feature with no Hawkins-specific news
+## ISSUE:rss:buildersandcontractors.co.nz 2026-10-10 11:30 → Only item in the window is a road-freight anniversary feature; Hawkins not mentioned and links to construction are indirect
+
+**Finding — No direct coverage of the target**
+The only feed item published on 2026-10-09 (NZ time) is "National Road Carriers celebrates 90 years of representing road freight". It covers the history of a freight industry body. It does not mention Hawkins or any of its projects, so this window gives no direct signal about the company.
+
+**Finding 2 — Weak relevance to construction**
+This item is about road freight, not building. It is only indirectly relevant to construction, through how materials and plant are moved. The feed has now gone four days in a row (gamers-to-tradies, cost index, touchscreen distraction, freight anniversary) without a construction-contractor news item. The window says little about the commercial construction market.
+
+**Finding 3 — Freight costs remain exposed to economic and regulatory cycles**
+Chief Executive Justin Tighe-Umbers says the freight sector has had to work through economic cycles and regulatory changes. The feed reported on 2026-10-07 that diesel rose 2.3% in September. Together these suggest that delivery and cartage costs for site logistics are still a variable to watch in project budgets.
+
+**Finding 4 — Next item signals insolvency themes**
+An item called "Calling time on a struggling business" appeared on 2026-10-10 NZ time, which is outside this window. It covers directors' duties under sections 135–136 of the Companies Act, including Mainzeal's $39.8 million liability. It will be assessed in the next window, but it shows the feed is turning to insolvency risk in construction.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-10-09 12:10 → Survey finds 93% of Kiwi drivers distracted by touchscreens; risk for fleet and site-vehicle operators; Hawkins not mentioned
 
 **Finding — Touchscreens are a common source of driver distraction**
