@@ -10,6 +10,19 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->## ISSUE:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Only item in the window is a trade-workforce feature with no Hawkins-specific news
+## ISSUE:rss:buildersandcontractors.co.nz 2026-10-11 10:27 → Construction made up 764 of 3,092 company liquidations in the year to July 2026; insolvency risk across the supply chain; Hawkins not mentioned
+
+**Finding — Construction has a large share of insolvencies**
+"Calling time on a struggling business" was published 2026-10-10 (NZ time). It reports 3,092 company liquidations in the 12 months to July 2026. Construction accounted for 764 of them, about one in four. For a head contractor, this points to a real risk that subcontractors and suppliers fail partway through a job, causing delays, rework and the cost of procuring replacements.
+
+**Finding 2 — Trade creditors are paid last in a liquidation**
+Under Schedule 7 of the Companies Act, secured creditors are paid first, then liquidator fees, employees and IRD. Unsecured trade creditors are paid last. Contractors that have paid in advance, hold retentions owed by a failed party, or have unpaid claims against one are likely to recover little. This makes credit checks, security arrangements and payment terms more important.
+
+**Finding 3 — Directors face personal liability**
+The article cites sections 135–136 of the Companies Act (reckless trading and taking on obligations the company cannot meet). It points to the Mainzeal case, where directors were held liable for $39.8 million. Mainzeal was a large New Zealand head contractor, so this case is a direct reminder of the governance risk that comes from continuing to trade while insolvent in this sector.
+
+**Finding 4 — No direct coverage of the target**
+As in earlier windows, the item is general industry guidance. It does not mention Hawkins or any of its projects.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-10-10 11:30 → Only item in the window is a road-freight anniversary feature; Hawkins not mentioned and links to construction are indirect
 
 **Finding — No direct coverage of the target**
