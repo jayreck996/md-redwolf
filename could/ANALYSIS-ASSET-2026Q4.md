@@ -10,6 +10,16 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->## ASSET:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Industry promotes gaming-to-trades pipeline ("Joystick Trades") as a source of tech-ready apprentices
+## ASSET:rss:buildersandcontractors.co.nz 2026-10-11 10:27 → Guidance on insolvency timing and creditor priority gives contractors a practical framework for managing supply-chain failure; feed publishes for a fifth day in a row
+
+**Finding — A framework for deciding when to act**
+The article sets out three points at which a business can decide to wind up. Too early means restructuring could still have recovered value. About right means assets remain for an orderly distribution. Too late means creditors carry the risk. Contractors can use the same framework to judge when a struggling subcontractor or joint-venture partner needs action, rather than waiting until assets are gone.
+
+**Finding 2 — Shareholders can choose the liquidator**
+Shareholders can appoint their chosen liquidator by special resolution, as long as they do so before creditors apply to the court. The article recommends getting professional advice early, before solvency becomes critical. This gives businesses a way to control how an exit happens and keep more value.
+
+**Finding 3 — Feed is publishing steadily**
+This is the fifth item on five days in a row (gamers-to-tradies, cost index, touchscreen distraction, freight anniversary, insolvency guidance), after the 18-day gap in September. The source is keeping up regular daily output.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-10-10 11:30 → National Road Carriers marks 90 years; HPMV rules allowing heavier, longer trucks support construction logistics
 
 **Finding — Heavier, longer trucks are allowed on approved routes**
