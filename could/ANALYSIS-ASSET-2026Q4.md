@@ -10,6 +10,16 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->## ASSET:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Industry promotes gaming-to-trades pipeline ("Joystick Trades") as a source of tech-ready apprentices
+## ASSET:rss:buildersandcontractors.co.nz 2026-10-12 10:43 → Annual dwelling consents climb from 34,000 to 40,000, pointing to a stronger build pipeline; feed publishes for a sixth day in a row
+
+**Finding — The consent pipeline is growing**
+The Cordell article reports that annual dwelling consents rose from 34,000 to 40,000. Together with the 2.7% rise in June-quarter construction activity (the largest since June 2023, reported 2026-10-07) and the 21% consent rise reported on 2026-09-08, this shows demand is clearly recovering. More consents mean more work for the wider sector, including suppliers and trades that also serve commercial contractors.
+
+**Finding 2 — Builders are recovering some pricing power**
+Davidson warns that households may face higher costs ahead. This implies that new contracts are starting to pass cost rises on rather than absorb them. For contractors pricing new work, rising demand gives more room to set prices that reflect current input costs, or to include escalation clauses.
+
+**Finding 3 — Feed is publishing steadily**
+This is the sixth item on six days in a row (gamers-to-tradies, cost index, touchscreen distraction, freight anniversary, insolvency guidance, Cordell cost index), after the 18-day gap in September. The source is keeping up regular daily output, and the last two cost items give it useful market data coverage.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-10-11 10:27 → Guidance on insolvency timing and creditor priority gives contractors a practical framework for managing supply-chain failure; feed publishes for a fifth day in a row
 
 **Finding — A framework for deciding when to act**
