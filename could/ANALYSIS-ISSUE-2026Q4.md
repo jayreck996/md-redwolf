@@ -10,6 +10,19 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->## ISSUE:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Only item in the window is a trade-workforce feature with no Hawkins-specific news
+## ISSUE:rss:buildersandcontractors.co.nz 2026-10-12 10:43 → Cordell index shows home-building costs up 1.7% in the September quarter, the fastest since 2022; builders on fixed-price contracts are absorbing the rise; Hawkins not mentioned
+
+**Finding — Cost growth is speeding up again**
+"Home-building costs rise at fastest pace since 2022" was published 2026-10-11 (NZ time). The Cordell Construction Cost Index rose 1.7% in the September quarter, the biggest quarterly rise since late 2022. Annual growth went from 3.5% to 4.8%, which is above the long-term average of 4%. This is a sharper signal than QV CostBuilder's September update, covered in this feed on 2026-10-07, which showed costs up only 0.2% for the month. The two indices measure different things over different periods, but read together they suggest the earlier "modest cost growth" picture may understate the pressure.
+
+**Finding 2 — Fixed-price contracts are squeezing margins**
+Cotality chief economist Kelvin Davidson says "Builders have absorbed some cost increases, particularly where existing projects are covered by fixed-price contracts." Contractors with fixed-price work in progress are carrying cost growth they cannot pass on. This adds to the insolvency risk in the supply chain covered on 2026-10-10, when construction made up 764 of 3,092 liquidations.
+
+**Finding 3 — Freight and petroleum-based inputs are driving the rise**
+Materials make up about 50% of the benchmark cost and wages about 40%. The article links higher delivery costs to the Middle East conflict, which is pushing up petroleum-based products, PVC, sealants and structural steel. Structural steel is a major input in commercial and civil work. This is in line with the 2.3% diesel rise and 12–12.5% rises in formwork, roof underlay and wall wrap reported on 2026-10-07.
+
+**Finding 4 — No direct coverage of the target**
+The index covers a benchmark 200 m² three-bedroom house, so it relates to residential work, not the commercial and infrastructure work Hawkins does. As in earlier windows, Hawkins and its projects are not mentioned.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-10-11 10:27 → Construction made up 764 of 3,092 company liquidations in the year to July 2026; insolvency risk across the supply chain; Hawkins not mentioned
 
 **Finding — Construction has a large share of insolvencies**
