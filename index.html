@@ -50,26 +50,34 @@
   .mentions { font-size: 12px; color: #0969da; margin-top: 8px; margin-bottom: 4px; font-weight: 500; }
   .mentions-label { font-size: 11px; color: #636e7b; margin-right: 4px; font-weight: 400; }
   .hashtags { font-size: 11px; color: #0969da; margin-bottom: 12px; }
-  .filter-toggle-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 6px 24px; display: flex; align-items: center; }
-  .filter-toggle-btn { display: flex; align-items: center; gap: 6px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 6px; padding: 5px 12px; cursor: pointer; font-size: 12px; font-weight: 500; color: #636e7b; box-shadow: 0 1px 3px rgba(31,35,40,0.06); transition: all 0.12s; }
-  .filter-toggle-btn:hover { border-color: #0969da; color: #0969da; }
-  .filter-toggle-btn.open { border-color: #0969da; color: #0969da; background: #ddf4ff; }
-  .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; max-height: 0; overflow: hidden; padding: 0 24px; transition: max-height 0.25s ease, padding 0.2s ease; }
-  .filter-bar.open { max-height: 300px; padding: 8px 24px; }
-
-  .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
-  .filter-search-row { display: flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 8px; padding: 6px 12px; box-shadow: 0 1px 3px rgba(31,35,40,0.06); color: #afb8c1; }
-  .filter-search-row:focus-within { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,0.15); color: #0969da; }
-  .filter-search-input { border: none; outline: none; font-size: 13px; color: #1f2328; flex: 1; background: transparent; min-width: 180px; }
+  .filter-toggle-bar { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 8px 24px; display: flex; align-items: center; gap: 8px; }
+  .toggle-pill { display: flex; align-items: center; gap: 6px; background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 20px; padding: 5px 12px; cursor: pointer; font-size: 12px; font-weight: 500; color: #636e7b; transition: all 0.15s; }
+  .toggle-pill:hover { background: #eaeef2; border-color: #afb8c1; color: #1f2328; }
+  .toggle-pill.active { background: #ddf4ff; border-color: #0969da; color: #0969da; }
+  .filter-count { display: none; background: #0969da; color: #fff; font-size: 10px; font-weight: 700; border-radius: 10px; padding: 1px 6px; line-height: 1.5; }
+  .filter-count.visible { display: inline-block; }
+  .filter-toggle-chevron { transition: transform 0.2s ease; opacity: 0.45; flex-shrink: 0; }
+  .toggle-pill.active .filter-toggle-chevron { transform: rotate(180deg); opacity: 0.8; }
+  .filter-bar { background: #ffffff; border-bottom: 1px solid #d0d7de; display: flex; flex-direction: column; gap: 8px; max-height: 0; overflow: hidden; padding: 0 24px; transition: max-height 0.3s ease, padding 0.25s ease; }
+  .filter-bar.open { max-height: 200px; padding: 12px 24px; }
+  .filter-search-row { display: flex; align-items: center; gap: 8px; background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 8px; padding: 7px 12px; color: #afb8c1; transition: all 0.15s; }
+  .filter-search-row:focus-within { background: #ffffff; border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,0.1); color: #0969da; }
+  .filter-search-input { border: none; outline: none; font-size: 13px; color: #1f2328; flex: 1; background: transparent; min-width: 160px; }
   .filter-search-input::placeholder { color: #afb8c1; }
-  .btn-filter-reset { font-size: 12px; padding: 6px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff; color: #636e7b; cursor: pointer; transition: all 0.12s; box-shadow: 0 1px 3px rgba(31,35,40,0.06); }
-  .btn-filter-reset:hover { border-color: #cf222e; color: #cf222e; }
-  .btn-filter-search { font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 6px; border: 1px solid #0969da; background: #0969da; color: #ffffff; cursor: pointer; transition: all 0.12s; box-shadow: 0 1px 3px rgba(31,35,40,0.06); }
-  .btn-filter-search:hover { background: #0860ca; border-color: #0860ca; }
+  .filter-bar-bottom { display: flex; flex-direction: column; gap: 8px; }
+  .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 2px rgba(31,35,40,0.04); }
   .filter-group { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 12px; border-right: 1px solid #d0d7de; }
+  .filter-group:last-child { border-right: none; }
   #f-feedback { display: flex; flex-wrap: wrap; gap: 4px; }
-  .filter-label { font-size: 11px; font-weight: 600; color: #636e7b; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
-  .chip { font-size: 12px; padding: 3px 10px; border-radius: 20px; border: 1px solid #d0d7de; background: #ffffff; color: #1f2328; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
+  .filter-label { font-size: 10px; font-weight: 600; color: #8c959f; text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; }
+  .chip-reset { font-size: 11px; padding: 3px 8px; border-radius: 20px; border: 1px dashed #d0d7de; background: none; color: #8c959f; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
+  .chip-reset:hover { border-color: #cf222e; color: #cf222e; background: #fff0f0; }
+  .filter-bar-actions { display: flex; gap: 6px; justify-content: flex-end; }
+  .btn-filter-reset { font-size: 12px; padding: 6px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff; color: #636e7b; cursor: pointer; transition: all 0.12s; }
+  .btn-filter-reset:hover { border-color: #cf222e; color: #cf222e; background: #fff0f0; }
+  .btn-filter-search { font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 6px; border: none; background: #0969da; color: #ffffff; cursor: pointer; transition: background 0.12s; }
+  .btn-filter-search:hover { background: #0860ca; }
+  .chip { font-size: 12px; padding: 3px 10px; border-radius: 20px; border: 1px solid #d0d7de; background: #ffffff; color: #636e7b; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
   .chip:hover { border-color: #0969da; color: #0969da; }
   .chip.active { background: #0969da; border-color: #0969da; color: #ffffff; }
   .chip.active.win  { background: #1a7f37; border-color: #1a7f37; }
@@ -77,7 +85,8 @@
   .chip.active.lost { background: #cf222e; border-color: #cf222e; }
   .chip.active.unreviewed { background: #636e7b; border-color: #636e7b; }
   .post.hidden { display: none; }
-  .filter-select { font-size: 12px; padding: 4px 26px 4px 9px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23636e7b'/%3E%3C/svg%3E") no-repeat right 7px center / 8px; color: #1f2328; cursor: pointer; appearance: none; -webkit-appearance: none; }
+  .filter-select { font-size: 12px; padding: 4px 24px 4px 8px; border-radius: 4px; border: 1px solid transparent; background: #ffffff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238c959f'/%3E%3C/svg%3E") no-repeat right 7px center / 8px; color: #1f2328; cursor: pointer; appearance: none; -webkit-appearance: none; }
+  .filter-select:hover { background-color: #f6f8fa; border-color: #d0d7de; }
   .filter-select:focus { outline: none; border-color: #0969da; }
 </style>
 </head>
@@ -90,9 +99,15 @@
 </header>
 
 <div class="filter-toggle-bar" id="filter-toggle-bar" style="display:none">
-  <button class="filter-toggle-btn" id="filter-toggle">
+  <button class="toggle-pill" id="sort-toggle" data-sort="score-desc">
+    <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M0 4.75A.75.75 0 0 1 .75 4h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 4.75ZM0 11.25a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75ZM3 7.5a.75.75 0 0 0 0 1.5h10a.75.75 0 0 0 0-1.5Z"/></svg>
+    <span class="sort-pill-label">High score</span>
+  </button>
+  <button class="toggle-pill" id="filter-toggle">
     <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5ZM5.25 7.5h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5ZM7.75 12h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"/></svg>
     Filters
+    <span class="filter-count" id="filter-count"></span>
+    <svg class="filter-toggle-chevron" width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.427 7.427l3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"/></svg>
   </button>
 </div>
 <div class="filter-bar" id="filter-bar">
@@ -100,38 +115,36 @@
     <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
     <input type="text" id="keyword-search" class="filter-search-input" placeholder="Search posts…">
   </div>
-  <div class="filter-bar-group">
-    <div class="filter-group">
-      <span class="filter-label">Week</span>
-      <div id="f-week"></div>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Topic</span>
-      <div id="f-topic"></div>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Type</span>
-      <div id="f-type"></div>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Feedback</span>
-      <div id="f-feedback">
-        <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
-        <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
-        <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
-        <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+  <div class="filter-bar-bottom">
+    <div class="filter-bar-group">
+      <div class="filter-group">
+        <span class="filter-label">Week</span>
+        <div id="f-week"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Topic</span>
+        <div id="f-topic"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div id="f-type"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Feedback</span>
+        <div id="f-feedback">
+          <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
+          <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
+          <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
+          <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+          <button class="chip-reset" id="feedback-reset" style="display:none">Reset</button>
+        </div>
       </div>
     </div>
-    <div class="filter-group">
-      <span class="filter-label">Sort</span>
-      <select id="f-sort" class="filter-select">
-        <option value="score-desc">High score</option>
-        <option value="score-asc">Low score</option>
-      </select>
+    <div class="filter-bar-actions">
+      <button class="btn-filter-reset" id="filter-clear">Reset</button>
+      <button class="btn-filter-search" id="filter-search">Search</button>
     </div>
   </div>
-  <button class="btn-filter-reset" id="filter-clear">Reset</button>
-  <button class="btn-filter-search" id="filter-search">Search</button>
 </div>
 
 
@@ -218,7 +231,12 @@ async function load() {
   const rows = parseCSV(text);
 
   const qMatch = CSV_URL.match(/TABLE-(\d{4})(Q\d)\.csv/i);
-  document.getElementById("week-label").textContent = qMatch ? `${qMatch[2]} ${qMatch[1]}` : "";
+  const qLabel = qMatch ? `${qMatch[2]} ${qMatch[1]}` : "";
+  function syncWeekLabel() {
+    const w = document.querySelector("#f-week select")?.value;
+    document.getElementById("week-label").textContent = w ? `${qLabel} · Week ${w}` : qLabel;
+  }
+  document.getElementById("week-label").textContent = qLabel;
 
   const container = document.getElementById("posts");
   container.innerHTML = "";
@@ -311,29 +329,49 @@ async function load() {
   const weekSel = document.querySelector("#f-week select");
   const latestWeek = [...weekSel.options].filter(o => o.value).map(o => Number(o.value)).sort((a, b) => b - a)[0];
   if (latestWeek) weekSel.value = String(latestWeek);
+  weekSel.addEventListener("change", syncWeekLabel);
+  syncWeekLabel();
+  function syncFeedbackReset() {
+    const chips = document.querySelectorAll("#f-feedback .chip");
+    const allActive = [...chips].every(c => c.classList.contains("active"));
+    document.getElementById("feedback-reset").style.display = allActive ? "none" : "";
+  }
   document.querySelectorAll("#f-feedback .chip").forEach(chip =>
-    chip.addEventListener("click", () => { chip.classList.toggle("active"); applyFilters(); })
+    chip.addEventListener("click", () => { chip.classList.toggle("active"); syncFeedbackReset(); applyFilters(); })
   );
+  document.getElementById("feedback-reset").addEventListener("click", () => {
+    document.querySelectorAll("#f-feedback .chip").forEach(c => c.classList.add("active"));
+    syncFeedbackReset();
+    applyFilters();
+  });
   document.getElementById("keyword-search").addEventListener("input", applyFilters);
   document.getElementById("filter-clear").addEventListener("click", () => {
     document.getElementById("keyword-search").value = "";
     document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) s.value = ""; });
     document.querySelectorAll(".chip").forEach(c => c.classList.add("active"));
+    syncFeedbackReset();
     applyFilters();
   });
   document.getElementById("filter-search").addEventListener("click", applyFilters);
-  document.getElementById("f-sort").addEventListener("change", sortPosts);
+  document.getElementById("sort-toggle").addEventListener("click", () => {
+    const btn = document.getElementById("sort-toggle");
+    const next = btn.dataset.sort === "score-desc" ? "score-asc" : "score-desc";
+    btn.dataset.sort = next;
+    btn.querySelector(".sort-pill-label").textContent = next === "score-desc" ? "High score" : "Low score";
+    btn.classList.toggle("active", next !== "score-desc");
+    sortPosts();
+  });
   sortPosts();
   applyFilters();
   document.getElementById("filter-toggle-bar").style.display = "";
   document.getElementById("filter-toggle").addEventListener("click", () => {
     document.getElementById("filter-bar").classList.toggle("open");
-    document.getElementById("filter-toggle").classList.toggle("open");
+    document.getElementById("filter-toggle").classList.toggle("active");
   });
 }
 
 function sortPosts() {
-  const val = document.getElementById("f-sort").value;
+  const val = document.getElementById("sort-toggle")?.dataset.sort || "score-desc";
   const container = document.getElementById("posts");
   [...container.querySelectorAll(".post")]
     .sort((a, b) => {
@@ -342,6 +380,22 @@ function sortPosts() {
       return val === "score-asc" ? sa - sb : sb - sa;
     })
     .forEach(p => container.appendChild(p));
+}
+
+function updateFilterCount() {
+  const keyword = (document.getElementById("keyword-search")?.value || "").trim();
+  let count = keyword ? 1 : 0;
+  document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter && s.value) count++; });
+  const chipTotals = {};
+  document.querySelectorAll(".chip").forEach(c => {
+    const key = c.dataset.filter;
+    if (!chipTotals[key]) chipTotals[key] = { active: 0, total: 0 };
+    chipTotals[key].total++;
+    if (c.classList.contains("active")) chipTotals[key].active++;
+  });
+  Object.values(chipTotals).forEach(({ active, total }) => { if (active < total) count++; });
+  const badge = document.getElementById("filter-count");
+  if (badge) { badge.textContent = count; badge.classList.toggle("visible", count > 0); }
 }
 
 function applyFilters() {
@@ -363,6 +417,7 @@ function applyFilters() {
     const kwPass   = !keyword || post.dataset.search.includes(keyword);
     post.classList.toggle("hidden", !(selPass && chipPass && kwPass));
   });
+  updateFilterCount();
 }
 
 load().catch(e => {
