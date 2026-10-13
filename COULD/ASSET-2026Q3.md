@@ -2,6 +2,21 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 -> Structural updates: feedback-comment column, tree feedback counts, week number correction
+
+**CSV — SHOULD/TABLE-2026Q3.csv:**
+- Added `feedback-comment` column (last column, after `feedback`)
+- Week numbers corrected to ISO week: batch 1 (post-001–006) 27 → 42 (Oct 12–18), batch 2 (post-007–012) 28 → 43 (Oct 19–25)
+
+**Tree — MUST/TREE-2026Q3.json:**
+- Added `"feedback": {"win": N, "tie": 0, "lost": N, "comments": []}` to all 54 subtypes
+- Seeded with week 42 actuals: CCTV win:1, Emerging Risks lost:1, Team Certifications win:1, Polls win:1
+
+**Workflow — .github/workflows/update-feedback.yml:**
+- Now writes `feedback-comment` to CSV and appends comment to tree subtype `comments[]` on each dispatch
+
+**Status:** READY — no media impact, structural only.
+
 ## ASSET:redwolf 2026-10-13 18:22 -> Week 28 adjustment check: media unchanged
 
 **Change since media was generated:** post-008 partner tags changed from Bosch to Gallagher Security + Integrated Control Technology (commit 7f25753). No other week 28 content changed.
