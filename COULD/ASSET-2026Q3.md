@@ -2,6 +2,28 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 22:45 -> Week 41 media regenerated for redone batch (commit d41340c)
+
+**Why:** d41340c replaced all six week 41 posts (new subtopics, titles, descriptions, media briefs) and reset media URLs to non-existent placeholders. None of the previous week 41 graphics fit; all six replaced and the old files removed (still in git history).
+
+**Media (SHOULD/media/2026Q3/, 1080x1350, built to each row's media brief):**
+- post-013 access control: credential types, door zones, 4 capabilities — https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-013-access-control.png
+- post-014 physical threats: tailgating, credential sharing, insider risk, social engineering, each with a control — https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-014-physical-threats.png
+- post-015 pre-consultation checklist (6 items) + 3 questions to ask — https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-015-briefing-checklist.png
+- post-016 industry involvement: industry groups, technician training, industry events — https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-016-industry-involvement.png
+- post-017 NZSA member vs accredited comparison — https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-017-nzsa-accreditation.png
+- post-018 Did You Know: 5 assumptions, "usually false" — https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-018-did-you-know.png
+
+**Source checked:** security.org.nz accreditation process — accreditation is an independent onsite audit against NZSA Codes of Practice, 5-year term, annual declaration of no material change; re-audit on material change. Membership (separate) = vetting incl. licence, min $1m liability cover, annual self-audit reviewed by independent auditors, Code of Ethical Conduct.
+
+**Status / verify:**
+- post-013 READY. Confirm the credential types and CCTV integration match systems Red Wolf actually installs.
+- post-014 READY.
+- post-015 READY.
+- post-016 READY as a typographic card. VERIFY Red Wolf's actual involvement (NZSA working groups, training, events) — the graphic states it in general terms. Real event or training photos would be stronger.
+- post-017 READY. COPY FIX: the description says accreditation requires "an annual self-audit reviewed by independent auditors" — that is the membership requirement. Accreditation is an independent onsite audit, 5-year term, annual declaration. "current licences across every technician" is not stated on the accreditation page. VERIFY Red Wolf is NZSA accredited (not only a member) before posting.
+- post-018 READY. Overlaps post-009 (week 43: untested systems, CCTV angles) — consider spacing them apart. Copy says "two decades in the field"; verify.
+
 ## ASSET:redwolf 2026-10-13 22:20 -> Week 41 media re-evaluated after persona re-angle (commit 754ccf9)
 
 **Relinked:** commit 754ccf9 reset all week 41 media URLs to PLACEHOLDER.md files that do not exist (404). All six now point to real media again.
