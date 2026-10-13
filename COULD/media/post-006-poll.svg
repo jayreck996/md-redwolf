@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1080" height="10" fill="#CC1111"/>
+
+  <!-- Header -->
+  <rect x="0" y="10" width="1080" height="120" fill="#1A1A1A"/>
+  <text x="540" y="62" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" fill="white" text-anchor="middle" letter-spacing="4">RED WOLF HIGH LEVEL SECURITY</text>
+  <text x="540" y="98" font-family="Arial, sans-serif" font-size="17" fill="rgba(255,255,255,0.6)" text-anchor="middle" letter-spacing="2">COMMUNITY POLL · 2026 Q3</text>
+
+  <!-- Poll question -->
+  <text x="540" y="200" font-family="Arial, sans-serif" font-size="18" fill="#CC1111" text-anchor="middle" letter-spacing="2">WE WANT TO KNOW</text>
+  <text x="540" y="258" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="46" fill="#1A1A1A" text-anchor="middle">WHAT IS THE</text>
+  <text x="540" y="316" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="46" fill="#1A1A1A" text-anchor="middle">BIGGEST PHYSICAL</text>
+  <text x="540" y="374" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="46" fill="#CC1111" text-anchor="middle">SECURITY GAP</text>
+  <text x="540" y="420" font-family="Arial, sans-serif" font-size="22" fill="#555" text-anchor="middle">in NZ businesses right now?</text>
+
+  <!-- Divider -->
+  <rect x="180" y="448" width="720" height="2" fill="#EEE"/>
+
+  <!-- Option 1 -->
+  <rect x="80" y="472" width="920" height="90" fill="#F9F9F9" rx="8" stroke="#E0E0E0" stroke-width="1.5"/>
+  <circle cx="130" cy="517" r="18" fill="none" stroke="#CC1111" stroke-width="2.5"/>
+  <text x="170" y="509" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#1A1A1A">Outdated CCTV systems</text>
+  <text x="170" y="534" font-family="Arial, sans-serif" font-size="16" fill="#888">Cameras that miss key zones or have no analytics</text>
+
+  <!-- Option 2 -->
+  <rect x="80" y="578" width="920" height="90" fill="#F9F9F9" rx="8" stroke="#E0E0E0" stroke-width="1.5"/>
+  <circle cx="130" cy="623" r="18" fill="none" stroke="#CC1111" stroke-width="2.5"/>
+  <text x="170" y="615" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#1A1A1A">Weak access control</text>
+  <text x="170" y="640" font-family="Arial, sans-serif" font-size="16" fill="#888">Shared codes, no audit trail, unmanaged entry points</text>
+
+  <!-- Option 3 -->
+  <rect x="80" y="684" width="920" height="90" fill="#F9F9F9" rx="8" stroke="#E0E0E0" stroke-width="1.5"/>
+  <circle cx="130" cy="729" r="18" fill="none" stroke="#CC1111" stroke-width="2.5"/>
+  <text x="170" y="721" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#1A1A1A">No 24/7 monitoring</text>
+  <text x="170" y="746" font-family="Arial, sans-serif" font-size="16" fill="#888">Incidents go undetected until the next business day</text>
+
+  <!-- Option 4 -->
+  <rect x="80" y="790" width="920" height="90" fill="#F9F9F9" rx="8" stroke="#E0E0E0" stroke-width="1.5"/>
+  <circle cx="130" cy="835" r="18" fill="none" stroke="#CC1111" stroke-width="2.5"/>
+  <text x="170" y="827" font-family="Arial, sans-serif" font-weight="bold" font-size="20" fill="#1A1A1A">No professional security assessment</text>
+  <text x="170" y="852" font-family="Arial, sans-serif" font-size="16" fill="#888">Never had a survey — don't know what's at risk</text>
+
+  <!-- Vote CTA -->
+  <rect x="80" y="905" width="440" height="65" fill="#CC1111" rx="8"/>
+  <text x="300" y="946" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="white" text-anchor="middle" letter-spacing="1">VOTE ON LINKEDIN ↓</text>
+
+  <rect x="560" y="905" width="440" height="65" fill="#1A1A1A" rx="8"/>
+  <text x="780" y="938" font-family="Arial, sans-serif" font-size="16" fill="#AAA" text-anchor="middle">Results + our take published</text>
+  <text x="780" y="958" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">next week</text>
+
+  <!-- Footer -->
+  <text x="540" y="1022" font-family="Arial, sans-serif" font-size="14" fill="#BBB" text-anchor="middle">redwolf.net.nz  |  Wellington &amp; Auckland  |  ISO 9001 Certified  |  NZSA Accredited</text>
+  <rect x="0" y="1060" width="1080" height="20" fill="#CC1111"/>
+</svg>
