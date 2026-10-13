@@ -57,8 +57,14 @@
   .week-nav-btn:hover:not(:disabled) { background: #f6f8fa; color: #0969da; }
   .week-nav-btn:disabled { opacity: 0.35; cursor: default; }
   .week-nav-label { font-size: 13px; font-weight: 600; color: #1f2328; padding: 7px 20px; min-width: 96px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.01em; }
-  .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; align-items: center; justify-content: center; }
+  .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px 10px; display: flex; justify-content: center; }
+  .filter-bar-inner { display: flex; flex-direction: column; }
   .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
+  .filter-bar-actions { display: flex; justify-content: flex-end; gap: 8px; padding-top: 8px; }
+  .btn-filter-reset { font-size: 12px; padding: 5px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff; color: #636e7b; cursor: pointer; transition: all 0.12s; }
+  .btn-filter-reset:hover { border-color: #cf222e; color: #cf222e; background: #ffebe9; }
+  .btn-filter-search { font-size: 12px; font-weight: 500; padding: 5px 14px; border-radius: 6px; border: 1px solid #0969da; background: #0969da; color: #ffffff; cursor: pointer; transition: all 0.12s; }
+  .btn-filter-search:hover { background: #0860ca; border-color: #0860ca; }
   .filter-group { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 6px 12px; border-right: 1px solid #d0d7de; }
   #f-feedback { display: flex; flex-wrap: wrap; gap: 4px; }
   .filter-label { font-size: 11px; font-weight: 600; color: #636e7b; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
@@ -69,8 +75,6 @@
   .chip.active.tie  { background: #9a6700; border-color: #9a6700; }
   .chip.active.lost { background: #cf222e; border-color: #cf222e; }
   .chip.active.unreviewed { background: #636e7b; border-color: #636e7b; }
-  .filter-clear { background: #ffffff; border: none; border-left: 1px solid #d0d7de; padding: 6px 10px; cursor: pointer; color: #636e7b; display: flex; align-items: center; transition: background 0.12s, color 0.12s; }
-  .filter-clear:hover { background: #f6f8fa; color: #cf222e; }
   .post.hidden { display: none; }
   .filter-select { font-size: 12px; padding: 4px 26px 4px 9px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23636e7b'/%3E%3C/svg%3E") no-repeat right 7px center / 8px; color: #1f2328; cursor: pointer; appearance: none; -webkit-appearance: none; }
   .filter-select:focus { outline: none; border-color: #0969da; }
@@ -97,38 +101,41 @@
 </div>
 
 <div class="filter-bar" id="filter-bar" style="display:none">
-  <div class="filter-bar-group">
-    <div class="filter-group">
-      <span class="filter-label">Week</span>
-      <div id="f-week"></div>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Topic</span>
-      <div id="f-topic"></div>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Type</span>
-      <div id="f-type"></div>
-    </div>
-    <div class="filter-group">
-      <span class="filter-label">Feedback</span>
-      <div id="f-feedback">
-        <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
-        <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
-        <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
-        <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+  <div class="filter-bar-inner">
+    <div class="filter-bar-group">
+      <div class="filter-group">
+        <span class="filter-label">Week</span>
+        <div id="f-week"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Topic</span>
+        <div id="f-topic"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Type</span>
+        <div id="f-type"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Feedback</span>
+        <div id="f-feedback">
+          <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
+          <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
+          <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
+          <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">Sort</span>
+        <select id="f-sort" class="filter-select">
+          <option value="score-desc">High score</option>
+          <option value="score-asc">Low score</option>
+        </select>
       </div>
     </div>
-    <div class="filter-group">
-      <span class="filter-label">Sort</span>
-      <select id="f-sort" class="filter-select">
-        <option value="score-desc">High score</option>
-        <option value="score-asc">Low score</option>
-      </select>
+    <div class="filter-bar-actions">
+      <button class="btn-filter-reset" id="filter-clear">Reset</button>
+      <button class="btn-filter-search" id="filter-search">Search</button>
     </div>
-    <button class="filter-clear" id="filter-clear" title="Clear filters">
-      <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg>
-    </button>
   </div>
 </div>
 
@@ -337,6 +344,7 @@ async function load() {
     applyFilters();
     updateWeekNav();
   });
+  document.getElementById("filter-search").addEventListener("click", applyFilters);
   document.getElementById("f-sort").addEventListener("change", sortPosts);
   sortPosts();
   applyFilters();
