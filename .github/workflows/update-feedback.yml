@@ -1,0 +1,54 @@
+name: Update client feedback
+
+on:
+  repository_dispatch:
+    types: [client-feedback]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update feedback in CSV
+        env:
+          POST_ID: ${{ github.event.client_payload.post_id }}
+          RESULT:  ${{ github.event.client_payload.result }}
+        run: |
+          python3 - <<'EOF'
+          import csv, os, sys
+
+          post_id = os.environ["POST_ID"]
+          result  = os.environ["RESULT"]
+          path    = "should/TABLE-2026Q3.csv"
+
+          if result not in ("win", "tie", "lost"):
+              print(f"Invalid result: {result}")
+              sys.exit(1)
+
+          rows = []
+          with open(path, newline="", encoding="utf-8") as f:
+              reader = csv.DictReader(f)
+              fieldnames = reader.fieldnames
+              if "feedback" not in fieldnames:
+                  fieldnames = list(fieldnames) + ["feedback"]
+              for row in reader:
+                  if row["item"] == post_id:
+                      row["feedback"] = result
+                  rows.append(row)
+
+          with open(path, "w", newline="", encoding="utf-8") as f:
+              writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
+              writer.writeheader()
+              writer.writerows(rows)
+
+          print(f"Updated {post_id} -> {result}")
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add should/TABLE-2026Q3.csv
+          git diff --cached --quiet || git commit -m "feedback: ${{ github.event.client_payload.post_id }} -> ${{ github.event.client_payload.result }}"
+          git push
