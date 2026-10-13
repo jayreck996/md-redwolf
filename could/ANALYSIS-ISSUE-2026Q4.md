@@ -10,6 +10,19 @@ REQUIRED FORMAT FOR EACH ISSUE ENTRY:
 ## ISSUE:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ISSUE ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ISSUE ENTRIES-->## ISSUE:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Only item in the window is a trade-workforce feature with no Hawkins-specific news
+## ISSUE:rss:buildersandcontractors.co.nz 2026-10-13 13:27 → Cocaine use is rising and showing up in more workplace drug tests; impairment risk for safety-critical construction work; Hawkins not mentioned
+
+**Finding — Cocaine use is spreading as the price falls**
+"Cocaine is getting cheaper, and it's turning up at work" was published 2026-10-12 (NZ time). Police wastewater testing measured about 6.8 kg used per week in the June 2026 quarter, roughly double the 3.3 kg measured in early 2024. After adjusting for inflation, the price fell from $368 per gram in 2017/18 to $247, a drop of 32%. In the Drug Trends Survey, 31% of respondents said they had used cocaine in the previous six months, up from 11% in 2017/18. Weekly use among respondents doubled from 6% to 12%.
+
+**Finding 2 — More positive results in workplace drug tests**
+Cocaine made up 2.8% of positive workplace drug tests in June 2026, up 68.5% on a year earlier. In Canterbury it was 3.1%, up 375.8%. The NZ Health Survey puts use among men aged 25–34 at 6.9%, and that age group is a large part of the site workforce. For contractors running safety-critical work such as working at height, operating plant and driving vehicles, this adds to the impairment risk. It comes on top of the driver-distraction risk covered on 2026-10-09 and the critical-risk changes due from 1 April 2027.
+
+**Finding 3 — Drug policies may need updating**
+Drug and alcohol testing programmes that were set up mainly for cannabis and methamphetamine may not detect cocaine well enough. The steep rise in Canterbury suggests the risk differs by region, which matters for contractors working across several centres.
+
+**Finding 4 — No direct coverage of the target**
+As in earlier windows, the item is about the workforce in general. It does not mention Hawkins or any of its projects. A Skills Group item on degree apprenticeships was published on 2026-10-13 NZ time, which is outside this window. It reports apprentice numbers down 14%, new entrants down 24%, and five-year completion rates falling from 54% to 40%, and will be assessed in the next window.
 ## ISSUE:rss:buildersandcontractors.co.nz 2026-10-12 10:43 → Cordell index shows home-building costs up 1.7% in the September quarter, the fastest since 2022; builders on fixed-price contracts are absorbing the rise; Hawkins not mentioned
 
 **Finding — Cost growth is speeding up again**
