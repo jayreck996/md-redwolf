@@ -51,6 +51,20 @@
   .mentions { font-size: 12px; color: #0969da; margin-top: 8px; margin-bottom: 4px; font-weight: 500; }
   .mentions-label { font-size: 11px; color: #636e7b; margin-right: 4px; font-weight: 400; }
   .hashtags { font-size: 11px; color: #0969da; margin-bottom: 12px; }
+  .filter-bar { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .filter-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .filter-label { font-size: 11px; font-weight: 600; color: #636e7b; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+  .chip { font-size: 12px; padding: 3px 10px; border-radius: 20px; border: 1px solid #d0d7de; background: #ffffff; color: #1f2328; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
+  .chip:hover { border-color: #0969da; color: #0969da; }
+  .chip.active { background: #0969da; border-color: #0969da; color: #ffffff; }
+  .chip.active.win  { background: #1a7f37; border-color: #1a7f37; }
+  .chip.active.tie  { background: #9a6700; border-color: #9a6700; }
+  .chip.active.lost { background: #cf222e; border-color: #cf222e; }
+  .chip.active.unreviewed { background: #636e7b; border-color: #636e7b; }
+  .filter-divider { width: 1px; height: 20px; background: #d0d7de; }
+  .filter-clear { font-size: 12px; color: #636e7b; background: none; border: none; cursor: pointer; margin-left: auto; padding: 3px 6px; }
+  .filter-clear:hover { color: #cf222e; }
+  .post.hidden { display: none; }
 </style>
 </head>
 <body>
@@ -60,6 +74,34 @@
   <h1>Weekly Content Review</h1>
   <span id="week-label"></span>
 </header>
+
+<div class="filter-bar" id="filter-bar" style="display:none">
+  <div class="filter-group">
+    <span class="filter-label">Week</span>
+    <div id="f-week"></div>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="filter-group">
+    <span class="filter-label">Topic</span>
+    <div id="f-topic"></div>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="filter-group">
+    <span class="filter-label">Type</span>
+    <div id="f-type"></div>
+  </div>
+  <div class="filter-divider"></div>
+  <div class="filter-group">
+    <span class="filter-label">Feedback</span>
+    <div id="f-feedback">
+      <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
+      <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
+      <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
+      <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+    </div>
+  </div>
+  <button class="filter-clear" id="filter-clear">✕ Clear</button>
+</div>
 
 <main>
   <h2>Posts for approval</h2>
@@ -153,6 +195,10 @@ async function load() {
     const feedback = row["feedback"] || "";
     const div = document.createElement("div");
     div.className = "post";
+    div.dataset.week     = row.week     || "";
+    div.dataset.topic    = row.topic    || "";
+    div.dataset.type     = row.type     || "";
+    div.dataset.feedback = feedback     || "unreviewed";
     div.innerHTML = `
       <div class="post-header">
         <span class="badge">${row.topic}</span>
@@ -205,6 +251,49 @@ async function load() {
     });
 
     container.appendChild(div);
+  });
+
+  // Populate dynamic filter chips
+  function makeChips(containerId, filterKey, values) {
+    const el = document.getElementById(containerId);
+    values.forEach(v => {
+      const btn = document.createElement("button");
+      btn.className = "chip active";
+      btn.dataset.filter = filterKey;
+      btn.dataset.value = v;
+      btn.textContent = v;
+      btn.addEventListener("click", () => { btn.classList.toggle("active"); applyFilters(); });
+      el.appendChild(btn);
+    });
+  }
+  makeChips("f-week",  "week",  [...new Set(rows.map(r => r.week).filter(Boolean))]);
+  makeChips("f-topic", "topic", [...new Set(rows.map(r => r.topic).filter(Boolean))]);
+  makeChips("f-type",  "type",  [...new Set(rows.map(r => r.type).filter(Boolean))]);
+
+  document.querySelectorAll("#f-feedback .chip").forEach(chip =>
+    chip.addEventListener("click", () => { chip.classList.toggle("active"); applyFilters(); })
+  );
+  document.getElementById("filter-clear").addEventListener("click", () => {
+    document.querySelectorAll(".chip").forEach(c => c.classList.add("active"));
+    applyFilters();
+  });
+  document.getElementById("filter-bar").style.display = "";
+}
+
+function applyFilters() {
+  const groups = {};
+  document.querySelectorAll(".chip").forEach(c => {
+    const key = c.dataset.filter;
+    if (!groups[key]) groups[key] = { active: [], total: 0 };
+    groups[key].total++;
+    if (c.classList.contains("active")) groups[key].active.push(c.dataset.value);
+  });
+  document.querySelectorAll(".post").forEach(post => {
+    const visible = Object.entries(groups).every(([key, { active, total }]) => {
+      if (active.length === 0 || active.length === total) return true;
+      return active.includes(post.dataset[key]);
+    });
+    post.classList.toggle("hidden", !visible);
   });
 }
 
