@@ -39,8 +39,10 @@ CONTENT GENERATION RULES
    INDUSTRY/PEOPLE=8, SERVICES/ENGAGEMENT=7.
    Adjust by subtype quality (e.g. Thought Leadership=8,
    Testimonials=8, Staff Profiles=7).
-4. Research all connection LinkedIn pages before generating
-   content that tags or references them.
+4. Web-browse every LinkedIn page in connections{} that will be
+   tagged in the batch — confirm the page is active, the slug is
+   correct, and note any recent posts or announcements relevant
+   to the content angle.
 5. Only tag partners when the post is directly relevant to
    their product or domain.
 6. All new posts go into TABLE-2026Q3.csv with status BLOCKED
