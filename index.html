@@ -102,6 +102,14 @@
       <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
     </div>
   </div>
+  <div class="filter-divider"></div>
+  <div class="filter-group">
+    <span class="filter-label">Sort</span>
+    <select id="f-sort" class="filter-select">
+      <option value="score-desc">High score</option>
+      <option value="score-asc">Low score</option>
+    </select>
+  </div>
   <button class="filter-clear" id="filter-clear">✕ Clear</button>
 </div>
 
@@ -201,6 +209,7 @@ async function load() {
     div.dataset.topic    = row.topic    || "";
     div.dataset.type     = row.type     || "";
     div.dataset.feedback = feedback     || "unreviewed";
+    div.dataset.score    = parseFloat(row.score) || 0;
     div.innerHTML = `
       <div class="post-header">
         <span class="badge">${row.topic}</span>
@@ -282,16 +291,30 @@ async function load() {
     chip.addEventListener("click", () => { chip.classList.toggle("active"); applyFilters(); })
   );
   document.getElementById("filter-clear").addEventListener("click", () => {
-    document.querySelectorAll(".filter-select").forEach(s => s.value = "");
+    document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) s.value = ""; });
     document.querySelectorAll(".chip").forEach(c => c.classList.add("active"));
     applyFilters();
   });
+  document.getElementById("f-sort").addEventListener("change", sortPosts);
+  sortPosts();
   document.getElementById("filter-bar").style.display = "";
+}
+
+function sortPosts() {
+  const val = document.getElementById("f-sort").value;
+  const container = document.getElementById("posts");
+  [...container.querySelectorAll(".post")]
+    .sort((a, b) => {
+      const sa = parseFloat(a.dataset.score) || 0;
+      const sb = parseFloat(b.dataset.score) || 0;
+      return val === "score-asc" ? sa - sb : sb - sa;
+    })
+    .forEach(p => container.appendChild(p));
 }
 
 function applyFilters() {
   const selVals = {};
-  document.querySelectorAll(".filter-select").forEach(s => { selVals[s.dataset.filter] = s.value; });
+  document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) selVals[s.dataset.filter] = s.value; });
   const chipGroups = {};
   document.querySelectorAll(".chip").forEach(c => {
     const key = c.dataset.filter;
