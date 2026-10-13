@@ -50,6 +50,11 @@
   .mentions { font-size: 12px; color: #0969da; margin-top: 8px; margin-bottom: 4px; font-weight: 500; }
   .mentions-label { font-size: 11px; color: #636e7b; margin-right: 4px; font-weight: 400; }
   .hashtags { font-size: 11px; color: #0969da; margin-bottom: 12px; }
+  .week-nav { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 8px 24px; display: flex; align-items: center; gap: 10px; justify-content: center; }
+  .week-nav-btn { background: none; border: 1px solid #d0d7de; border-radius: 6px; width: 28px; height: 28px; cursor: pointer; color: #636e7b; font-size: 20px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: all 0.12s; }
+  .week-nav-btn:hover:not(:disabled) { border-color: #0969da; color: #0969da; }
+  .week-nav-btn:disabled { opacity: 0.35; cursor: default; }
+  .week-nav-label { font-size: 14px; font-weight: 600; color: #1f2328; min-width: 76px; text-align: center; }
   .filter-bar { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .filter-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .filter-label { font-size: 11px; font-weight: 600; color: #636e7b; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
@@ -75,6 +80,12 @@
   <h1>Weekly Content Review</h1>
   <span id="week-label"></span>
 </header>
+
+<div class="week-nav" id="week-nav" style="display:none">
+  <button class="week-nav-btn" id="week-prev" title="Previous week">&#8249;</button>
+  <span class="week-nav-label" id="week-nav-label"></span>
+  <button class="week-nav-btn" id="week-next" title="Next week">&#8250;</button>
+</div>
 
 <div class="filter-bar" id="filter-bar" style="display:none">
   <div class="filter-group">
@@ -290,6 +301,26 @@ async function load() {
   const latestWeek = [...weekSel.options].filter(o => o.value).map(o => Number(o.value)).sort((a, b) => b - a)[0];
   if (latestWeek) weekSel.value = String(latestWeek);
 
+  const weekValues = [...weekSel.options].filter(o => o.value).map(o => o.value).sort((a, b) => Number(a) - Number(b));
+  function updateWeekNav() {
+    const idx = weekValues.indexOf(weekSel.value);
+    document.getElementById("week-nav-label").textContent = weekSel.value ? `Week ${weekSel.value}` : "All weeks";
+    document.getElementById("week-prev").disabled = idx <= 0;
+    document.getElementById("week-next").disabled = idx >= weekValues.length - 1;
+  }
+  weekSel.addEventListener("change", updateWeekNav);
+  document.getElementById("week-prev").addEventListener("click", () => {
+    const idx = weekValues.indexOf(weekSel.value);
+    if (idx > 0) { weekSel.value = weekValues[idx - 1]; applyFilters(); updateWeekNav(); }
+  });
+  document.getElementById("week-next").addEventListener("click", () => {
+    const idx = weekValues.indexOf(weekSel.value);
+    const next = idx < 0 ? 0 : idx + 1;
+    if (next < weekValues.length) { weekSel.value = weekValues[next]; applyFilters(); updateWeekNav(); }
+  });
+  updateWeekNav();
+  document.getElementById("week-nav").style.display = "";
+
   document.querySelectorAll("#f-feedback .chip").forEach(chip =>
     chip.addEventListener("click", () => { chip.classList.toggle("active"); applyFilters(); })
   );
@@ -297,6 +328,7 @@ async function load() {
     document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) s.value = ""; });
     document.querySelectorAll(".chip").forEach(c => c.classList.add("active"));
     applyFilters();
+    updateWeekNav();
   });
   document.getElementById("f-sort").addEventListener("change", sortPosts);
   sortPosts();
