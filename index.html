@@ -60,6 +60,9 @@
   .week-jump-option { display: block; width: 100%; text-align: left; padding: 8px 16px; font-size: 13px; font-weight: 500; background: none; border: none; cursor: pointer; color: #1f2328; transition: background 0.1s; }
   .week-jump-option:hover { background: #f6f8fa; }
   .week-jump-option.active { color: #0969da; font-weight: 600; background: #ddf4ff; }
+  .week-nav-arrow { background: none; border: 1px solid #d0d7de; border-radius: 6px; width: 30px; height: 30px; cursor: pointer; color: #636e7b; display: flex; align-items: center; justify-content: center; transition: all 0.12s; }
+  .week-nav-arrow:hover:not(:disabled) { border-color: #0969da; color: #0969da; }
+  .week-nav-arrow:disabled { opacity: 0.35; cursor: default; }
   .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px 10px; display: flex; justify-content: center; }
   .filter-bar-inner { display: flex; flex-direction: column; }
   .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
@@ -139,13 +142,19 @@
 </div>
 
 <div class="week-nav" id="week-nav" style="display:none">
-  <div class="week-jump" id="week-jump">
+  <button class="week-nav-arrow" id="week-prev" title="Previous week">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/></svg>
+  </button>
+  <div class="week-jump" id="week-jump" style="margin: 0 8px">
     <button class="week-jump-btn" id="week-jump-btn">
       <span id="week-nav-label"></span>
       <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.427 7.427l3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"/></svg>
     </button>
     <div class="week-jump-dropdown" id="week-jump-dropdown"></div>
   </div>
+  <button class="week-nav-arrow" id="week-next" title="Next week">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06z"/></svg>
+  </button>
 </div>
 
 <main>
@@ -346,10 +355,22 @@ async function load() {
   });
 
   function updateWeekNav() {
+    const idx = weekValues.indexOf(weekSel.value);
     document.getElementById("week-nav-label").textContent = weekSel.value ? `Week ${weekSel.value}` : "All weeks";
     jumpDropdown.querySelectorAll(".week-jump-option").forEach(o => o.classList.toggle("active", o.dataset.week === weekSel.value));
+    document.getElementById("week-prev").disabled = idx <= 0;
+    document.getElementById("week-next").disabled = idx >= weekValues.length - 1;
   }
   weekSel.addEventListener("change", updateWeekNav);
+  document.getElementById("week-prev").addEventListener("click", () => {
+    const idx = weekValues.indexOf(weekSel.value);
+    if (idx > 0) { weekSel.value = weekValues[idx - 1]; applyFilters(); updateWeekNav(); }
+  });
+  document.getElementById("week-next").addEventListener("click", () => {
+    const idx = weekValues.indexOf(weekSel.value);
+    const next = idx < 0 ? 0 : idx + 1;
+    if (next < weekValues.length) { weekSel.value = weekValues[next]; applyFilters(); updateWeekNav(); }
+  });
   jumpBtn.addEventListener("click", e => { e.stopPropagation(); jumpBtn.classList.toggle("open"); jumpDropdown.classList.toggle("open"); });
   document.addEventListener("click", () => { jumpBtn.classList.remove("open"); jumpDropdown.classList.remove("open"); });
   updateWeekNav();
