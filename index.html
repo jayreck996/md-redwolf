@@ -71,7 +71,7 @@ const TOKEN  = "__REVIEW_PAT__".startsWith("__") ? (window.__MD_REDWOLF__ || "")
 const CSV_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/SHOULD/TABLE-2026Q3.csv`;
 
 function parseCSV(text) {
-  const lines = text.trim().split("\n");
+  const lines = text.trim().replace(/\r/g, "").split("\n");
   const headers = lines[0].replace(/"/g, "").split(",");
   return lines.slice(1).map(line => {
     const vals = [];
@@ -104,7 +104,7 @@ function mediaLink(row) {
 }
 
 async function submitFeedback(postId, result, btn, statusEl, allBtns) {
-  allBtns.forEach(b => b.disabled = true);
+  allBtns.forEach(b => { b.disabled = true; b.style.opacity = ""; });
   statusEl.textContent = "Submitting…";
   statusEl.className = "status";
   try {
@@ -121,16 +121,18 @@ async function submitFeedback(postId, result, btn, statusEl, allBtns) {
       })
     });
     if (res.status === 204) {
+      allBtns.forEach(b => { b.classList.remove("active"); b.style.opacity = b.dataset.result !== result ? "0.35" : ""; });
       btn.classList.add("active");
       statusEl.textContent = `Saved: ${result}`;
       statusEl.className = "status ok";
+      allBtns.forEach(b => b.disabled = false);
     } else {
       throw new Error(`HTTP ${res.status}`);
     }
   } catch (e) {
     statusEl.textContent = `Error: ${e.message}`;
     statusEl.className = "status err";
-    allBtns.forEach(b => b.disabled = false);
+    allBtns.forEach(b => { b.disabled = false; b.style.opacity = ""; });
   }
 }
 
@@ -182,7 +184,11 @@ async function load() {
         submitFeedback(row.item, btn.dataset.result, btn, statusEl, btns)
       );
     });
-    if (feedback) btns.forEach(b => b.disabled = true);
+    if (feedback) {
+      btns.forEach(b => {
+        if (b.dataset.result !== feedback) b.style.opacity = "0.35";
+      });
+    }
 
     const copyBtn = div.querySelector(".btn-copy");
     copyBtn.addEventListener("click", () => {
