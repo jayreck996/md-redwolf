@@ -2,6 +2,28 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 21:55 -> Week 41 media generated (post-013 to post-018)
+
+**Media (SHOULD/media/2026Q3/, same brand system, 1080x1350):**
+- post-013 survey 3-stage diagram: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-013-security-survey.png
+- post-014 PSR framework checklist: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-014-psr-framework.png
+- post-015 NZSA trust signals card: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-015-nzsa-membership.png
+- post-016 RED WOLF values card: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-016-red-wolf-values.png
+- post-017 quality process explainer: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-017-quality-process.png
+- post-018 three trends commentary: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-018-three-trends.png
+
+**Sources checked:** PSR via ncsc.govt.nz (4 areas: governance, personnel, information, physical; mandatory for public service agencies; annual self-assessment against 20 mandatory requirements). NZSA via security.org.nz (vetting incl. licence check; min $1m public and product liability; annual self-audit reviewed by independent auditors; Code of Ethical Conduct; complaints and disciplinary procedure).
+
+**Status:**
+- post-013 READY. Generic survey process; confirm it matches how Red Wolf runs surveys.
+- post-014 READY. Copy fix: description says PSR sets obligations for "critical infrastructure providers" — the Cabinet mandate covers public service agencies (plus NZDF, Police, NZSIS, PCO), not private critical infrastructure. Also "what has been updated" — no 2026 PSR update found; remove or cite one.
+- post-015 READY. Graphic does not claim Red Wolf is a member. Copy fix: "not self-certification ... independently verified" overstates it — the annual audit is a self-audit reviewed by independent auditors. Verify Red Wolf's NZSA membership before posting.
+- post-016 READY as branded values card (no photo). Values from COULD/README.TXT.
+- post-017 READY. No ISO badge or certification claim on the graphic. VERIFY Red Wolf holds ISO 9001 before posting — the post copy states it and it remains unverified.
+- post-018 READY. Trends are Red Wolf's commentary, not cited data.
+
+**Table:** media and media URL updated for post-013 to post-018 (placeholders were never created; links were 404 before this).
+
 ## ASSET:redwolf 2026-10-13 -> Week 41 content batch generated (post-013 to post-018)
 
 **Posts added to SHOULD/TABLE-2026Q3.csv:**
