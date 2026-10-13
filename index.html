@@ -57,8 +57,9 @@
   .week-nav-btn:hover:not(:disabled) { background: #f6f8fa; color: #0969da; }
   .week-nav-btn:disabled { opacity: 0.35; cursor: default; }
   .week-nav-label { font-size: 13px; font-weight: 600; color: #1f2328; padding: 7px 20px; min-width: 96px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.01em; }
-  .filter-bar { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
-  .filter-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; align-items: center; justify-content: center; }
+  .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
+  .filter-group { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-right: 1px solid #d0d7de; flex-wrap: wrap; }
   .filter-label { font-size: 11px; font-weight: 600; color: #636e7b; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
   .chip { font-size: 12px; padding: 3px 10px; border-radius: 20px; border: 1px solid #d0d7de; background: #ffffff; color: #1f2328; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
   .chip:hover { border-color: #0969da; color: #0969da; }
@@ -67,9 +68,8 @@
   .chip.active.tie  { background: #9a6700; border-color: #9a6700; }
   .chip.active.lost { background: #cf222e; border-color: #cf222e; }
   .chip.active.unreviewed { background: #636e7b; border-color: #636e7b; }
-  .filter-divider { width: 1px; height: 20px; background: #d0d7de; }
-  .filter-clear { font-size: 12px; color: #636e7b; background: none; border: none; cursor: pointer; margin-left: auto; padding: 3px 6px; }
-  .filter-clear:hover { color: #cf222e; }
+  .filter-clear { background: #ffffff; border: none; border-left: 1px solid #d0d7de; padding: 6px 10px; cursor: pointer; color: #636e7b; display: flex; align-items: center; transition: background 0.12s, color 0.12s; }
+  .filter-clear:hover { background: #f6f8fa; color: #cf222e; }
   .post.hidden { display: none; }
   .filter-select { font-size: 12px; padding: 4px 26px 4px 9px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23636e7b'/%3E%3C/svg%3E") no-repeat right 7px center / 8px; color: #1f2328; cursor: pointer; appearance: none; -webkit-appearance: none; }
   .filter-select:focus { outline: none; border-color: #0969da; }
@@ -96,41 +96,39 @@
 </div>
 
 <div class="filter-bar" id="filter-bar" style="display:none">
-  <div class="filter-group">
-    <span class="filter-label">Week</span>
-    <div id="f-week"></div>
-  </div>
-  <div class="filter-divider"></div>
-  <div class="filter-group">
-    <span class="filter-label">Topic</span>
-    <div id="f-topic"></div>
-  </div>
-  <div class="filter-divider"></div>
-  <div class="filter-group">
-    <span class="filter-label">Type</span>
-    <div id="f-type"></div>
-  </div>
-  <div class="filter-divider"></div>
-  <div class="filter-group">
-    <span class="filter-label">Feedback</span>
-    <div id="f-feedback">
-      <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
-      <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
-      <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
-      <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+  <div class="filter-bar-group">
+    <div class="filter-group">
+      <span class="filter-label">Week</span>
+      <div id="f-week"></div>
     </div>
+    <div class="filter-group">
+      <span class="filter-label">Topic</span>
+      <div id="f-topic"></div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">Type</span>
+      <div id="f-type"></div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">Feedback</span>
+      <div id="f-feedback">
+        <button class="chip active unreviewed" data-filter="feedback" data-value="unreviewed">Unreviewed</button>
+        <button class="chip active win"        data-filter="feedback" data-value="win">Win</button>
+        <button class="chip active tie"        data-filter="feedback" data-value="tie">Tie</button>
+        <button class="chip active lost"       data-filter="feedback" data-value="lost">Lost</button>
+      </div>
+    </div>
+    <div class="filter-group">
+      <span class="filter-label">Sort</span>
+      <select id="f-sort" class="filter-select">
+        <option value="score-desc">High score</option>
+        <option value="score-asc">Low score</option>
+      </select>
+    </div>
+    <button class="filter-clear" id="filter-clear" title="Clear filters">
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg>
+    </button>
   </div>
-  <div class="filter-divider"></div>
-  <div class="filter-group">
-    <span class="filter-label">Sort</span>
-    <select id="f-sort" class="filter-select">
-      <option value="score-desc">High score</option>
-      <option value="score-asc">Low score</option>
-    </select>
-  </div>
-  <button class="filter-clear" id="filter-clear" title="Clear filters">
-    <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"/></svg>
-  </button>
 </div>
 
 <main>
