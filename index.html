@@ -327,7 +327,10 @@ async function load() {
   makeSelect("f-type",  "type",  "types",  [...new Set(rows.map(r => r.type).filter(Boolean))]);
 
   const weekSel = document.querySelector("#f-week select");
-  const latestWeek = [...weekSel.options].filter(o => o.value).map(o => Number(o.value)).sort((a, b) => b - a)[0];
+  const weeksWithFeedback = rows.filter(r => r.feedback).map(r => Number(r.week)).filter(Boolean);
+  const latestWeek = weeksWithFeedback.length
+    ? Math.max(...weeksWithFeedback)
+    : Math.max(...[...weekSel.options].filter(o => o.value).map(o => Number(o.value)));
   if (latestWeek) weekSel.value = String(latestWeek);
   weekSel.addEventListener("change", syncWeekLabel);
   syncWeekLabel();
