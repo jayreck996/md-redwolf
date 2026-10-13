@@ -2,6 +2,16 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 23:10 -> Week 41 media re-evaluated after batch regeneration (commit f552bd3)
+
+**Relinked:** f552bd3 reset all six week 41 media URLs to non-existent placeholders (404). All six relinked.
+
+**Unchanged (content identical to d2ad2a5):** post-013, post-015, post-016, post-017, post-018 — existing graphics kept.
+
+**Replaced:** post-014 is now Cybersecurity Convergence (was Physical Security Threats). New graphic https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-014-cyber-physical.png — IT/physical Venn with the overlap (building automation, access control, IP cameras, intercoms), three attack vectors from the copy (outdated building automation, phished credentials, physical entry to network breach) and a four-point unified approach. Removed post-014-physical-threats.png.
+
+**Verify:** post-014 copy calls the convergence gap "the fastest-growing risk for NZ organisations" — unsourced; soften or cite. Open items for post-016 and post-017 from the 23:00 entry still apply.
+
 ## ASSET:redwolf 2026-10-13 23:00 -> Week 41 media updated for LinkedIn-research rewrite (commit 50491bb)
 
 **Media URLs unchanged** (same filenames, all 18 table links return 200). Files updated in place:
