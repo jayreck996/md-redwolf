@@ -44,6 +44,9 @@
   .btn-comment-delete { font-size: 12px; padding: 6px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; color: #636e7b; cursor: pointer; white-space: nowrap; transition: all 0.12s; }
   .btn-comment-delete:hover { border-color: #cf222e; color: #cf222e; background: #ffebe9; }
   .btn-comment-delete:disabled { opacity: 0.4; cursor: not-allowed; }
+  .saved-comment { font-size: 11px; color: #636e7b; padding: 4px 2px; display: none; }
+  .saved-comment.visible { display: block; }
+  .saved-comment-label { font-weight: 600; color: #8c959f; margin-right: 4px; }
   .btn { padding: 5px 14px; font-size: 13px; font-weight: 500; border: 1px solid; border-radius: 6px; cursor: pointer; transition: all 0.15s; background: #ffffff; }
   .btn-win  { color: #1a7f37; border-color: #1a7f3766; }
   .btn-win:hover, .btn-win.active  { background: #dafbe1; border-color: #1a7f37; }
@@ -239,6 +242,7 @@ async function submitFeedback(postId, result, comment, btn, statusEl, allBtns, c
         statusEl.className = "status ok";
       }
       allBtns.forEach(b => b.disabled = false);
+      return true;
     } else {
       throw new Error(`HTTP ${res.status}`);
     }
@@ -246,6 +250,7 @@ async function submitFeedback(postId, result, comment, btn, statusEl, allBtns, c
     statusEl.textContent = `Error: ${e.message}`;
     statusEl.className = "status err";
     allBtns.forEach(b => b.disabled = false);
+    return false;
   }
 }
 
@@ -305,6 +310,7 @@ async function load() {
           <button class="btn-comment-post">Post</button>
           <button class="btn-comment-delete">Delete</button>
         </div>
+        <div class="saved-comment ${row['feedback-comment'] ? 'visible' : ''}"><span class="saved-comment-label">Saved:</span>${(row['feedback-comment']||'').replace(/</g,'&lt;')}</div>
       </div>`;
 
     const btns = [...div.querySelectorAll(".btn")];
@@ -321,11 +327,18 @@ async function load() {
       });
     });
 
-    const savedComment = row["feedback-comment"] || "";
+    let savedComment = row["feedback-comment"] || "";
+    const savedCommentEl = div.querySelector(".saved-comment");
     function syncCommentButtons() {
       const hasText = commentEl.value.trim().length > 0;
       postCommentBtn.style.display   = hasText ? "" : "none";
       deleteCommentBtn.style.display = !hasText && savedComment ? "" : "none";
+    }
+    function updateSavedComment(text) {
+      savedComment = text;
+      savedCommentEl.innerHTML = text ? `<span class="saved-comment-label">Saved:</span>${text.replace(/</g,'&lt;')}` : "";
+      savedCommentEl.classList.toggle("visible", !!text);
+      syncCommentButtons();
     }
     commentEl.addEventListener("input", syncCommentButtons);
     syncCommentButtons();
@@ -334,15 +347,16 @@ async function load() {
       const activeBtn = btns.find(b => b.classList.contains("active"));
       const result  = activeBtn?.dataset.result || feedback || "";
       const comment = commentEl.value.trim();
-      submitFeedback(row.item, result, comment, null, statusEl, btns, true);
+      submitFeedback(row.item, result, comment, null, statusEl, btns, true)
+        .then(ok => { if (ok) updateSavedComment(comment); });
     });
 
     deleteCommentBtn.addEventListener("click", () => {
       const activeBtn = btns.find(b => b.classList.contains("active"));
       const result = activeBtn?.dataset.result || feedback || "";
       commentEl.value = "";
-      syncCommentButtons();
-      submitFeedback(row.item, result, "", null, statusEl, btns, true);
+      submitFeedback(row.item, result, "", null, statusEl, btns, true)
+        .then(ok => { if (ok) updateSavedComment(""); });
     });
     if (feedback) {
       btns.forEach(b => {
