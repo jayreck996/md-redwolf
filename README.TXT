@@ -27,8 +27,10 @@ STEP 1 — RESEARCH
   Read MUST/README.TXT        content generation rules
   Read MUST/TREE-2026Q3.json  pillars, subtypes, connections
   Read COULD/README.TXT       brand values, asset rules
-  Web-browse every LinkedIn page that will be tagged in this batch
-  (confirm active, correct slug, note recent activity — rule 4)
+  For each connection in TREE-2026Q3.json connections{}:
+    navigate to linkedin.com/company/<slug>/posts/
+    run get_page_text — confirm active, slug correct, note recent posts
+  (see rule 4 in MUST/README.TXT)
 
 STEP 2 — GENERATE
   Open SHOULD/TABLE-2026Q3.csv
