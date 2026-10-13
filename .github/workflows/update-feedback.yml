@@ -13,45 +13,82 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Update feedback in CSV
+      - name: Update feedback in CSV and tree
         env:
           POST_ID: ${{ github.event.client_payload.post_id }}
           RESULT:  ${{ github.event.client_payload.result }}
+          COMMENT: ${{ github.event.client_payload.comment }}
         run: |
           python3 - <<'EOF'
-          import csv, os, sys
+          import csv, json, os, sys
 
-          post_id = os.environ["POST_ID"]
-          result  = os.environ["RESULT"]
-          path    = "SHOULD/TABLE-2026Q3.csv"
+          post_id  = os.environ["POST_ID"]
+          result   = os.environ["RESULT"]
+          comment  = os.environ.get("COMMENT", "")
+          csv_path  = "SHOULD/TABLE-2026Q3.csv"
+          tree_path = "MUST/TREE-2026Q3.json"
 
           if result not in ("win", "tie", "lost", ""):
               print(f"Invalid result: {result}")
               sys.exit(1)
 
+          # --- update CSV ---
+          subtopic = None
           rows = []
-          with open(path, newline="", encoding="utf-8") as f:
+          with open(csv_path, newline="", encoding="utf-8") as f:
               reader = csv.DictReader(f)
-              fieldnames = reader.fieldnames
+              fieldnames = list(reader.fieldnames)
               if "feedback" not in fieldnames:
-                  fieldnames = list(fieldnames) + ["feedback"]
+                  fieldnames.append("feedback")
+              if "feedback-comment" not in fieldnames:
+                  fieldnames.append("feedback-comment")
               for row in reader:
                   if row["item"] == post_id:
                       row["feedback"] = result
+                      row["feedback-comment"] = comment
+                      subtopic = row.get("subtopic", "")
                   rows.append(row)
 
-          with open(path, "w", newline="", encoding="utf-8") as f:
+          with open(csv_path, "w", newline="", encoding="utf-8") as f:
               writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)
               writer.writeheader()
               writer.writerows(rows)
 
-          print(f"Updated {post_id} -> {result}")
+          print(f"CSV: {post_id} -> {result} (comment: {comment!r})")
+
+          # --- update tree ---
+          if not subtopic or not result:
+              print("No subtopic or result — skipping tree update")
+              sys.exit(0)
+
+          with open(tree_path, encoding="utf-8") as f:
+              tree = json.load(f)
+
+          updated = False
+          for category in tree["tree"]:
+              for t in category["types"]:
+                  for st in t["subtypes"]:
+                      if st["name"] == subtopic:
+                          fb = st.setdefault("feedback", {"win": 0, "tie": 0, "lost": 0, "comments": []})
+                          fb.setdefault("comments", [])
+                          fb[result] = fb.get(result, 0) + 1
+                          if comment:
+                              fb["comments"].append(comment)
+                          updated = True
+
+          if updated:
+              with open(tree_path, "w", encoding="utf-8") as f:
+                  json.dump(tree, f, indent=2, ensure_ascii=False)
+                  f.write("\n")
+              print(f"Tree: {subtopic} {result} incremented")
+          else:
+              print(f"Tree: subtopic '{subtopic}' not found — no tree update")
           EOF
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add SHOULD/TABLE-2026Q3.csv
+          git add SHOULD/TABLE-2026Q3.csv MUST/TREE-2026Q3.json
           git diff --cached --quiet || git commit -m "feedback: ${{ github.event.client_payload.post_id }} -> ${{ github.event.client_payload.result }}"
           git push

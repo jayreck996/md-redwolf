@@ -17,6 +17,13 @@ REPO STRUCTURE
 ORCHESTRATION — HOW TO RUN A CONTENT BATCH
 ============================================================
 
+STEP 0 — LEARN
+  Counts and comments update automatically when client submits
+  feedback (GitHub Actions writes to both CSV and tree).
+  Before generating the next batch, read TREE-2026Q3.json —
+  check win/tie/lost counts and comments per subtype to inform
+  subtype selection and content angle.
+
 STEP 1 — RESEARCH
   Read MUST/README.TXT        content generation rules
   Read MUST/TREE-2026Q3.json  pillars, subtypes, connections
