@@ -5,6 +5,31 @@ NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES.
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 -> Client review SPA: GitHub Pages weekly content approval UI
+
+**Live URL:** https://jayreck996.github.io/md-redwolf/
+**Local dev:** `python3 -m http.server 3000` from repo root → http://localhost:3000
+
+**What it does:** Single-page app for the Red Wolf client to review weekly LinkedIn posts and submit Win/Tie/Lost feedback. Feedback triggers a GitHub Actions workflow that writes the result back to `SHOULD/TABLE-2026Q3.csv` and commits.
+
+**Files:**
+- `index.html` — full SPA (vanilla JS, no framework); fetches `SHOULD/TABLE-2026Q3.csv` from raw.githubusercontent.com
+- `.github/workflows/update-feedback.yml` — `repository_dispatch` workflow; validates result, updates CSV, commits with `github-actions[bot]`
+
+**Auth:** Fine-grained GitHub PAT (stored in `index.html`) scoped to `md-redwolf` repo with Actions: Read and Write only. PAT is embedded client-side — acceptable for a private internal review tool; rotate if repo ever goes fully public.
+
+**Card layout (top → bottom):**
+1. Badges (topic, type) + post ID + score
+2. Title + description
+3. LinkedIn tag (`linkedin account tag` column)
+4. Hashtags
+5. Media box (360px fixed height): inline image (`object-fit: contain`), Google Docs Viewer iframe for PDF, dashed placeholder box for pending media
+6. Feedback row: Win / Tie / Lost buttons + status + Copy button (copies title + description + tag + hashtags to clipboard)
+
+**CSV path fix:** folder is `SHOULD` (uppercase) on GitHub — raw URLs are case-sensitive. Both `index.html` and the workflow use `SHOULD/TABLE-2026Q3.csv`.
+
+**Commits:** `3d31d26` fix case, `2f19075` inline image preview, `6278805` light theme + PDF, `a276a8c` media-pending box, `5d7b182` fixed-height media, `5180f99` hashtag/media swap, `500a81d` LinkedIn tag section, `8107f42` copy button
+
 ## ASSET:redwolf 2026-10-13 -> Research branch: LinkedIn connections, score, week column
 
 **Branch:** `research`
