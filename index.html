@@ -34,9 +34,16 @@
   .feedback { padding: 12px 16px; border-top: 1px solid #eaeef2; display: flex; flex-direction: column; gap: 8px; background: #f6f8fa; }
   .feedback-buttons { display: flex; align-items: center; gap: 8px; }
   .feedback-buttons span { font-size: 12px; color: #636e7b; margin-right: 4px; }
-  .feedback-comment { width: 100%; font-size: 12px; padding: 6px 10px; border: 1px solid #d0d7de; border-radius: 6px; background: #ffffff; color: #1f2328; outline: none; transition: border-color 0.15s, box-shadow 0.15s; }
+  .feedback-comment-row { display: flex; gap: 6px; align-items: center; }
+  .feedback-comment { flex: 1; font-size: 12px; padding: 6px 10px; border: 1px solid #d0d7de; border-radius: 6px; background: #ffffff; color: #1f2328; outline: none; transition: border-color 0.15s, box-shadow 0.15s; }
   .feedback-comment:focus { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,0.1); }
   .feedback-comment::placeholder { color: #afb8c1; }
+  .btn-comment-post { font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 6px; border: none; background: #0969da; color: #fff; cursor: pointer; white-space: nowrap; transition: background 0.12s; }
+  .btn-comment-post:hover { background: #0860ca; }
+  .btn-comment-post:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-comment-delete { font-size: 12px; padding: 6px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #fff; color: #636e7b; cursor: pointer; white-space: nowrap; transition: all 0.12s; }
+  .btn-comment-delete:hover { border-color: #cf222e; color: #cf222e; background: #ffebe9; }
+  .btn-comment-delete:disabled { opacity: 0.4; cursor: not-allowed; }
   .btn { padding: 5px 14px; font-size: 13px; font-weight: 500; border: 1px solid; border-radius: 6px; cursor: pointer; transition: all 0.15s; background: #ffffff; }
   .btn-win  { color: #1a7f37; border-color: #1a7f3766; }
   .btn-win:hover, .btn-win.active  { background: #dafbe1; border-color: #1a7f37; }
@@ -198,8 +205,8 @@ function mediaLink(row) {
   return `<div class="post-media"><a href="${url}" target="_blank">${label}</a></div>`;
 }
 
-async function submitFeedback(postId, result, comment, btn, statusEl, allBtns) {
-  allBtns.forEach(b => { b.disabled = true; b.style.opacity = ""; });
+async function submitFeedback(postId, result, comment, btn, statusEl, allBtns, commentOnly = false) {
+  allBtns.forEach(b => b.disabled = true);
   statusEl.textContent = "Submitting…";
   statusEl.className = "status";
   try {
@@ -216,7 +223,12 @@ async function submitFeedback(postId, result, comment, btn, statusEl, allBtns) {
       })
     });
     if (res.status === 204) {
-      if (result === "") {
+      if (commentOnly) {
+        const activeResult = allBtns.find(b => b.classList.contains("active"))?.dataset.result;
+        allBtns.forEach(b => { b.style.opacity = activeResult && b.dataset.result !== activeResult ? "0.35" : ""; });
+        statusEl.textContent = comment ? "Comment saved" : "Comment cleared";
+        statusEl.className = "status ok";
+      } else if (result === "") {
         allBtns.forEach(b => { b.classList.remove("active"); b.style.opacity = ""; });
         statusEl.textContent = "Cleared";
         statusEl.className = "status";
@@ -233,7 +245,7 @@ async function submitFeedback(postId, result, comment, btn, statusEl, allBtns) {
   } catch (e) {
     statusEl.textContent = `Error: ${e.message}`;
     statusEl.className = "status err";
-    allBtns.forEach(b => { b.disabled = false; b.style.opacity = ""; });
+    allBtns.forEach(b => b.disabled = false);
   }
 }
 
@@ -288,18 +300,39 @@ async function load() {
           <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"/><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"/></svg>
           </button>
         </div>
-        <input type="text" class="feedback-comment" placeholder="Add a comment (optional)…" value="${(row['feedback-comment']||'').replace(/"/g,'&quot;')}">
+        <div class="feedback-comment-row">
+          <input type="text" class="feedback-comment" placeholder="Add a comment (optional)…" value="${(row['feedback-comment']||'').replace(/"/g,'&quot;')}">
+          <button class="btn-comment-post">Post</button>
+          <button class="btn-comment-delete">Delete</button>
+        </div>
       </div>`;
 
     const btns = [...div.querySelectorAll(".btn")];
-    const statusEl = div.querySelector(".status");
+    const statusEl  = div.querySelector(".status");
     const commentEl = div.querySelector(".feedback-comment");
+    const postCommentBtn   = div.querySelector(".btn-comment-post");
+    const deleteCommentBtn = div.querySelector(".btn-comment-delete");
+
     btns.forEach(btn => {
       btn.addEventListener("click", () => {
         const result  = btn.classList.contains("active") ? "" : btn.dataset.result;
         const comment = result === "" ? "" : (commentEl?.value || "").trim();
         submitFeedback(row.item, result, comment, btn, statusEl, btns);
       });
+    });
+
+    postCommentBtn.addEventListener("click", () => {
+      const activeBtn = btns.find(b => b.classList.contains("active"));
+      const result  = activeBtn?.dataset.result || feedback || "";
+      const comment = (commentEl?.value || "").trim();
+      submitFeedback(row.item, result, comment, null, statusEl, btns, true);
+    });
+
+    deleteCommentBtn.addEventListener("click", () => {
+      const activeBtn = btns.find(b => b.classList.contains("active"));
+      const result = activeBtn?.dataset.result || feedback || "";
+      commentEl.value = "";
+      submitFeedback(row.item, result, "", null, statusEl, btns, true);
     });
     if (feedback) {
       btns.forEach(b => {
