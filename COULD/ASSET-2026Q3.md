@@ -5,6 +5,24 @@ NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES.
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 -> SPA auth: GitHub classic PAT via Actions secret + config.js
+
+**Problem:** Token needed client-side to call `POST /repos/.../dispatches`. Embedded in source → GitHub push protection auto-revokes it.
+
+**Solution:**
+- Source `index.html` uses placeholder `__REVIEW_PAT__`
+- `.github/workflows/deploy-pages.yml` runs `sed` to inject `secrets.MD_REDWOLF` at Pages deploy time
+- Local dev: `config.js` (gitignored via `.gitignore`) sets `window.__MD_REDWOLF__`; `index.html` reads it as fallback
+- Token line: `const TOKEN = "__REVIEW_PAT__".startsWith("__") ? (window.__MD_REDWOLF__ || "") : "__REVIEW_PAT__";`
+
+**Token type:** Must be a **classic PAT** with `public_repo` scope — fine-grained PATs do not support `repository_dispatch` (returns 403 "Resource not accessible by personal access token")
+
+**GitHub secret:** `MD_REDWOLF` (underscore) in repo Settings → Secrets and variables → Actions
+
+**Feedback workflow fix:** Added `permissions: contents: write` to `update-feedback.yml` — required for the `git push` step to commit CSV updates back to the repo
+
+**Status:** End-to-end confirmed working on localhost — button click → `repository_dispatch` → workflow → `SHOULD/TABLE-2026Q3.csv` updated with `feedback` column
+
 ## ASSET:redwolf 2026-10-13 -> Client review SPA: GitHub Pages weekly content approval UI
 
 **Live URL:** https://jayreck996.github.io/md-redwolf/
