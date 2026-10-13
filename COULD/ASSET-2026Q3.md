@@ -5,6 +5,28 @@ NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES.
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 -> Week 28 content batch generated (post-007 to post-012)
+
+**Branch:** `main`
+
+**Posts added to SHOULD/TABLE-2026Q3.csv:**
+
+| Item | Category | Type | Subtopic | Score | Status |
+|------|----------|------|----------|-------|--------|
+| post-007 | SERVICES | Monitoring & Response | Network Operations Centre | 7 | BLOCKED: needs NOC photo |
+| post-008 | INDUSTRY | Technology Trends | AI in Surveillance | 8 | BLOCKED: needs AI detection infographic |
+| post-009 | AUTHORITY | Thought Leadership | Expert Opinion | 8 | BLOCKED: needs 5-point tip card graphic |
+| post-010 | PEOPLE | Team Spotlight | Staff Profiles | 7 | BLOCKED: needs staff/team photo |
+| post-011 | TRUST | Testimonials & Social Proof | Client Quotes | 8 | BLOCKED: needs client quote graphic; verify client approval for story |
+| post-012 | ENGAGEMENT | Interactive | Questions & Debates | 7 | BLOCKED: needs branded opinion graphic |
+
+**Subtypes deliberately varied from week 27** (no repeat of CCTV, Emerging Risks, Awards, Behind the Scenes, Case Study/Commercial, Polls).
+
+**Verify before publishing:**
+- post-008: confirm Bosch tag is appropriate (check partnership scope)
+- post-009: "20+ years" — Red Wolf founded 2005, so 21 years in 2026; adjust copy if needed
+- post-011: client story must be anonymised or have written approval before posting
+
 ## ASSET:redwolf 2026-10-13 -> Research branch: LinkedIn connections, score, week column
 
 **Branch:** `research`
