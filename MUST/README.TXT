@@ -39,12 +39,11 @@ CONTENT GENERATION RULES
    INDUSTRY/PEOPLE=8, SERVICES/ENGAGEMENT=7.
    Adjust by subtype quality (e.g. Thought Leadership=8,
    Testimonials=8, Staff Profiles=7).
-4. [PARKED] Value assignment — leave the value column empty for now.
-5. Research all connection LinkedIn pages before generating
+4. Research all connection LinkedIn pages before generating
    content that tags or references them.
-6. Only tag partners when the post is directly relevant to
+5. Only tag partners when the post is directly relevant to
    their product or domain.
-7. All new posts go into TABLE-2026Q3.csv with status BLOCKED
+6. All new posts go into TABLE-2026Q3.csv with status BLOCKED
    until media and any required approvals are in place.
 
 ============================================================
