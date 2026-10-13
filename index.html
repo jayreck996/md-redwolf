@@ -66,7 +66,7 @@
 <script>
 const OWNER  = "jayreck996";
 const REPO   = "md-redwolf";
-const TOKEN  = "__REVIEW_PAT__";
+const TOKEN  = "__REVIEW_PAT__".startsWith("__") ? localStorage.getItem("REVIEW_PAT") || "" : "__REVIEW_PAT__";
 const CSV_URL = `https://raw.githubusercontent.com/${OWNER}/${REPO}/main/SHOULD/TABLE-2026Q3.csv`;
 
 function parseCSV(text) {
