@@ -42,7 +42,7 @@
   .status.ok   { color: #1a7f37; }
   .status.err  { color: #cf222e; }
   .loading { text-align: center; padding: 48px; color: #636e7b; }
-  .hashtags { font-size: 11px; color: #0969da; margin-top: 6px; }
+  .hashtags { font-size: 11px; color: #0969da; margin-top: 6px; margin-bottom: 12px; }
 </style>
 </head>
 <body>
@@ -153,8 +153,8 @@ async function load() {
       <div class="post-body">
         <div class="post-title">${row.title}</div>
         <div class="post-desc">${row.description}</div>
-        ${mediaLink(row)}
         <div class="hashtags">${row.hashtag}</div>
+        ${mediaLink(row)}
       </div>
       <div class="feedback">
         <span>Feedback:</span>
