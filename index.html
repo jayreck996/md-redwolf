@@ -60,6 +60,10 @@
   .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px 10px; display: flex; justify-content: center; }
   .filter-bar-inner { display: flex; flex-direction: column; }
   .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
+  .filter-search-row { display: flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 8px; padding: 6px 12px; box-shadow: 0 1px 3px rgba(31,35,40,0.06); margin-bottom: 8px; color: #afb8c1; }
+  .filter-search-row:focus-within { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,0.15); color: #0969da; }
+  .filter-search-input { border: none; outline: none; font-size: 13px; color: #1f2328; flex: 1; background: transparent; min-width: 200px; }
+  .filter-search-input::placeholder { color: #afb8c1; }
   .filter-bar-actions { display: flex; justify-content: flex-end; gap: 8px; padding-top: 8px; }
   .btn-filter-reset { font-size: 12px; padding: 5px 12px; border-radius: 6px; border: 1px solid #d0d7de; background: #ffffff; color: #636e7b; cursor: pointer; transition: all 0.12s; }
   .btn-filter-reset:hover { border-color: #cf222e; color: #cf222e; background: #ffebe9; }
@@ -102,6 +106,10 @@
 
 <div class="filter-bar" id="filter-bar" style="display:none">
   <div class="filter-bar-inner">
+    <div class="filter-search-row">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
+      <input type="text" id="keyword-search" class="filter-search-input" placeholder="Search posts…">
+    </div>
     <div class="filter-bar-group">
       <div class="filter-group">
         <span class="filter-label">Week</span>
@@ -236,6 +244,7 @@ async function load() {
     div.dataset.type     = row.type     || "";
     div.dataset.feedback = feedback     || "unreviewed";
     div.dataset.score    = parseFloat(row.score) || 0;
+    div.dataset.search   = [row.title, row.description, row.topic, row.type, row.hashtag, row["linkedin account tag"]].filter(Boolean).join(" ").toLowerCase();
     div.innerHTML = `
       <div class="post-header">
         <span class="badge">${row.topic}</span>
@@ -338,7 +347,9 @@ async function load() {
   document.querySelectorAll("#f-feedback .chip").forEach(chip =>
     chip.addEventListener("click", () => { chip.classList.toggle("active"); applyFilters(); })
   );
+  document.getElementById("keyword-search").addEventListener("input", applyFilters);
   document.getElementById("filter-clear").addEventListener("click", () => {
+    document.getElementById("keyword-search").value = "";
     document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) s.value = ""; });
     document.querySelectorAll(".chip").forEach(c => c.classList.add("active"));
     applyFilters();
@@ -364,6 +375,7 @@ function sortPosts() {
 }
 
 function applyFilters() {
+  const keyword = (document.getElementById("keyword-search")?.value || "").toLowerCase().trim();
   const selVals = {};
   document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) selVals[s.dataset.filter] = s.value; });
   const chipGroups = {};
@@ -378,7 +390,8 @@ function applyFilters() {
     const chipPass = Object.entries(chipGroups).every(([k, { active, total }]) =>
       active.length === 0 || active.length === total || active.includes(post.dataset[k])
     );
-    post.classList.toggle("hidden", !(selPass && chipPass));
+    const kwPass   = !keyword || post.dataset.search.includes(keyword);
+    post.classList.toggle("hidden", !(selPass && chipPass && kwPass));
   });
 }
 
