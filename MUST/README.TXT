@@ -31,6 +31,20 @@ connections{}
                   Bosch, ICT, Jacques Technologies
 
 ============================================================
+CORE VALUES — RED WOLF
+============================================================
+R  Reliable        We consistently deliver on our commitments.
+E  Excellence      We pursue the highest standards in quality and service.
+D  Driven          We are motivated to improve, achieve, and succeed.
+W  We Before Me    Team success comes before individual gain.
+O  Ownership       We take responsibility for actions and outcomes.
+L  Learn           We continuously develop our skills and capability.
+F  Future Focused  We adapt, innovate, and prepare for tomorrow.
+
+Content note: weave these values into post copy where natural.
+PEOPLE and AUTHORITY posts are the strongest fit.
+
+============================================================
 CONTENT GENERATION RULES
 ============================================================
 1. One post per pillar per week — 6 posts per batch.
