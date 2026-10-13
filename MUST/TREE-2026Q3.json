@@ -5,6 +5,15 @@
     "quarter": "2026Q3",
     "created": "2026-10-13"
   },
+  "values": [
+    { "letter": "R", "value": "Reliable",       "tagline": "We consistently deliver on our commitments." },
+    { "letter": "E", "value": "Excellence",      "tagline": "We pursue the highest standards in quality and service." },
+    { "letter": "D", "value": "Driven",          "tagline": "We are motivated to improve, achieve, and succeed." },
+    { "letter": "W", "value": "We Before Me",    "tagline": "Team success comes before individual gain." },
+    { "letter": "O", "value": "Ownership",       "tagline": "We take responsibility for actions and outcomes." },
+    { "letter": "L", "value": "Learn",           "tagline": "We continuously develop our skills and capability." },
+    { "letter": "F", "value": "Future Focused",  "tagline": "We adapt, innovate, and prepare for tomorrow." }
+  ],
   "connections": {
     "own": {
       "Red Wolf High Level Security Ltd": "https://www.linkedin.com/company/red-wolf-high-level-security-ltd"
