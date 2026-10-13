@@ -38,6 +38,31 @@ L  Learn           We continuously develop our skills and capability.
 F  Future Focused  We adapt, innovate, and prepare for tomorrow.
 
 ============================================================
+TARGET AUDIENCE — BRAND PERSONAS (reference only)
+============================================================
+Each tree pillar naturally addresses a different audience.
+Use these as background context, not generation constraints.
+
+  SERVICES / TRUST / AUTHORITY
+    Buyers and decision-makers: Security Managers, Facilities Managers,
+    Operations Managers. Mid-career, 40–55. NZ commercial or government.
+    Care about: reliable delivery, compliance, documentation, IQP,
+    cyber-secure hardware, project closure, clear communication.
+
+  INDUSTRY
+    Industry peers and informed buyers. Follow NZ security regulation,
+    threat trends, and technology shifts. Use Red Wolf content to
+    benchmark and stay current.
+
+  PEOPLE
+    Job seekers and current staff. Technicians, consultants, graduates.
+    Interested in culture, career growth, and what Red Wolf stands for.
+
+  ENGAGEMENT
+    Broad LinkedIn audience — industry peers, business owners, partners.
+    Respond to opinion, polls, and curated news with Red Wolf perspective.
+
+============================================================
 RELATIONSHIP TO OTHER DIRS
 ============================================================
   MUST/   — strategy skeleton (tree doc, connections)

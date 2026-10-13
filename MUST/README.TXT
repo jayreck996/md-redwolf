@@ -47,38 +47,6 @@ CONTENT GENERATION RULES
    until media and any required approvals are in place.
 
 ============================================================
-TARGET AUDIENCE — PRIMARY PERSONA
-============================================================
-Role:     Security Manager (or Facilities / Operations Manager)
-Profile:  Mid-career professional, 40–55, responsible for physical
-          security across one or more commercial or government sites in NZ.
-
-What they need:
-  Reliable solutions     Delivered on time, on spec, no surprises.
-  Project management     Clear milestones, single point of contact,
-                         proactive updates throughout.
-  Quality workmanship    Installations that pass inspection first time.
-  IQP compliance         Access-controlled doors ready for IQP sign-off
-                         under the NZ Building Warrant of Fitness regime.
-  Cyber-secure solutions Hardware and firmware that reduce attack surface;
-                         can explain risk in plain language.
-  Documentation          Full as-builts, manuals, and warranties at handover.
-  Project closure        Formal commissioning sign-off, staff training,
-                         SLA activation — nothing left open.
-  Customer service       Responsive, clear communication before, during,
-                         and after every job.
-
-What they fear:
-  Contractors who disappear after install.
-  Non-compliant installs that fail audit or BWOF inspection.
-  Undocumented systems that create liability.
-  Vendors who can't explain cyber risk without jargon.
-
-Content angle:
-  Speak to confidence, compliance, and care. Show Red Wolf delivers
-  the process, not just the product.
-
-============================================================
 EXTENDING THE TREE
 ============================================================
 - New subtypes can be added to any existing type.
