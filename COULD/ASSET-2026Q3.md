@@ -2,6 +2,28 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 -> Week 41 content batch generated (post-013 to post-018)
+
+**Posts added to SHOULD/TABLE-2026Q3.csv:**
+
+| Item | Category | Type | Subtopic | Value | Score | Status |
+|------|----------|------|----------|-------|-------|--------|
+| post-013 | SERVICES | Consulting & Design | Protective Security Surveys | Ownership | 7 | BLOCKED: needs survey process diagram |
+| post-014 | INDUSTRY | Regulation & Compliance | NZ Security Industry Standards | Learn | 8 | BLOCKED: needs PSR checklist graphic |
+| post-015 | AUTHORITY | Accreditations & Partnerships | NZSA Membership | Excellence | 8 | BLOCKED: needs NZSA trust signals card |
+| post-016 | PEOPLE | Culture & Values | Company Culture | We Before Me | 7 | BLOCKED: needs team culture photo or values card |
+| post-017 | TRUST | Compliance & Certifications | ISO 9001 | Reliable | 8 | BLOCKED: needs ISO 9001 explainer card |
+| post-018 | ENGAGEMENT | Community & Reposts | Industry News Commentary | Future Focused | 7 | BLOCKED: needs 3-trend commentary graphic |
+
+**Persona alignment:** All posts written to the Security Manager persona (MUST/README.TXT) — compliance, quality, reliability, and process themes throughout.
+
+**Tags used:** @Red Wolf High Level Security Ltd on all posts. @New Zealand Security Association on post-014, 015, 018.
+
+**Verify before publishing:**
+- post-014: confirm PSR framework details are current for 2026
+- post-015: confirm NZSA membership is active and licence details are accurate
+- post-017: confirm ISO 9001 certification is current before publishing
+
 ## ASSET:redwolf 2026-10-13 -> Structural updates: feedback-comment column, tree feedback counts, week number correction
 
 **CSV — SHOULD/TABLE-2026Q3.csv:**
