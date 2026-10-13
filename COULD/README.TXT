@@ -27,6 +27,17 @@ WHEN TO LOG AN ASSET
 - Decisions about what was kept out of media or copy
 
 ============================================================
+CORE VALUES — RED WOLF
+============================================================
+R  Reliable        We consistently deliver on our commitments.
+E  Excellence      We pursue the highest standards in quality and service.
+D  Driven          We are motivated to improve, achieve, and succeed.
+W  We Before Me    Team success comes before individual gain.
+O  Ownership       We take responsibility for actions and outcomes.
+L  Learn           We continuously develop our skills and capability.
+F  Future Focused  We adapt, innovate, and prepare for tomorrow.
+
+============================================================
 RELATIONSHIP TO OTHER DIRS
 ============================================================
   MUST/   — strategy skeleton (tree doc, connections)
