@@ -68,7 +68,8 @@
   .filter-toggle-btn:hover { border-color: #0969da; color: #0969da; }
   .filter-toggle-btn.open { border-color: #0969da; color: #0969da; background: #ddf4ff; }
   .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; max-height: 0; overflow: hidden; padding: 0 24px; transition: max-height 0.25s ease, padding 0.2s ease; }
-  .filter-bar.open { max-height: 200px; padding: 8px 24px; }
+  .filter-bar.open { max-height: 300px; padding: 8px 24px; }
+  .week-nav-inline { display: flex; align-items: center; gap: 6px; }
   .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
   .filter-search-row { display: flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 8px; padding: 6px 12px; box-shadow: 0 1px 3px rgba(31,35,40,0.06); color: #afb8c1; }
   .filter-search-row:focus-within { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,0.15); color: #0969da; }
@@ -108,6 +109,21 @@
   </button>
 </div>
 <div class="filter-bar" id="filter-bar">
+  <div class="week-nav-inline">
+    <button class="week-nav-arrow" id="week-prev" title="Previous week">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/></svg>
+    </button>
+    <div class="week-jump" id="week-jump">
+      <button class="week-jump-btn" id="week-jump-btn">
+        <span id="week-nav-label"></span>
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.427 7.427l3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"/></svg>
+      </button>
+      <div class="week-jump-dropdown" id="week-jump-dropdown"></div>
+    </div>
+    <button class="week-nav-arrow" id="week-next" title="Next week">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06z"/></svg>
+    </button>
+  </div>
   <div class="filter-search-row">
     <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
     <input type="text" id="keyword-search" class="filter-search-input" placeholder="Search posts…">
@@ -143,21 +159,6 @@
 </div>
 
 <div id="f-week" style="display:none"></div>
-<div class="week-nav" id="week-nav" style="display:none">
-  <button class="week-nav-arrow" id="week-prev" title="Previous week">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/></svg>
-  </button>
-  <div class="week-jump" id="week-jump" style="margin: 0 8px">
-    <button class="week-jump-btn" id="week-jump-btn">
-      <span id="week-nav-label"></span>
-      <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.427 7.427l3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"/></svg>
-    </button>
-    <div class="week-jump-dropdown" id="week-jump-dropdown"></div>
-  </div>
-  <button class="week-nav-arrow" id="week-next" title="Next week">
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06z"/></svg>
-  </button>
-</div>
 
 <main>
   <h2>Posts for approval</h2>
@@ -376,8 +377,6 @@ async function load() {
   jumpBtn.addEventListener("click", e => { e.stopPropagation(); jumpBtn.classList.toggle("open"); jumpDropdown.classList.toggle("open"); });
   document.addEventListener("click", () => { jumpBtn.classList.remove("open"); jumpDropdown.classList.remove("open"); });
   updateWeekNav();
-  document.getElementById("week-nav").style.display = "";
-
   document.querySelectorAll("#f-feedback .chip").forEach(chip =>
     chip.addEventListener("click", () => { chip.classList.toggle("active"); applyFilters(); })
   );
