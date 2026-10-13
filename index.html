@@ -50,13 +50,16 @@
   .mentions { font-size: 12px; color: #0969da; margin-top: 8px; margin-bottom: 4px; font-weight: 500; }
   .mentions-label { font-size: 11px; color: #636e7b; margin-right: 4px; font-weight: 400; }
   .hashtags { font-size: 11px; color: #0969da; margin-bottom: 12px; }
-  .week-nav { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; align-items: center; justify-content: center; }
-  .week-nav-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); }
-  .week-nav-btn { background: #ffffff; border: none; border-right: 1px solid #d0d7de; width: 36px; cursor: pointer; color: #636e7b; display: flex; align-items: center; justify-content: center; transition: background 0.12s, color 0.12s; }
-  #week-next { border-right: none; border-left: 1px solid #d0d7de; }
-  .week-nav-btn:hover:not(:disabled) { background: #f6f8fa; color: #0969da; }
-  .week-nav-btn:disabled { opacity: 0.35; cursor: default; }
-  .week-nav-label { font-size: 13px; font-weight: 600; color: #1f2328; padding: 7px 20px; min-width: 96px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.01em; }
+  .week-nav { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 8px 24px; display: flex; justify-content: center; }
+  .week-jump { position: relative; }
+  .week-jump-btn { display: flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 8px; padding: 6px 14px; cursor: pointer; font-size: 13px; font-weight: 600; color: #1f2328; box-shadow: 0 1px 3px rgba(31,35,40,0.06); transition: border-color 0.12s, box-shadow 0.12s; }
+  .week-jump-btn:hover, .week-jump-btn.open { border-color: #0969da; color: #0969da; }
+  .week-jump-btn.open { box-shadow: 0 0 0 3px rgba(9,105,218,0.15); }
+  .week-jump-dropdown { position: absolute; top: calc(100% + 6px); left: 50%; transform: translateX(-50%); background: #ffffff; border: 1px solid #d0d7de; border-radius: 8px; box-shadow: 0 8px 24px rgba(31,35,40,0.12); min-width: 150px; overflow: hidden; display: none; z-index: 100; }
+  .week-jump-dropdown.open { display: block; }
+  .week-jump-option { display: block; width: 100%; text-align: left; padding: 8px 16px; font-size: 13px; font-weight: 500; background: none; border: none; cursor: pointer; color: #1f2328; transition: background 0.1s; }
+  .week-jump-option:hover { background: #f6f8fa; }
+  .week-jump-option.active { color: #0969da; font-weight: 600; background: #ddf4ff; }
   .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px 10px; display: flex; justify-content: center; }
   .filter-bar-inner { display: flex; flex-direction: column; }
   .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
@@ -136,14 +139,12 @@
 </div>
 
 <div class="week-nav" id="week-nav" style="display:none">
-  <div class="week-nav-group">
-    <button class="week-nav-btn" id="week-prev" title="Previous week">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/></svg>
+  <div class="week-jump" id="week-jump">
+    <button class="week-jump-btn" id="week-jump-btn">
+      <span id="week-nav-label"></span>
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4.427 7.427l3.396 3.396a.25.25 0 0 0 .354 0l3.396-3.396A.25.25 0 0 0 11.396 7H4.604a.25.25 0 0 0-.177.427Z"/></svg>
     </button>
-    <span class="week-nav-label" id="week-nav-label"></span>
-    <button class="week-nav-btn" id="week-next" title="Next week">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06z"/></svg>
-    </button>
+    <div class="week-jump-dropdown" id="week-jump-dropdown"></div>
   </div>
 </div>
 
@@ -325,22 +326,32 @@ async function load() {
   if (latestWeek) weekSel.value = String(latestWeek);
 
   const weekValues = [...weekSel.options].filter(o => o.value).map(o => o.value).sort((a, b) => Number(a) - Number(b));
+  const jumpBtn = document.getElementById("week-jump-btn");
+  const jumpDropdown = document.getElementById("week-jump-dropdown");
+
+  // "All weeks" option
+  const allOpt = document.createElement("button");
+  allOpt.className = "week-jump-option";
+  allOpt.textContent = "All weeks";
+  allOpt.addEventListener("click", () => { weekSel.value = ""; applyFilters(); updateWeekNav(); jumpDropdown.classList.remove("open"); jumpBtn.classList.remove("open"); });
+  jumpDropdown.appendChild(allOpt);
+
+  weekValues.forEach(w => {
+    const opt = document.createElement("button");
+    opt.className = "week-jump-option";
+    opt.dataset.week = w;
+    opt.textContent = `Week ${w}`;
+    opt.addEventListener("click", () => { weekSel.value = w; applyFilters(); updateWeekNav(); jumpDropdown.classList.remove("open"); jumpBtn.classList.remove("open"); });
+    jumpDropdown.appendChild(opt);
+  });
+
   function updateWeekNav() {
-    const idx = weekValues.indexOf(weekSel.value);
     document.getElementById("week-nav-label").textContent = weekSel.value ? `Week ${weekSel.value}` : "All weeks";
-    document.getElementById("week-prev").disabled = idx <= 0;
-    document.getElementById("week-next").disabled = idx >= weekValues.length - 1;
+    jumpDropdown.querySelectorAll(".week-jump-option").forEach(o => o.classList.toggle("active", o.dataset.week === weekSel.value));
   }
   weekSel.addEventListener("change", updateWeekNav);
-  document.getElementById("week-prev").addEventListener("click", () => {
-    const idx = weekValues.indexOf(weekSel.value);
-    if (idx > 0) { weekSel.value = weekValues[idx - 1]; applyFilters(); updateWeekNav(); }
-  });
-  document.getElementById("week-next").addEventListener("click", () => {
-    const idx = weekValues.indexOf(weekSel.value);
-    const next = idx < 0 ? 0 : idx + 1;
-    if (next < weekValues.length) { weekSel.value = weekValues[next]; applyFilters(); updateWeekNav(); }
-  });
+  jumpBtn.addEventListener("click", e => { e.stopPropagation(); jumpBtn.classList.toggle("open"); jumpDropdown.classList.toggle("open"); });
+  document.addEventListener("click", () => { jumpBtn.classList.remove("open"); jumpDropdown.classList.remove("open"); });
   updateWeekNav();
   document.getElementById("week-nav").style.display = "";
 
