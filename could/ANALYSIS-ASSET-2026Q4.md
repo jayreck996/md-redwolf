@@ -10,6 +10,16 @@ REQUIRED FORMAT FOR EACH ASSET ENTRY:
 ## ASSET:{NAME OF ENVIRONMENT} {YYYY-MM-DD HH:MM} → {CONTENT}
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE, NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES-->## ASSET:rss:buildersandcontractors.co.nz 2026-10-07 11:33 → Industry promotes gaming-to-trades pipeline ("Joystick Trades") as a source of tech-ready apprentices
+## ASSET:rss:buildersandcontractors.co.nz 2026-10-13 13:27 → Workplace testing and wastewater data give contractors early warning to update drug and alcohol policies; feed publishes for a seventh day in a row
+
+**Finding — Early data to act on**
+The article combines several data sources: police wastewater testing, the Drug Trends Survey, the NZ Health Survey and workplace testing results broken down by region. Together they give employers early, measurable evidence of a changing impairment risk. Contractors can use the figures, including 2.8% of positive tests nationally and 3.1% in Canterbury, to justify reviewing their testing panels, how often they test, and the support they offer staff, before a site incident happens.
+
+**Finding 2 — Testing already catches the trend**
+The 68.5% year-on-year rise in cocaine-positive results shows that current workplace testing programmes are picking up the change. Firms with established drug and alcohol testing are well placed to show they are meeting their health and safety duties.
+
+**Finding 3 — Feed is publishing steadily**
+This is the seventh item on seven days in a row (gamers-to-tradies, cost index, touchscreen distraction, freight anniversary, insolvency guidance, Cordell cost index, workplace cocaine use), after the 18-day gap in September. A Skills Group white paper calling for degree-level apprenticeships appeared on 2026-10-13 NZ time, which is outside this window. The source keeps publishing every day, and its workforce coverage is growing.
 ## ASSET:rss:buildersandcontractors.co.nz 2026-10-12 10:43 → Annual dwelling consents climb from 34,000 to 40,000, pointing to a stronger build pipeline; feed publishes for a sixth day in a row
 
 **Finding — The consent pipeline is growing**
