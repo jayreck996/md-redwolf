@@ -321,10 +321,19 @@ async function load() {
       });
     });
 
+    const savedComment = row["feedback-comment"] || "";
+    function syncCommentButtons() {
+      const hasText = commentEl.value.trim().length > 0;
+      postCommentBtn.style.display   = hasText ? "" : "none";
+      deleteCommentBtn.style.display = !hasText && savedComment ? "" : "none";
+    }
+    commentEl.addEventListener("input", syncCommentButtons);
+    syncCommentButtons();
+
     postCommentBtn.addEventListener("click", () => {
       const activeBtn = btns.find(b => b.classList.contains("active"));
       const result  = activeBtn?.dataset.result || feedback || "";
-      const comment = (commentEl?.value || "").trim();
+      const comment = commentEl.value.trim();
       submitFeedback(row.item, result, comment, null, statusEl, btns, true);
     });
 
@@ -332,6 +341,7 @@ async function load() {
       const activeBtn = btns.find(b => b.classList.contains("active"));
       const result = activeBtn?.dataset.result || feedback || "";
       commentEl.value = "";
+      syncCommentButtons();
       submitFeedback(row.item, result, "", null, statusEl, btns, true);
     });
     if (feedback) {
