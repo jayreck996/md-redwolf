@@ -233,7 +233,7 @@ async function load() {
   const qMatch = CSV_URL.match(/TABLE-(\d{4})(Q\d)\.csv/i);
   const qLabel = qMatch ? `${qMatch[2]} ${qMatch[1]}` : "";
   function syncWeekLabel() {
-    const w = document.querySelector("#f-week select")?.value;
+    const w = document.querySelector("#f-week select")?.value || String(latestWeek);
     document.getElementById("week-label").textContent = w ? `${qLabel} · Week ${w}` : qLabel;
   }
   document.getElementById("week-label").textContent = qLabel;
@@ -347,9 +347,12 @@ async function load() {
   document.getElementById("keyword-search").addEventListener("input", applyFilters);
   document.getElementById("filter-clear").addEventListener("click", () => {
     document.getElementById("keyword-search").value = "";
-    document.querySelectorAll(".filter-select").forEach(s => { if (s.dataset.filter) s.value = ""; });
+    document.querySelectorAll(".filter-select").forEach(s => {
+      if (s.dataset.filter) s.value = s.dataset.filter === "week" ? String(latestWeek) : "";
+    });
     document.querySelectorAll(".chip").forEach(c => c.classList.add("active"));
     syncFeedbackReset();
+    syncWeekLabel();
     applyFilters();
   });
   document.getElementById("filter-search").addEventListener("click", applyFilters);
