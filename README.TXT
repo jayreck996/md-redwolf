@@ -38,7 +38,7 @@ STEP 2 — GENERATE
     topic     — one of the 6 pillars
     type      — from the pillar's type list in the tree
     subtopic  — from the type's subtype list (no repeats in quarter)
-    value     — from RED WOLF values in COULD/README.TXT
+    value     — [PARKED] leave empty for now
     score     — using the scoring logic in MUST/README.TXT
     tags      — @Red Wolf always; partners only if directly relevant
   Set all new posts to BLOCKED status until media is ready
