@@ -5,6 +5,25 @@ NEVER DELETE OR EDIT PREVIOUS ASSET ENTRIES.
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 18:05 -> Week 28 media generated (post-007, 008, 009, 011, 012)
+
+**Media (SHOULD/media/2026Q3/, same brand system as week 27, 1080x1350):**
+- post-007 alarm-to-resolution timeline: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-007-noc-alarm-timeline.png
+- post-008 AI detection event types: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-008-ai-analytics.png
+- post-009 five mistakes tip card: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-009-five-mistakes.png
+- post-011 late-night incident timeline: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-011-late-night-response.png
+- post-012 hot take opinion graphic: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-012-hot-take.png
+
+**Status:**
+- post-007 READY as a graphic instead of a NOC photo. No response times or site counts on the graphic; verify "hundreds of sites" and "Wellington and Auckland" in post copy.
+- post-008 READY. No Bosch branding on the graphic; confirm the Bosch tag fits the partnership.
+- post-009 READY. Mistakes 4 and 5 (untested systems, unmanaged contractor access) added to complete the five. Verify "20+ years" in post copy.
+- post-010 BLOCKED: needs staff photo and real technician quotes with consent; verify "6+ years" average tenure. Placeholder file added so its link no longer 404s.
+- post-011 READY as an incident timeline, deliberately without a client quote. Add a real quote only with the client's written approval; confirm the 11pm CBD incident details.
+- post-012 READY. Opinion only, no figures.
+
+**Table:** media and media URL updated for post-007/008/009/011/012.
+
 ## ASSET:redwolf 2026-10-13 -> Week 28 content batch generated (post-007 to post-012)
 
 **Branch:** `main`
