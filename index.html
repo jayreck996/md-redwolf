@@ -63,7 +63,12 @@
   .week-nav-arrow { background: none; border: 1px solid #d0d7de; border-radius: 6px; width: 30px; height: 30px; cursor: pointer; color: #636e7b; display: flex; align-items: center; justify-content: center; transition: all 0.12s; }
   .week-nav-arrow:hover:not(:disabled) { border-color: #0969da; color: #0969da; }
   .week-nav-arrow:disabled { opacity: 0.35; cursor: default; }
-  .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 8px 24px; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+  .filter-toggle-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 6px 24px; display: flex; align-items: center; }
+  .filter-toggle-btn { display: flex; align-items: center; gap: 6px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 6px; padding: 5px 12px; cursor: pointer; font-size: 12px; font-weight: 500; color: #636e7b; box-shadow: 0 1px 3px rgba(31,35,40,0.06); transition: all 0.12s; }
+  .filter-toggle-btn:hover { border-color: #0969da; color: #0969da; }
+  .filter-toggle-btn.open { border-color: #0969da; color: #0969da; background: #ddf4ff; }
+  .filter-bar { background: #f6f8fa; border-bottom: 1px solid #d0d7de; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; max-height: 0; overflow: hidden; padding: 0 24px; transition: max-height 0.25s ease, padding 0.2s ease; }
+  .filter-bar.open { max-height: 200px; padding: 8px 24px; }
   .filter-bar-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); flex-wrap: wrap; }
   .filter-search-row { display: flex; align-items: center; gap: 8px; background: #ffffff; border: 1px solid #d0d7de; border-radius: 8px; padding: 6px 12px; box-shadow: 0 1px 3px rgba(31,35,40,0.06); color: #afb8c1; }
   .filter-search-row:focus-within { border-color: #0969da; box-shadow: 0 0 0 3px rgba(9,105,218,0.15); color: #0969da; }
@@ -96,7 +101,13 @@
   <span id="week-label"></span>
 </header>
 
-<div class="filter-bar" id="filter-bar" style="display:none">
+<div class="filter-toggle-bar" id="filter-toggle-bar" style="display:none">
+  <button class="filter-toggle-btn" id="filter-toggle">
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5ZM5.25 7.5h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5ZM7.75 12h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z"/></svg>
+    Filters
+  </button>
+</div>
+<div class="filter-bar" id="filter-bar">
   <div class="filter-search-row">
     <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
     <input type="text" id="keyword-search" class="filter-search-input" placeholder="Search posts…">
@@ -382,7 +393,11 @@ async function load() {
   document.getElementById("f-sort").addEventListener("change", sortPosts);
   sortPosts();
   applyFilters();
-  document.getElementById("filter-bar").style.display = "";
+  document.getElementById("filter-toggle-bar").style.display = "";
+  document.getElementById("filter-toggle").addEventListener("click", () => {
+    document.getElementById("filter-bar").classList.toggle("open");
+    document.getElementById("filter-toggle").classList.toggle("open");
+  });
 }
 
 function sortPosts() {
