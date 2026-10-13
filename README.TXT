@@ -36,11 +36,13 @@ STEP 2 — GENERATE
   Open SHOULD/TABLE-2026Q3.csv
   Add 6 new rows — one per pillar — for the next week number
   For each post assign:
-    topic     — one of the 6 pillars
-    type      — from the pillar's type list in the tree
-    subtopic  — from the type's subtype list (no repeats in quarter)
-    score     — using the scoring logic in MUST/README.TXT
-    tags      — @Red Wolf always; partners only if directly relevant
+    topic      — one of the 6 pillars
+    type       — from the pillar's type list in the tree
+    subtopic   — from the type's subtype list (no repeats in quarter)
+    score      — using the scoring logic in MUST/README.TXT
+    tags       — @Red Wolf always; partners only if directly relevant
+    media-type — choose the format that best suits the content
+                 (png / jpg / pdf / mp4 — see rule 6 in MUST/README.TXT)
   Set all new posts to BLOCKED status until media is ready
 
 STEP 3 — MEDIA
