@@ -50,11 +50,13 @@
   .mentions { font-size: 12px; color: #0969da; margin-top: 8px; margin-bottom: 4px; font-weight: 500; }
   .mentions-label { font-size: 11px; color: #636e7b; margin-right: 4px; font-weight: 400; }
   .hashtags { font-size: 11px; color: #0969da; margin-bottom: 12px; }
-  .week-nav { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 8px 24px; display: flex; align-items: center; gap: 10px; justify-content: center; }
-  .week-nav-btn { background: none; border: 1px solid #d0d7de; border-radius: 6px; width: 28px; height: 28px; cursor: pointer; color: #636e7b; font-size: 20px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: all 0.12s; }
-  .week-nav-btn:hover:not(:disabled) { border-color: #0969da; color: #0969da; }
+  .week-nav { background: #f6f8fa; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; align-items: center; justify-content: center; }
+  .week-nav-group { display: flex; align-items: stretch; border: 1px solid #d0d7de; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 1px 3px rgba(31,35,40,0.06); }
+  .week-nav-btn { background: #ffffff; border: none; border-right: 1px solid #d0d7de; width: 36px; cursor: pointer; color: #636e7b; display: flex; align-items: center; justify-content: center; transition: background 0.12s, color 0.12s; }
+  #week-next { border-right: none; border-left: 1px solid #d0d7de; }
+  .week-nav-btn:hover:not(:disabled) { background: #f6f8fa; color: #0969da; }
   .week-nav-btn:disabled { opacity: 0.35; cursor: default; }
-  .week-nav-label { font-size: 14px; font-weight: 600; color: #1f2328; min-width: 76px; text-align: center; }
+  .week-nav-label { font-size: 13px; font-weight: 600; color: #1f2328; padding: 7px 20px; min-width: 96px; text-align: center; display: flex; align-items: center; justify-content: center; letter-spacing: 0.01em; }
   .filter-bar { background: #ffffff; border-bottom: 1px solid #d0d7de; padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .filter-group { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
   .filter-label { font-size: 11px; font-weight: 600; color: #636e7b; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
@@ -82,9 +84,15 @@
 </header>
 
 <div class="week-nav" id="week-nav" style="display:none">
-  <button class="week-nav-btn" id="week-prev" title="Previous week">&#8249;</button>
-  <span class="week-nav-label" id="week-nav-label"></span>
-  <button class="week-nav-btn" id="week-next" title="Next week">&#8250;</button>
+  <div class="week-nav-group">
+    <button class="week-nav-btn" id="week-prev" title="Previous week">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06z"/></svg>
+    </button>
+    <span class="week-nav-label" id="week-nav-label"></span>
+    <button class="week-nav-btn" id="week-next" title="Next week">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06z"/></svg>
+    </button>
+  </div>
 </div>
 
 <div class="filter-bar" id="filter-bar" style="display:none">
