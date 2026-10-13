@@ -2,6 +2,20 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 23:00 -> Week 41 media updated for LinkedIn-research rewrite (commit 50491bb)
+
+**Media URLs unchanged** (same filenames, all 18 table links return 200). Files updated in place:
+- post-013 access-control.png — capabilities now match copy: real-time door monitoring, tailgating alerts, audit trail, instant lockdown (replaced time-based permissions and CCTV-linked events). No Gallagher branding on the graphic.
+- post-014 physical-threats.png — tag changed to "Cybersecurity Awareness Month".
+- post-016 industry-involvement.png — four items: NZSA working groups, position statements, technician training, industry events and awards (NZSA awards).
+- post-017 nzsa-accreditation.png — added note that members and accredited members are expected to uphold NZSA professional standards (codes of conduct, position statements incl. confidential information and departing staff, Sept 2026).
+- post-018 did-you-know.png — assumptions 4 and 5 now match copy: visitor management stops at the front desk; no security audit since the last fit-out.
+- post-015 unchanged.
+
+**Source checked:** security.org.nz/position-statements — "Prof Standards: Confidential Info & Departing Staff - Sept 2026" exists.
+
+**Still open:** post-017 copy still attributes the membership requirements (annual self-audit reviewed by independent auditors) to accreditation; "current licences across every technician" is not stated by NZSA for accreditation. post-016: verify Red Wolf's actual working-group, position-statement and awards involvement. post-018: verify "two decades in the field".
+
 ## ASSET:redwolf 2026-10-13 22:45 -> Week 41 media regenerated for redone batch (commit d41340c)
 
 **Why:** d41340c replaced all six week 41 posts (new subtopics, titles, descriptions, media briefs) and reset media URLs to non-existent placeholders. None of the previous week 41 graphics fit; all six replaced and the old files removed (still in git history).
