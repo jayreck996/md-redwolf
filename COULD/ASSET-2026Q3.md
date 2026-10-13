@@ -2,6 +2,14 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 18:22 -> Week 28 adjustment check: media unchanged
+
+**Change since media was generated:** post-008 partner tags changed from Bosch to Gallagher Security + Integrated Control Technology (commit 7f25753). No other week 28 content changed.
+
+**Media impact:** none. post-008-ai-analytics.png carries no partner names or logos, so it stays valid. The earlier "confirm the Bosch tag" note is superseded.
+
+**Verify:** post-008 is about AI video analytics. Per MUST/README.TXT rule 5, confirm Gallagher and ICT are directly relevant (e.g. video analytics integrated with their access control platforms), otherwise tag only Red Wolf.
+
 ## ASSET:redwolf 2026-10-13 18:05 -> Week 28 media generated (post-007, 008, 009, 011, 012)
 
 **Media (SHOULD/media/2026Q3/, same brand system as week 27, 1080x1350):**
