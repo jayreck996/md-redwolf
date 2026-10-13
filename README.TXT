@@ -25,7 +25,7 @@ STEP 0 — LEARN
   subtype selection and content angle.
 
 STEP 1 — RESEARCH
-  Read MUST/README.TXT        content generation rules
+  Read MUST/README.TXT        content generation rules + target persona
   Read MUST/TREE-2026Q3.json  pillars, subtypes, connections
   Read COULD/README.TXT       brand values, asset rules
   Research LinkedIn pages for any connections to be tagged
