@@ -207,8 +207,8 @@ async function load() {
   const text = await res.text();
   const rows = parseCSV(text);
 
-  const weeks = [...new Set(rows.map(r => r.week))];
-  document.getElementById("week-label").textContent = `Week ${weeks.join(", ")}`;
+  const qMatch = CSV_URL.match(/TABLE-(\d{4})(Q\d)\.csv/i);
+  document.getElementById("week-label").textContent = qMatch ? `${qMatch[2]} ${qMatch[1]}` : "";
 
   const container = document.getElementById("posts");
   container.innerHTML = "";
