@@ -2,6 +2,22 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-13 22:20 -> Week 41 media re-evaluated after persona re-angle (commit 754ccf9)
+
+**Relinked:** commit 754ccf9 reset all week 41 media URLs to PLACEHOLDER.md files that do not exist (404). All six now point to real media again.
+
+**Kept (content unchanged):** post-013 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-013-security-survey.png · post-015 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-015-nzsa-membership.png · post-017 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-017-quality-process.png (media text says "ISO 9001" but the graphic carries no ISO badge; certification still unverified).
+
+**Updated:** post-014 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-014-psr-framework.png — headline "The PSR framework in practice", checklist relabelled "Have this ready before any audit, tender or review". Earlier copy issues (critical infrastructure mandate, "what has been updated") are resolved by the new description.
+
+**Replaced:**
+- post-016 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-016-project-delivery.png — values card no longer fit the new angle; new graphic shows four client commitments (one point of contact, milestones up front, proactive updates, formal close-out). Removed post-016-red-wolf-values.png.
+- post-018 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-018-year-end-decisions.png — three decisions: IT/physical convergence, IQP paperwork for access-controlled doors (specified system SS 3/2, building WOF), footage retention policy (Privacy Act, principle 9). Removed post-018-three-trends.png.
+
+**Sources checked:** building.govt.nz (IQP inspection, Form 12A, annual BWoF); council SS 3/2 access controlled doors forms; privacy.org.nz principle 9 (retention).
+
+**Verify:** post-016 commitments must match how Red Wolf actually runs projects. post-018 copy says AI cameras create "new liability" — keep it framed as a privacy obligation, not legal advice.
+
 ## ASSET:redwolf 2026-10-13 21:55 -> Week 41 media generated (post-013 to post-018)
 
 **Media (SHOULD/media/2026Q3/, same brand system, 1080x1350):**
