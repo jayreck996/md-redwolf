@@ -212,10 +212,16 @@ async function submitFeedback(postId, result, btn, statusEl, allBtns) {
       })
     });
     if (res.status === 204) {
-      allBtns.forEach(b => { b.classList.remove("active"); b.style.opacity = b.dataset.result !== result ? "0.35" : ""; });
-      btn.classList.add("active");
-      statusEl.textContent = `Saved: ${result}`;
-      statusEl.className = "status ok";
+      if (result === "") {
+        allBtns.forEach(b => { b.classList.remove("active"); b.style.opacity = ""; });
+        statusEl.textContent = "Cleared";
+        statusEl.className = "status";
+      } else {
+        allBtns.forEach(b => { b.classList.remove("active"); b.style.opacity = b.dataset.result !== result ? "0.35" : ""; });
+        btn.classList.add("active");
+        statusEl.textContent = `Saved: ${result}`;
+        statusEl.className = "status ok";
+      }
       allBtns.forEach(b => b.disabled = false);
     } else {
       throw new Error(`HTTP ${res.status}`);
@@ -281,9 +287,10 @@ async function load() {
     const btns = [...div.querySelectorAll(".btn")];
     const statusEl = div.querySelector(".status");
     btns.forEach(btn => {
-      btn.addEventListener("click", () =>
-        submitFeedback(row.item, btn.dataset.result, btn, statusEl, btns)
-      );
+      btn.addEventListener("click", () => {
+        const result = btn.classList.contains("active") ? "" : btn.dataset.result;
+        submitFeedback(row.item, result, btn, statusEl, btns);
+      });
     });
     if (feedback) {
       btns.forEach(b => {

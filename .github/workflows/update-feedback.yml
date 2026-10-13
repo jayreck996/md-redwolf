@@ -25,7 +25,7 @@ jobs:
           result  = os.environ["RESULT"]
           path    = "SHOULD/TABLE-2026Q3.csv"
 
-          if result not in ("win", "tie", "lost"):
+          if result not in ("win", "tie", "lost", ""):
               print(f"Invalid result: {result}")
               sys.exit(1)
 
