@@ -2,6 +2,25 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-20 17:05 -> Week 43 media re-evaluated after batch regeneration (commit 9173fbf)
+
+**Relinked:** 9173fbf reset week 43 media URLs to PLACEHOLDER.md files; only post-010's exists, the other five returned 404. All six now point to real files.
+
+**Kept (copy reworded, same substance):**
+- post-007 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-007-noc-alarm-timeline.png — 5-step alarm-to-resolution timeline still matches.
+- post-008 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-008-ai-analytics.png — "AI detection capabilities" infographic still matches.
+- post-011 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-011-late-night-response.png — incident timeline still matches.
+
+**Updated:** post-009 https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-009-five-gaps.png — headline now "The 5 security gaps we see most in Wellington businesses" to match the new title; same five gaps and fixes. Removed post-009-five-mistakes.png.
+
+**Replaced:** post-012 is now Campaigns & Seasonal / Security Awareness Month (was Hot Take). New graphic https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-012-security-awareness-month.png — "Don't forget the physical side": propped doors, visitor books no one checks, access never reviewed after staff departures. Removed post-012-hot-take.png.
+
+**Still BLOCKED:** post-010 — media-type now jpg; needs a real staff/team photo and technician quotes with consent. Verify "over six years" average tenure.
+
+**Verify:** post-011 title now says "A Client's Account" — the post presents a client's first-hand account, so written client approval is required (graphic carries no client quote). post-009 "20+ years" and post-007 "Wellington and Auckland" still unverified.
+
+**Note:** week 41 rows were dropped in 05d2801; post-013 to post-018 media files remain in SHOULD/media/2026Q3/ unreferenced.
+
 ## ASSET:redwolf 2026-10-13 23:10 -> Week 41 media re-evaluated after batch regeneration (commit f552bd3)
 
 **Relinked:** f552bd3 reset all six week 41 media URLs to non-existent placeholders (404). All six relinked.
