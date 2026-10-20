@@ -2,6 +2,27 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-20 17:30 -> Week 43 media generated for fresh subtopics (commit 5b9220f)
+
+**Why:** 5b9220f replaced all six week 43 posts with new subtopics and reset media URLs to placeholders (five did not exist). None of the previous week 43 graphics fit; they were removed (still in git history): post-007-noc-alarm-timeline, post-008-ai-analytics, post-009-five-gaps, post-011-late-night-response, post-012-security-awareness-month.
+
+**Media (SHOULD/media/2026Q3/, 1080x1350):**
+- post-007 Protective Security Surveys — 3-stage diagram (site assessment, gap analysis, recommendations) + compliance vs diagnostic: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-007-survey-diagnostic.png
+- post-008 NZ Security Industry Standards — NZSA position statement on confidential information and departing staff: employer and departing-staff obligations, access to revoke at final working time: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-008-nzsa-departing-staff.png
+- post-009 NZSA Membership — trust signals card + questions to ask: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-009-nzsa-membership.png
+- post-011 Government & Critical Infrastructure — 5-slide carousel PDF (challenge, scope/stage/deliver, result, CTA): https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-011-gov-case-study-carousel.pdf (+ post-011-slide-1..5.png)
+- post-012 Industry News Commentary — "Security should protect the experience, not just the assets" with friction vs enabler: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/SHOULD/media/2026Q3/post-012-protect-the-experience.png
+- post-010 Company Culture — media-type jpg, needs a real team photo. Placeholder updated.
+
+**Sources checked:** NZSA position statement "Confidential Information and Departing Staff" (security.org.nz/wp-content/uploads/2026/10/NZSA_Professional-Standard.pdf) — advisory "expected professional standard", not binding. NZSA membership requirements (security.org.nz, why choose an NZSA member).
+
+**Verify before publishing:**
+- post-012: the quote attributed to "NZSA Board Member Mark Knoff-Thomas" at the "Profit Protection Future Forum" could not be found online; his public role found is Newmarket Business Association. The graphic deliberately does NOT name him or present a direct quote. Confirm the quote, his title and the event (link a source) before using it in the copy.
+- post-011: this presents a real government project. Confirm the facts (full access control + CCTV upgrade, staged, live operations) and get client approval; government/critical infrastructure clients often restrict publicity. Graphic names no agency or building.
+- post-008: copy says NZSA "released guidance on staff transitions" — accurate; it is a position statement (advisory), not a regulation.
+- post-009: copy matches NZSA membership requirements. Confirm Red Wolf is a member.
+- post-010: verify culture claims; get consent for any photo.
+
 ## ASSET:redwolf 2026-10-20 17:05 -> Week 43 media re-evaluated after batch regeneration (commit 9173fbf)
 
 **Relinked:** 9173fbf reset week 43 media URLs to PLACEHOLDER.md files; only post-010's exists, the other five returned 404. All six now point to real files.
