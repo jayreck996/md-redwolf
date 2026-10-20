@@ -2,6 +2,19 @@ LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW LOG ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## VERSION 2 — 2026-10-20 NZT
+
+Commit: 9173fbf
+Week 43 batch generated — post-007 to post-012 (all BLOCKED).
+
+Prompt changes from v1:
+- README.TXT expanded to full orchestration source: structure, plan steps,
+  generation rules, scoring guide, extending the tree
+- STEP 1 RESEARCH added — LinkedIn connections browsed before generating
+  (LinkedIn blocked unauthenticated access; slugs confirmed valid)
+- MUST/README.TXT reduced to pointer only
+- Scoring guide formalised: base pillar scores + type/subtype adjustments
+
 ## VERSION 1 — 2026-10-13 16:18 NZT
 
 Commit: e5e59ec
