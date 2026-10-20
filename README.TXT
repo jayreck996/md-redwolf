@@ -8,10 +8,10 @@ Purpose:  Structured weekly content generation, review, and publishing
 ============================================================
 REPO STRUCTURE
 ============================================================
-  MUST/   — what the content must follow (strategy, rules)
-  SHOULD/ — what the content should contain (posts, media)
-  COULD/  — what the content could reference (assets, values)
-  WOULD/  — what has happened (activity log)
+  CAN/   — what the content must follow (strategy, rules)
+  COULD/ — what the content should contain (posts, media)
+  MAY/  — what the content could reference (assets, values)
+  MIGHT/  — what has happened (activity log)
 
 ============================================================
 CONTENT STRUCTURE
@@ -41,7 +41,7 @@ ORCHESTRATION — HOW TO RUN A CONTENT BATCH
 
 STEP 1 — RESEARCH
   1a. fetch()
-      Read MUST/TREE-2026Q3.json — load all connections{} slugs.
+      Read CAN/TREE-2026Q3.json — load all connections{} slugs.
       For each connection fetch() the LinkedIn page URL:
         confirm the page is active and the slug is correct
         note any recent posts, announcements, or campaigns
@@ -50,7 +50,7 @@ STEP 1 — RESEARCH
       a page that is inactive.
 
   1b. select topic
-      Read MUST/TREE-2026Q3.json — for each of the 6 pillars
+      Read CAN/TREE-2026Q3.json — for each of the 6 pillars
       select a type and subtype not yet used this quarter.
       Apply the scoring guide to assign a score to each post.
 
@@ -62,7 +62,7 @@ STEP 1 — RESEARCH
         mp4  — video
 
 STEP 2 — GENERATE
-  Open SHOULD/TABLE-2026Q3.csv and add 6 new rows for the next
+  Open COULD/TABLE-2026Q3.csv and add 6 new rows for the next
   week number — one per pillar — using the selections from STEP 1:
     topic, type, subtopic, score, media-type already decided
     write title, description, tags, hashtags
@@ -70,8 +70,8 @@ STEP 2 — GENERATE
   Set all new posts to BLOCKED status until media is ready
 
 STEP 3 — MEDIA
-  Generate or source media, save to SHOULD/media/<quarter>/,
-  log each asset in COULD/ASSET-2026Q3.md.
+  Generate or source media, save to COULD/media/<quarter>/,
+  log each asset in MAY/ASSET-2026Q3.md.
 
 STEP 4 — REVIEW
   Client reviews posts via the index site (GitHub Pages).
@@ -80,7 +80,7 @@ STEP 4 — REVIEW
 STEP 5 — PUBLISH
   Download media locally (LinkedIn does not accept URLs).
   Copy title, description, tags, and hashtags from the CSV.
-  Upload to LinkedIn and log outcome in WOULD/LOG-2026Q3.log.
+  Upload to LinkedIn and log outcome in MIGHT/LOG-2026Q3.log.
 
 ============================================================
 CONTENT GENERATION RULES
@@ -145,19 +145,19 @@ EXTENDING THE TREE
 ============================================================
 KEY FILES
 ============================================================
-  MUST/TREE-2026Q3.json       content strategy skeleton
-  SHOULD/TABLE-2026Q3.csv     all posts, all weeks
-  SHOULD/media/2026Q3/        post media files
-  COULD/ASSET-2026Q3.md       asset log (status, verify notes)
-  WOULD/LOG-2026Q3.log        activity log
+  CAN/TREE-2026Q3.json       content strategy skeleton
+  COULD/TABLE-2026Q3.csv     all posts, all weeks
+  COULD/media/2026Q3/        post media files
+  MAY/ASSET-2026Q3.md       asset log (status, verify notes)
+  MIGHT/LOG-2026Q3.log        activity log
 
 ============================================================
 QUARTER ROLLOVER
 ============================================================
   At the start of a new quarter:
-  - Create MUST/TREE-<year><Q>.json   (copy + update meta)
-  - Create SHOULD/TABLE-<year><Q>.csv (new header, empty rows)
-  - Create COULD/ASSET-<year><Q>.md   (fresh log)
-  - Create WOULD/LOG-<year><Q>.log    (fresh log)
+  - Create CAN/TREE-<year><Q>.json   (copy + update meta)
+  - Create COULD/TABLE-<year><Q>.csv (new header, empty rows)
+  - Create MAY/ASSET-<year><Q>.md   (fresh log)
+  - Create MIGHT/LOG-<year><Q>.log    (fresh log)
   - Update this file: client, quarter, key files section
 ============================================================
