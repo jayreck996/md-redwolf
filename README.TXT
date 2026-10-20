@@ -39,33 +39,34 @@ connections{}
 ORCHESTRATION — HOW TO RUN A CONTENT BATCH
 ============================================================
 
-STEP 0 — LEARN
-  Read SHOULD/TABLE-2026Q3.csv
-  Check client feedback (win/tie/lost) per post to inform
-  subtype selection and content angle for the next batch.
-
 STEP 1 — RESEARCH
-  Read MUST/TREE-2026Q3.json — load all connections{} slugs.
-  For each connection:
-    navigate to the LinkedIn page URL
-    confirm the page is active and the slug is correct
-    note any recent posts, announcements, or campaigns
-      relevant to the upcoming content angles
-  Record any slug corrections or inactive pages before
-  proceeding — do not tag a page that is inactive.
+  1a. fetch()
+      Read MUST/TREE-2026Q3.json — load all connections{} slugs.
+      For each connection fetch() the LinkedIn page URL:
+        confirm the page is active and the slug is correct
+        note any recent posts, announcements, or campaigns
+          relevant to the upcoming content angles
+      Record slug corrections or inactive pages — do not tag
+      a page that is inactive.
+
+  1b. select topic
+      Read MUST/TREE-2026Q3.json — for each of the 6 pillars
+      select a type and subtype not yet used this quarter.
+      Apply the scoring guide to assign a score to each post.
+
+  1c. choose artifact
+      For each selected post decide the media-type:
+        png  — branded graphic, infographic, diagram, card, timeline
+        jpg  — photo (staff, site, event)
+        pdf  — multi-slide carousel / document
+        mp4  — video
 
 STEP 2 — GENERATE
-  Read MUST/TREE-2026Q3.json — confirm pillars, types, subtypes.
-  Open SHOULD/TABLE-2026Q3.csv — check existing subtopics used
-  this quarter to avoid repeats, then add 6 new rows for the
-  next week number (one per pillar):
-    topic      — one of the 6 pillars
-    type       — from the pillar's type list in TREE-2026Q3.json
-    subtopic   — from the type's subtype list (no repeats in quarter)
-    score      — using the scoring guide below
-    tags       — @Red Wolf always; partners only if directly relevant
-    media-type — choose the format that best suits the content
-                 (png / jpg / pdf / mp4 — see content rules below)
+  Open SHOULD/TABLE-2026Q3.csv and add 6 new rows for the next
+  week number — one per pillar — using the selections from STEP 1:
+    topic, type, subtopic, score, media-type already decided
+    write title, description, tags, hashtags
+    tags: @Red Wolf always; partners only if directly relevant
   Set all new posts to BLOCKED status until media is ready
 
 STEP 3 — MEDIA
