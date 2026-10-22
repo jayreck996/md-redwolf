@@ -41,10 +41,12 @@ ORCHESTRATION — HOW TO RUN A CONTENT BATCH
 
 STEP 1 — RESEARCH
   1a. fetch-linkedin skill
-      Read CAN/TREE-<SLUG>-2026Q3.json for each connection — these are
-      pre-cached LinkedIn snapshots committed weekly by the GitHub Action
-      fetch-linkedin.yml. Claude does not fetch LinkedIn directly and does
-      not use claude-in-chrome.
+      Read CAN/TREE-2026Q3.json's connections{} for the list of
+      connections and their fixed slugs, then read each connection's
+      CAN/TREE-<SLUG>-2026Q3.json — these are pre-cached LinkedIn
+      snapshots committed weekly by the GitHub Action fetch-linkedin.yml.
+      Claude does not fetch LinkedIn directly and does not use
+      claude-in-chrome.
 
       How the cache is built (separate private repo py-redwolf):
         GitHub Action (weekly cron)
