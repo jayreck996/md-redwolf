@@ -2,6 +2,65 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Full cycle completed for real: GitHub Action → Cloudflare → py-redwolf → real LinkedIn data → committed
+
+**login_linkedin.py run successfully** (by the user). First attempt
+was blocked by LinkedIn/Google ("This browser or app may not be
+secure") — Playwright's bundled Chromium carries automation markers
+that trip this check even for a genuine human login. Fixed by
+switching both `login_linkedin.py` and `browse_linkedin.py` to
+`channel="chrome"` (the real, already-installed Google Chrome, not
+Playwright's own build) — also means `playwright install chromium` is
+no longer needed at all (py-redwolf commit `69c91f4`).
+
+**Implemented real bio/followerCount/recentPosts extraction**
+(py-redwolf `d399883`, `48e43cb`), verified against real authenticated
+fetches of Red Wolf's own page:
+  - `networkidle` never fires on LinkedIn (constant background
+    polling) — switched to `domcontentloaded` + a fixed wait.
+  - `recentPosts`: no stable CSS hook, but every post is reliably
+    preceded by the literal visible text "Feed post" (an accessibility
+    label). Splitting on that, keeping only chunks whose author line
+    roughly matches companyName, filters out ad/promoted cards using
+    the same label. Dates are best-effort (relative "Xd"/"Xw" or bare
+    "Mon DD", no year given).
+  - Bug caught and fixed: the company-name check was exact-string —
+    `CAN/TREE-2026Q3.json`'s official names (e.g. "Red Wolf High Level
+    Security **Ltd**") don't match the shorter name LinkedIn actually
+    displays ("Red Wolf High Level Security"), which silently dropped
+    every real post with no error. Fixed with a substring-containment
+    check after normalizing punctuation/case.
+  - `bio`: lives on a separate `/about/` page (the authenticated
+    default view redirects the base URL to the Posts tab instead), no
+    CSS hook either — plain text after the visible "Overview" label.
+
+**Ran the real fetch-linkedin.yml Action, twice:**
+  - 1st run (`39731202984`): all 10 connections came back **HTTP 403**
+    — isolated to `urllib.request`'s default User-Agent
+    ("Python-urllib/3.x") being blocked outright, before ever reaching
+    the tunnel/listener. Reproduced with curl spoofing the same UA
+    (blocked identically) vs. a normal UA (200) — most likely
+    Cloudflare's Bot Fight Mode or a similar default WAF rule. Fixed
+    by setting an explicit User-Agent (`md-redwolf` commit `8f474f0`).
+  - 2nd run (`39731937253`): **9 of 10 connections got real data** —
+    `CAN/TREE-<SLUG>-2026Q3.json` now has real `followerCount`/`bio`
+    for NZSA, ASIS, NZPOLICE, JOHNSON, GALLAGHER, INNERRANGE, BOSCH,
+    ICT, JACQUES (ASIS and BOSCH also got 1 real post each; the rest
+    got 0 — genuinely quiet accounts, or the "Feed post" heuristic
+    doesn't catch how larger companies' feeds render; honestly
+    unknown which). REDWOLF alone got a navigation timeout — almost
+    certainly from this session's own repeated manual testing against
+    that exact URL earlier today, not a code problem. Left as-is
+    rather than immediately retried, consistent with "run
+    conservatively" — next week's cron (or a manual retry later) will
+    pick it up.
+
+**Status:** the design works, end to end, with real data, for the
+first time. Remaining: REDWOLF's cache will need a retry at some
+point; the "0 posts" connections are an open question, not a confirmed
+bug; the stray `linkedin-fetch.toigroup.co.nz` DNS record (logged
+earlier) is still outstanding.
+
 ## ASSET:redwolf 2026-10-22 -> Both LaunchAgents live; only login_linkedin.py and one DNS cleanup remain
 
 **Built and loaded:**
