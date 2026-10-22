@@ -2,6 +2,70 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Claude skill plan: items 1–2 revised, split into new private repo ts-redwolf
+
+**Revision:** Item 1 (macnimi server) is no longer a bespoke Node.js +
+Puppeteer endpoint. It's now a headless Claude Code invocation
+(`claude -p`) that runs a new `browse-linkedin` skill using claude-in-chrome
+against the mac mini's own, already-authenticated LinkedIn Chrome session —
+a real browsing session instead of a scripted scraper. Item 2 (the trigger
+side) is unchanged in shape: still a GitHub Action calling the mac mini and
+committing the result, just now calling this new listener instead of a raw
+Puppeteer endpoint.
+
+**Why split into a second repo:** `md-redwolf` is public. The browsing
+method (headless Claude Code + claude-in-chrome + an authenticated session)
+and the mac-mini infra (listener, tunnel config) shouldn't be public, even
+though they contain no secrets themselves. Created
+[`ts-redwolf`](https://github.com/jayreck996/ts-redwolf) (private) as the
+write-side pair to `md-redwolf`'s read side — matching the existing
+`md-<client>` / `ts-<client>` convention already used elsewhere (e.g.
+`md-recruitment-dev` / `ts-recruitment-dev`).
+
+**Revised architecture:**
+  GitHub Action on md-redwolf (cron — weekly)
+    → HTTPS GET <LINKEDIN_FETCH_URL>/fetch?slug=<SLUG>&url=<linkedin-url>
+        via Cloudflare Tunnel + Access (service token, GH secret)
+    → ts-redwolf/listener.py (127.0.0.1:8787 on the mac mini)
+        checks LISTENER_SHARED_SECRET, serializes requests (one at a time)
+        runs: claude -p "<browse-linkedin invocation>" (cwd=ts-redwolf)
+    → ts-redwolf/.claude/skills/browse-linkedin/
+        claude-in-chrome opens one tab on the company's LinkedIn page,
+        reads bio/followerCount/recentPosts, closes the tab,
+        prints one JSON object (or {slug, error} on failure) to stdout
+    → listener.py returns that JSON → Action commits
+      CAN/TREE-<SLUG>-2026Q3.json to md-redwolf (unchanged from before)
+
+  md-redwolf's fetch-linkedin skill (STEP 1a) still just reads those
+  committed cache files — unchanged, never talks to ts-redwolf or the mac
+  mini directly.
+
+**Built in ts-redwolf (private, pushed):**
+  listener.py — stdlib-only, binds 127.0.0.1, one request at a time
+  .claude/skills/browse-linkedin/SKILL.md — one page, one connection per run
+  cloudflared.config.yml.template, com.redwolf.linkedin-listener.plist.template,
+    .env.example — setup templates only, no real secrets committed
+  README.md — wiring diagram + one-time mac-mini setup steps
+
+**Still open (needs the mac mini / Cloudflare dashboard, not git):**
+  1. cloudflared tunnel login/create, DNS route, Access application +
+     service token
+  2. Fill in the real .env and cloudflared.config.yml locally (gitignored)
+  3. Load both as LaunchAgents (listener + cloudflared)
+  4. Confirm Chrome stays logged into LinkedIn with claude-in-chrome enabled
+  5. Add CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET / LINKEDIN_FETCH_URL
+     as md-redwolf GitHub secrets, then build
+     .github/workflows/fetch-linkedin.yml
+
+**Risk:** unchanged from the original note below — LinkedIn ToS prohibits
+scraping. A real authenticated session is the same kind of risk as the
+original Puppeteer design, just a different shape; keep the cron weekly,
+one fetch per connection, no retries that widen scope.
+
+**Status:** ts-redwolf scaffolded and pushed (items 1, 3 of the original
+plan, revised). Item 2 (GitHub Action) and the mac-mini-side setup above
+still PLANNED.
+
 ## ASSET:redwolf 2026-10-22 -> Claude skill plan: items 3–4 built (fetch-linkedin skill + README)
 
 **Built:** `.claude/skills/fetch-linkedin/SKILL.md` — implements item 3 of the
