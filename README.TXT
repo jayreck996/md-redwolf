@@ -59,7 +59,7 @@ STEP 1 — RESEARCH
         do not tag a connection whose recentPosts[] is empty or stale
 
       Fallback (cache files don't exist yet — the skill itself is
-      built, but py-redwolf's tunnel/Access/login setup is still
+      built, but py-redwolf's tunnel/login/LaunchAgent setup is still
       pending on the client side, see MAY/ASSET-2026Q3.md):
         run a web search for each connection slug.
 
