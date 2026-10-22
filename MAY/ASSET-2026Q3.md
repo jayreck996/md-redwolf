@@ -2,6 +2,40 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Both LaunchAgents live; only login_linkedin.py and one DNS cleanup remain
+
+**Built and loaded:**
+  ~/Library/LaunchAgents/com.redwolf.linkedin-listener.plist
+    runs py-redwolf/listener.py via .venv/bin/python3, RunAtLoad +
+    KeepAlive, logs to launchd-stdout.log/launchd-stderr.log
+  ~/Library/LaunchAgents/com.redwolf.linkedin-tunnel.plist
+    runs `cloudflared tunnel --config ~/.cloudflared/py-redwolf.yml run`,
+    same RunAtLoad + KeepAlive pattern, logs under ~/.cloudflared/
+
+Loaded via `launchctl bootstrap gui/$(id -u) <plist>`. Both confirmed
+running (`launchctl list | grep redwolf`), tunnel showing 4 registered
+edge connections, listener bound on 127.0.0.1:8787.
+
+**Verified end to end, persistently this time (not loose background
+processes like the earlier test):** curled the real public hostname
+with the correct `X-Listener-Secret` — got back
+`{"slug":"TEST","error":"linkedin_storage_state.json missing — run
+login_linkedin.py"}`, HTTP 200. Exactly the expected result with no
+real session yet. This path now survives a reboot/logout; the earlier
+E2E test did not.
+
+**Status:** everything buildable or automatable from here is done.
+Only two things remain, both outside anything scriptable:
+  1. `login_linkedin.py`, run by hand — accepted as a recurring,
+     infrequent cost (see prior entry's honesty correction on
+     autonomy), not a blocker to everything else being ready
+  2. Delete the stray `linkedin-fetch.toigroup.co.nz` CNAME from the
+     Cloudflare dashboard (logged earlier, still outstanding — this
+     API token has no DNS-write scope)
+Once (1) is done, `fetch-linkedin.yml`'s `workflow_dispatch` can be
+run for a real test with actual LinkedIn data — the first point since
+this whole design started where that's actually true.
+
 ## ASSET:redwolf 2026-10-22 -> Dropped Cloudflare Access; honest note on what Plan B actually fixes (not full autonomy)
 
 **Decision: Access is not required.** `listener.py`'s existing
