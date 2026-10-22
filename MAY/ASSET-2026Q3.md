@@ -2,6 +2,29 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 16:20 -> Week 43 media generated for fresh batch (commit 64f00b7)
+
+**Why:** 64f00b7 replaced all six week 43 posts again; five media URLs pointed to placeholders that did not exist (404). Media now lives in COULD/media/2026Q3/ after the folder rename (6c99c42). None of the 20 Oct week 43 graphics fit the new posts; removed (still in git history): post-007-survey-diagnostic, post-008-nzsa-departing-staff, post-009-nzsa-membership, post-011-gov-case-study-carousel (+ slides 1–5), post-012-protect-the-experience, post-010-PLACEHOLDER.md.
+
+**Media (all png, 1080x1350):**
+- post-007 IQP Inspections — compliance schedule → IQP inspection → Form 12A → Building WOF, access-controlled doors as SS 3/2: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/COULD/media/2026Q3/post-007-iqp-inspections.png
+- post-008 AI in Surveillance — traditional CCTV vs AI analytics split, plus "what it doesn't do": https://raw.githubusercontent.com/jayreck996/md-redwolf/main/COULD/media/2026Q3/post-008-cctv-vs-ai.png
+- post-009 Expert Opinion — detect / delay / respond layers with examples; delay must outlast response: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/COULD/media/2026Q3/post-009-detect-delay-respond.png
+- post-010 Career Growth — technician → senior technician → team lead → lead consultant; training, NZSA qualifications, mentoring: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/COULD/media/2026Q3/post-010-career-pathway.png
+- post-011 NZSA Accreditation — member vs accredited, plus tender question: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/COULD/media/2026Q3/post-011-nzsa-accreditation-tender.png
+- post-012 Security Awareness Month — tailgating, propped doors, unmonitored visitors, outdated credentials, each with a fix; comment CTA: https://raw.githubusercontent.com/jayreck996/md-redwolf/main/COULD/media/2026Q3/post-012-awareness-month-fixes.png
+
+**Sources checked:** building.govt.nz (IQP, Form 12A, annual BWOF; most specified systems inspected at least yearly); council SS 3/2 access controlled doors forms; security.org.nz accreditation process and membership requirements.
+
+**Verify before publishing:**
+- post-007: copy says Red Wolf "is registered to carry out IQP inspections across Wellington and Auckland" — confirm IQP registration with each council. Official term is "independent qualified person" (copy says "Independently Qualified Person").
+- post-011: COPY FIX — "annual self-audit assessed by independent auditors" is the membership requirement; accreditation is an independent onsite audit against NZSA Codes of Practice (5-year term, annual declaration). VERIFY "Red Wolf has held NZSA accreditation since our founding".
+- post-010: verify "several of our senior consultants and team leads started as installation technicians" and the NZSA qualifications claim. Graphic shows a generic pathway, no names or timeframes.
+- post-008: copy says Red Wolf installs AI analytics for mid-market clients — confirm.
+- post-009: "20 years in the industry" — still unverified.
+
+**Note:** week 41 media (post-013 to post-018) remains in COULD/media/2026Q3/ unreferenced.
+
 ## ASSET:redwolf 2026-10-20 17:30 -> Week 43 media generated for fresh subtopics (commit 5b9220f)
 
 **Why:** 5b9220f replaced all six week 43 posts with new subtopics and reset media URLs to placeholders (five did not exist). None of the previous week 43 graphics fit; they were removed (still in git history): post-007-noc-alarm-timeline, post-008-ai-analytics, post-009-five-gaps, post-011-late-night-response, post-012-security-awareness-month.
