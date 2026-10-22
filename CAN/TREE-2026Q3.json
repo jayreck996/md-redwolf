@@ -48,7 +48,8 @@
           "subtypes": [
             { "name": "Protective Security Surveys", "description": "Site assessment process and outcomes" },
             { "name": "Solution Design", "description": "End-to-end custom security design methodology" },
-            { "name": "Asset Management", "description": "Lifecycle management of installed security assets" }
+            { "name": "Asset Management", "description": "Lifecycle management of installed security assets" },
+            { "name": "IQP Inspections", "description": "Independently Qualified Person inspections for access-controlled doors under the NZ Building Act compliance schedule" }
           ]
         }
       ]
