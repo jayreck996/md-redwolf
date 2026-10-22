@@ -2,8 +2,34 @@
   "slug": "JOHNSON",
   "companyName": "Johnson Controls",
   "url": "https://www.linkedin.com/company/johnson-controls",
-  "fetchedAt": "2026-10-22T06:10:10Z",
-  "followerCount": 3805483,
+  "fetchedAt": "2026-10-22T07:04:49Z",
+  "followerCount": 3805536,
   "bio": "Johnson Controls is a global leader in thermal management, mission-critical building systems, energy efficiency and decarbonization. We help our customers use energy more productively, reduce carbon emissions and operate with the precision and resilience required in rapidly expanding industries such as data centers, healthcare, pharmaceuticals, advanced manufacturing and higher education.\n\nFor more than 140 years, Johnson Controls has been delivering performance where it really matters. Backed by advanced technology, lifecycle services and an industry-leading field organization, we elevate customer performance, turning goals into real-world results and helping move society forward.\n\nVisit johnsoncontrols.com for more information.",
-  "recentPosts": []
+  "recentPosts": [
+    {
+      "date": "2026-10-21",
+      "text": "Cyber resilience starts by improving your system's visibility, reducing risk and prioritizing modernization. Our on-demand webinar gives you a strategy to do all three and secure your connected buildings. Get our experts' advice and move from awareness to action by watching it now: https://on.jci.com/4yyRsmR",
+      "url": "https://www.linkedin.com/company/johnson-controls/home/"
+    },
+    {
+      "date": "2026-10-21",
+      "text": "As AI reshapes data center requirements, cooling decisions are increasingly connected to the broader design strategy.\nHigher rack densities can affect everything from infrastructure planning to efficiency and long-term flexibility, making thermal management a key consideration in the design process.\nExplore what this shift means for AI data centers: https://on.jci.com/4B9mMv3",
+      "url": "https://www.linkedin.com/company/johnson-controls/home/"
+    },
+    {
+      "date": "2026-10-21",
+      "text": "Cybersecurity Awareness Month is a reminder: The air gap isn\u2019t what it used to be.\nToday\u2019s connected buildings need a security approach that protects OT without sacrificing the connectivity that makes intelligent operations possible. Zero-trust security can help organizations move beyond assumed boundaries with identity-based access, microsegmentation and encryption.\n\ud83d\udc49 Learn why virtual air gaps alone aren\u2019t enough:\nhttps://on.jci.com/47p4j07",
+      "url": "https://www.linkedin.com/company/johnson-controls/home/"
+    },
+    {
+      "date": "2026-10-21",
+      "text": "As AI workloads drive unprecedented rack densities, we\u2019re helping operators reduce water consumption, control acoustic impact and improve cooling efficiency without compromising performance. At DCD Connect Virginia \u2013 a one-on-one learning opportunity for data center professionals \u2013 we\u2019ll be there to show you how our chip-to-ambient thermal management can help your facility meet today\u2019s challenges and prepare for tomorrow\u2019s advances.\nLearn more about the event here:https://on.jci.com/484aMxA",
+      "url": "https://www.linkedin.com/company/johnson-controls/home/"
+    },
+    {
+      "date": "2026-10-21",
+      "text": "Data center demands continue to evolve and designing for flexibility has never been more essential.\nThe 1GW Reference Design Guides provide a framework for building scalable, adaptable infrastructure that can support changing workload requirements, evolving cooling strategies and future technology roadmaps.\nExplore the guides: https://on.jci.com/3VJEntx",
+      "url": "https://www.linkedin.com/company/johnson-controls/home/"
+    }
+  ]
 }
