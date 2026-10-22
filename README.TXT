@@ -58,7 +58,9 @@ STEP 1 — RESEARCH
           to the upcoming content angles
         do not tag a connection whose recentPosts[] is empty or stale
 
-      Fallback (cache not yet live — skill PLANNED):
+      Fallback (cache files don't exist yet — the skill itself is
+      built, but py-redwolf's tunnel/Access/login setup is still
+      pending on the client side, see MAY/ASSET-2026Q3.md):
         run a web search for each connection slug.
 
   1b. select topic
@@ -158,11 +160,16 @@ EXTENDING THE TREE
 ============================================================
 KEY FILES
 ============================================================
-  CAN/TREE-2026Q3.json       content strategy skeleton
-  COULD/TABLE-2026Q3.csv     all posts, all weeks
-  COULD/media/2026Q3/        post media files
-  MAY/ASSET-2026Q3.md       asset log (status, verify notes)
-  MIGHT/LOG-2026Q3.log        activity log
+  CAN/TREE-2026Q3.json              content strategy skeleton
+  CAN/TREE-<SLUG>-2026Q3.json       per-connection LinkedIn cache
+                                      (written by fetch-linkedin.yml;
+                                      none exist yet — see ASSET log)
+  COULD/TABLE-2026Q3.csv            all posts, all weeks
+  COULD/media/2026Q3/               post media files
+  MAY/ASSET-2026Q3.md              asset log (status, verify notes)
+  MIGHT/LOG-2026Q3.log               activity log
+  .claude/skills/fetch-linkedin/     STEP 1a skill (reads the cache above)
+  .github/workflows/fetch-linkedin.yml   weekly cache-refresh Action
 
 ============================================================
 QUARTER ROLLOVER
