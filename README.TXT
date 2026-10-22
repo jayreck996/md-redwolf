@@ -1,5 +1,5 @@
 RED WOLF — LinkedIn Content Orchestration Plan
-Last updated: 2026-10-20
+Last updated: 2026-10-22
 
 Client:   Red Wolf High Level Security Ltd
 Platform: LinkedIn
@@ -41,14 +41,26 @@ ORCHESTRATION — HOW TO RUN A CONTENT BATCH
 
 STEP 1 — RESEARCH
   1a. fetch-linkedin skill
-      Use the fetch-linkedin Claude skill (.claude/skills/fetch-linkedin/)
-      instead of calling LinkedIn directly — unauthenticated fetch() is
-      blocked. The skill reads the weekly cache files
-      CAN/TREE-<SLUG>-2026Q3.json (one per connection, written by the
-      fetch-linkedin GitHub Action) and summarizes recent posts,
-      announcements, or campaigns relevant to the upcoming content angles.
-      Record slug corrections or inactive/missing pages — do not tag
-      a page that is inactive or has no cache data.
+      Read CAN/TREE-<SLUG>-2026Q3.json for each connection — these are
+      pre-cached LinkedIn snapshots committed weekly by the GitHub Action
+      fetch-linkedin.yml. Claude does not fetch LinkedIn directly and does
+      not use claude-in-chrome.
+
+      How the cache is built (separate private repo py-redwolf):
+        GitHub Action (weekly cron)
+          → Cloudflare Tunnel → py-redwolf/listener.py on mac mini
+              → runs: claude -p browse-linkedin skill
+                  → chrome session (authenticated LinkedIn)
+                      → returns JSON per slug
+          → Action commits CAN/TREE-<SLUG>-2026Q3.json to this repo
+
+      For each TREE-<SLUG> file:
+        note recent posts, announcements, or campaigns relevant
+          to the upcoming content angles
+        do not tag a connection whose recentPosts[] is empty or stale
+
+      Fallback (cache not yet live — skill PLANNED):
+        run a web search for each connection slug.
 
   1b. select topic
       Read CAN/TREE-2026Q3.json — for each of the 6 pillars
