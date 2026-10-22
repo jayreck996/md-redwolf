@@ -58,10 +58,11 @@ STEP 1 — RESEARCH
           to the upcoming content angles
         do not tag a connection whose recentPosts[] is empty or stale
 
-      Fallback (cache files don't exist yet — the skill itself is
-      built, but py-redwolf's tunnel/login/LaunchAgent setup is still
-      pending on the client side, see MAY/ASSET-2026Q3.md):
-        run a web search for each connection slug.
+      Fallback (a connection's cache file is missing or stale — the
+      pipeline is live as of 2026-10-22, see MAY/ASSET-2026Q3.md, but
+      an individual fetch can still fail, e.g. the LinkedIn session
+      expiring):
+        run a web search for that connection's slug instead.
 
   1b. select topic
       Read CAN/TREE-2026Q3.json — for each of the 6 pillars
