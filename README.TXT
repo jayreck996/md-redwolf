@@ -51,7 +51,9 @@ STEP 1 — RESEARCH
 
   1b. select topic
       Read CAN/TREE-2026Q3.json — for each of the 6 pillars
-      select a type and subtype not yet used this quarter.
+      select a type and subtype that is relevant given what
+      was found in step 1a (recent partner activity, industry
+      news, or campaign timing should inform the angle).
       Apply the scoring guide to assign a score to each post.
 
   1c. choose artifact
@@ -89,8 +91,7 @@ CONTENT GENERATION RULES
 2. Do not repeat the same subtype within the same quarter.
 3. Score each post using the scoring guide below.
 4. Research (STEP 1) must be completed before generating —
-   recent partner or association activity should inform
-   the content angle where relevant.
+   subtype selection in 1b must be informed by what 1a found.
 5. Only tag partners when the post is directly relevant to
    their product or domain.
 6. Set media-type to the expected output file format:
