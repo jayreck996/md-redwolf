@@ -1,0 +1,53 @@
+name: fetch-linkedin
+
+# Weekly cache refresh for STEP 1a (see README.TXT and
+# MAY/ASSET-2026Q3.md). Calls py-redwolf's listener (over Cloudflare
+# Tunnel + Access) once per connection and commits the results to
+# CAN/TREE-<SLUG>-2026Q3.json. A connection that fails or times out is
+# skipped, not treated as a job failure — the fetch-linkedin skill
+# already handles a missing cache file as MISSING.
+#
+# Requires repo secrets: LINKEDIN_FETCH_URL, CF_ACCESS_CLIENT_ID,
+# CF_ACCESS_CLIENT_SECRET, LISTENER_SHARED_SECRET.
+
+on:
+  schedule:
+    # Sunday 20:00 UTC — before the Monday (NZT) batch day. Adjust if
+    # the batch day changes.
+    - cron: "0 20 * * 0"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch LinkedIn snapshots
+        env:
+          LINKEDIN_FETCH_URL: ${{ secrets.LINKEDIN_FETCH_URL }}
+          CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
+          LISTENER_SHARED_SECRET: ${{ secrets.LISTENER_SHARED_SECRET }}
+        run: python3 .github/scripts/fetch_linkedin_cache.py
+
+      - name: Commit updated cache files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          shopt -s nullglob
+          files=(CAN/TREE-*-2026Q3.json)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No cache files were written this run — nothing to commit."
+            exit 0
+          fi
+          git add "${files[@]}"
+          git diff --cached --quiet || git commit -m "chore(linkedin-cache): weekly fetch-linkedin snapshot update"
+          git push
