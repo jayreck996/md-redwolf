@@ -2,6 +2,57 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Real E2E test over the public tunnel — full round trip confirmed, 4th GitHub secret needed
+
+**What was done:** generated a real `LISTENER_SHARED_SECRET` (`openssl
+rand -hex 32`) into py-redwolf's `.env` (gitignored — this is now the
+real value, not a test throwaway). Started `listener.py` and
+`cloudflared tunnel run` for `py-redwolf` live, briefly, then hit the
+real public hostname `https://redwolf.toigroup.co.nz/fetch` from the
+actual internet (not localhost):
+  - no `X-Listener-Secret` header → 401 (confirmed)
+  - correct header → 200 with
+    `{"slug":"TEST","error":"linkedin_storage_state.json missing — run
+    login_linkedin.py"}` — the full real chain: public hostname →
+    Cloudflare edge → tunnel → `listener.py` → `browse_linkedin.py` →
+    JSON back through the same path, working end to end.
+
+**Mistake made and fixed during this test:** first run of `listener.py`
+used the system Python (the venv-activation fallback was written as
+`source ... || (python3 -m venv ... && source ...)` — activating inside
+a `(...)` subshell doesn't affect the parent shell, so the `nohup
+python3 listener.py` right after it still picked up the system
+Python). Result: `browse_linkedin.py` crashed with `ModuleNotFoundError:
+No module named 'playwright'`, which `listener.py` correctly reported
+as HTTP 502 (Cloudflare substituted its own generic error page body for
+that 502 — expected Cloudflare behavior, not a bug in our code).
+Fixed by starting `listener.py` with `.venv/bin/python3` explicitly
+rather than relying on shell activation; re-ran, got the correct result
+above.
+
+**New finding — a 4th GitHub secret is needed, not 3:** since
+`LISTENER_SHARED_SECRET` is now set, every request to the real endpoint
+must include a matching `X-Listener-Secret` header — including the
+future `fetch-linkedin.yml` GitHub Action's requests. Prior entries only
+listed `CF_ACCESS_CLIENT_ID`, `CF_ACCESS_CLIENT_SECRET`,
+`LINKEDIN_FETCH_URL` as the GitHub secrets to add — a 4th,
+`LISTENER_SHARED_SECRET` (same value as py-redwolf's local `.env`), is
+also required so the Action can send that header.
+
+**Shut down after the test:** killed both `listener.py` and the
+`cloudflared tunnel run` process for `py-redwolf`. Confirmed down —
+the hostname returned Cloudflare's 530 ("no origin reachable")
+afterward. Not left running, since Access still isn't enabled on the
+account.
+
+**Status:** real E2E round trip CONFIRMED working (minus an actual
+authenticated LinkedIn session — still untested, still needs
+`login_linkedin.py` run by hand). `.env`'s `LISTENER_SHARED_SECRET` is
+now the real production value. Still open: add it as `md-redwolf`'s
+4th GitHub secret alongside the other three once the Action is built;
+Cloudflare Access (blocked); the stray DNS record cleanup (prior
+entry); `fetch-linkedin.yml` itself.
+
 ## ASSET:redwolf 2026-10-22 -> Cloudflare Tunnel created for py-redwolf; one stray DNS record needs manual cleanup
 
 **Created:** tunnel `py-redwolf` (id `973ee4ee-8089-41f1-be79-d87102cba334`),
