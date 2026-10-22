@@ -2,6 +2,44 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Risk flags: moving md-redwolf + ts-redwolf into a new 'redwolf' GitHub org
+
+**Proposal under discussion:** create a new GitHub org `redwolf` (name
+confirmed available) and transfer both `md-redwolf` and `ts-redwolf` into
+it, so the client-facing repo and its private write-side pair share an
+org instead of sitting under the personal account.
+
+**Cannot be automated end-to-end:** GitHub's API has no "create
+organization" endpoint, and `gh` has no `repo transfer` subcommand — org
+creation is a manual step at https://github.com/organizations/new; the
+repo transfer itself can be scripted afterward via the REST API
+(`POST /repos/{owner}/{repo}/transfer`).
+
+**Risk flags:**
+  1. GitHub Pages URL changes host, not just path:
+     jayreck996.github.io/md-redwolf/ -> redwolf.github.io/md-redwolf/.
+     This is the client's review site (STEP 4). The old URL will NOT
+     keep working via redirect — different hostname entirely. The client
+     would need the new link sent to them.
+  2. 44 hardcoded raw.githubusercontent.com/jayreck996/md-redwolf/...
+     links already exist in this file's history, plus 12 in
+     COULD/TABLE-2026Q3.csv (week-43 media URLs etc). GitHub generally
+     redirects github.com/<old-owner>/<repo> paths after a transfer, and
+     raw.githubusercontent.com usually follows the same mapping, but this
+     is not a documented permanent guarantee. Per this repo's append-only
+     log rule, historical entries containing these links cannot be
+     rewritten even if the links go stale later.
+  3. Local clones on this machine point at jayreck996/... remotes for
+     both repos — mechanical fix after a transfer, not a blocker.
+  4. GitHub Actions secrets stay attached to a repo through a transfer,
+     so md-redwolf's planned CF_ACCESS_* / LINKEDIN_FETCH_URL secrets
+     (once added) are unaffected.
+  5. ts-redwolf is private with no public links — no Pages/raw-link risk
+     for that repo specifically.
+
+**Status:** FLAGGED for decision — org not yet created, no transfer has
+happened. Item 1 (Pages URL) is the real cost; the rest is mechanical.
+
 ## ASSET:redwolf 2026-10-22 -> Claude skill plan: items 1–2 revised, split into new private repo ts-redwolf
 
 **Revision:** Item 1 (macnimi server) is no longer a bespoke Node.js +
