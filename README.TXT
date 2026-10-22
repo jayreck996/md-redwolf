@@ -40,14 +40,15 @@ ORCHESTRATION — HOW TO RUN A CONTENT BATCH
 ============================================================
 
 STEP 1 — RESEARCH
-  1a. fetch()
-      Read CAN/TREE-2026Q3.json — load all connections{} slugs.
-      For each connection fetch() the LinkedIn page URL:
-        confirm the page is active and the slug is correct
-        note any recent posts, announcements, or campaigns
-          relevant to the upcoming content angles
-      Record slug corrections or inactive pages — do not tag
-      a page that is inactive.
+  1a. fetch-linkedin skill
+      Use the fetch-linkedin Claude skill (.claude/skills/fetch-linkedin/)
+      instead of calling LinkedIn directly — unauthenticated fetch() is
+      blocked. The skill reads the weekly cache files
+      CAN/TREE-<SLUG>-2026Q3.json (one per connection, written by the
+      fetch-linkedin GitHub Action) and summarizes recent posts,
+      announcements, or campaigns relevant to the upcoming content angles.
+      Record slug corrections or inactive/missing pages — do not tag
+      a page that is inactive or has no cache data.
 
   1b. select topic
       Read CAN/TREE-2026Q3.json — for each of the 6 pillars

@@ -1,0 +1,95 @@
+---
+name: fetch-linkedin
+description: Use during STEP 1a (RESEARCH / fetch()) of a Red Wolf content batch. Reads the cached per-connection LinkedIn snapshots in CAN/TREE-<SLUG>-<quarter>.json — written weekly by the fetch-linkedin GitHub Action — instead of calling LinkedIn directly, which blocks unauthenticated fetch(). Summarizes recent partner/association activity to inform STEP 1b subtype selection.
+---
+
+# fetch-linkedin
+
+Implements STEP 1a from the root `README.TXT` using the cached-snapshot design
+recorded in `MAY/ASSET-<quarter>.md` ("Claude skill plan: LinkedIn fetch via
+macnimi server + GitHub Action", Option B). A separate GitHub Action
+(`.github/workflows/fetch-linkedin.yml`, not yet built) calls an authenticated
+macnimi/Puppeteer server on a weekly cron and commits one JSON snapshot per
+connection into `CAN/`. This skill only **reads** those snapshots — it never
+calls LinkedIn itself and never writes cache files.
+
+## When to use this
+
+Any time an agent is running STEP 1 of the orchestration and reaches 1a. It
+replaces the old instruction to `fetch()` each LinkedIn page URL directly.
+
+## Steps
+
+1. **Load the connection list.**
+   Read `CAN/TREE-<quarter>.json` (e.g. `CAN/TREE-2026Q3.json`) and pull
+   `connections{}` — `own`, `associations`, `partners`.
+
+2. **Map each connection to its cache slug.**
+   Slugs are short, uppercase, and fixed — not derived from the LinkedIn URL.
+   Current mapping:
+
+   | Connection                              | Group        | Slug         |
+   |------------------------------------------|--------------|--------------|
+   | Red Wolf High Level Security Ltd         | own          | REDWOLF      |
+   | New Zealand Security Association (NZSA)  | associations | NZSA         |
+   | ASIS International                       | associations | ASIS         |
+   | NZ Police                                | associations | NZPOLICE     |
+   | Johnson Controls                         | partners     | JOHNSON      |
+   | Gallagher Security                       | partners     | GALLAGHER    |
+   | Inner Range ANZ                          | partners     | INNERRANGE   |
+   | Bosch Security and Safety Systems        | partners     | BOSCH        |
+   | Integrated Control Technology (ICT)      | partners     | ICT          |
+   | Jacques Technologies                     | partners     | JACQUES      |
+
+   If `connections{}` ever gains an entry not in this table, pick a short
+   uppercase slug the same way (first/most distinctive word, no spaces) and
+   add it to this table in the same edit that adds the connection.
+
+3. **Read each cache file.**
+   For every slug, look for `CAN/TREE-<SLUG>-<quarter>.json`
+   (e.g. `CAN/TREE-NZSA-2026Q3.json`). Expected shape:
+
+   ```json
+   {
+     "slug": "NZSA",
+     "companyName": "New Zealand Security Association (NZSA)",
+     "url": "https://www.linkedin.com/company/new-zealand-security-association",
+     "fetchedAt": "2026-10-20T03:00:00Z",
+     "followerCount": 0,
+     "bio": "string",
+     "recentPosts": [
+       { "date": "2026-10-18", "text": "string", "url": "string" }
+     ]
+   }
+   ```
+
+4. **Check freshness before trusting the data.**
+   - **Missing file** — the Action hasn't run for this slug yet, or the
+     connection is new. Treat as 1a's "inactive page" case: do not tag this
+     connection in STEP 2, and note it as MISSING in the 1a findings.
+   - **Stale (`fetchedAt` more than 7 days old)** — flag as STALE in the 1a
+     findings but still use the data; a week-old snapshot is still more
+     current than guessing.
+   - **Malformed JSON** — flag as MISSING and skip; don't block the batch on
+     one bad file.
+
+5. **Summarize per connection.**
+   For each connection with usable data, write 1–2 sentences on anything from
+   `recentPosts` / `bio` that's relevant to the upcoming content angles —
+   campaigns, product launches, awards, hiring pushes, partnership news.
+   Connections with nothing notable get a one-line "no relevant activity."
+
+6. **Hand off to 1b.**
+   Produce a short findings block (per-connection summary + any
+   MISSING/STALE flags) and carry it into 1b subtype selection, per README
+   rule 4: "subtype selection in 1b must be informed by what 1a found."
+
+## Constraints
+
+- Never call `fetch()` or any LinkedIn URL directly from this skill — that's
+  exactly the unauthenticated path this design replaces.
+- Never write or edit `CAN/TREE-<SLUG>-<quarter>.json` from here — those files
+  are owned by the `fetch-linkedin` GitHub Action.
+- The quarter suffix (`2026Q3`) is hardcoded per the current quarter's key
+  files; update it at quarter rollover alongside the rest of the files listed
+  in README's QUARTER ROLLOVER section.

@@ -2,6 +2,28 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Claude skill plan: items 3–4 built (fetch-linkedin skill + README)
+
+**Built:** `.claude/skills/fetch-linkedin/SKILL.md` — implements item 3 of the
+Option B design below. During STEP 1a it reads the cached
+`CAN/TREE-<SLUG>-2026Q3.json` snapshots instead of calling LinkedIn directly,
+maps all 10 connections to their fixed slugs (REDWOLF, NZSA, ASIS, NZPOLICE,
+JOHNSON, GALLAGHER, INNERRANGE, BOSCH, ICT, JACQUES), flags MISSING (no cache
+file) or STALE (`fetchedAt` >7 days) connections instead of blocking the
+batch, and summarizes recent activity per connection to inform 1b. Read-only:
+never calls LinkedIn, never writes the cache files.
+
+**Also built (item 4):** README.TXT step 1a now references the skill and the
+`TREE-<SLUG>` cache files instead of the old direct-`fetch()` instructions.
+
+**Still open:** item 1 (macnimi server endpoint) and item 2
+(`.github/workflows/fetch-linkedin.yml`) — blocked on the macnimi server's
+address/auth, which only the client has.
+
+**Status:** items 3–4 BUILT. Items 1–2 still PLANNED; no cache files exist
+yet, so the fetch-linkedin skill will report every connection as MISSING
+until the Action starts writing them.
+
 ## ASSET:redwolf 2026-10-22 -> Claude skill plan: LinkedIn fetch via macnimi server + GitHub Action
 
 **Plan:** Replace step 1a fetch() — which LinkedIn blocks unauthenticated — with a weekly
