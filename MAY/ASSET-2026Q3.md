@@ -2,6 +2,43 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Org transfer completed (redwolfnz); ts-redwolf renamed to py-redwolf
+
+**Org transfer:** both repos moved from the jayreck996 personal account
+into the `redwolfnz` org (confirmed existing org, admin role active) via
+`POST /repos/{owner}/{repo}/transfer`:
+  jayreck996/md-redwolf  -> redwolfnz/md-redwolf  (public)
+  jayreck996/ts-redwolf  -> redwolfnz/ts-redwolf  (private)
+
+Verified after transfer: GitHub Pages rebuilt automatically at the new
+host — https://redwolfnz.github.io/md-redwolf/ (replaces
+jayreck996.github.io/md-redwolf/, which does NOT redirect — different
+hostname, per the risk flag logged earlier). Existing Actions secret
+(MD_REDWOLF) carried over intact. Local clones' remotes updated to the
+new org URLs on this machine.
+
+**Rename:** redwolfnz/ts-redwolf -> redwolfnz/py-redwolf (via
+`gh repo rename`), since the repo is pure Python (listener.py, stdlib
+only) rather than TypeScript — matches the existing `py-*` naming used
+elsewhere (py-quiz, py-test, py-portfolio) better than `ts-*`. Local
+folder renamed to match; self-references inside the repo's own files
+(listener.py, README.md, cloudflared/launchd templates) updated to the
+new name, and README's link to md-redwolf fixed from the old
+jayreck996 owner to redwolfnz.
+
+**Known stale references not touched (append-only):** this file's own
+earlier entries above still say "ts-redwolf" and link to
+github.com/jayreck996/ts-redwolf — historical, left as-is per this
+repo's append-only log rule. Same applies to the 44
+raw.githubusercontent.com/jayreck996/md-redwolf/... links already in
+this file and the 12 in COULD/TABLE-2026Q3.csv — not yet verified
+whether they still resolve post-transfer.
+
+**Status:** org transfer + rename DONE. Still open: confirm whether the
+old raw.githubusercontent.com/jayreck996 media links still resolve;
+send the client the new Pages URL; the mac-mini tunnel/GitHub Action
+work flagged in the prior entries remains PLANNED.
+
 ## ASSET:redwolf 2026-10-22 -> Risk flags: moving md-redwolf + ts-redwolf into a new 'redwolf' GitHub org
 
 **Proposal under discussion:** create a new GitHub org `redwolf` (name
