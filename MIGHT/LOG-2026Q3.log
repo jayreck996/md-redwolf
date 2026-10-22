@@ -2,10 +2,10 @@ LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW LOG ENTRIES DIRECTLY BELOW THIS LINE -->
 
-## VERSION 2 — 2026-10-20 NZT
+## VERSION 2 — 2026-10-22 15:56 NZT
 
-Commit: 9173fbf
-Week 43 batch generated — post-007 to post-012 (all BLOCKED).
+Commit: 64f00b7
+Week 43 batch regenerated fresh — post-007 to post-012 (all BLOCKED).
 
 Prompt changes from v1:
 - README.TXT expanded to full orchestration source: structure, plan steps,
@@ -14,6 +14,12 @@ Prompt changes from v1:
   (LinkedIn blocked unauthenticated access; slugs confirmed valid)
 - MUST/README.TXT reduced to pointer only
 - Scoring guide formalised: base pillar scores + type/subtype adjustments
+- Folder structure renamed: MUST→CAN, SHOULD→COULD, COULD→MAY, WOULD→MIGHT
+- Step 1b updated: subtype selection driven by 1a findings, not quarter history
+- IQP Inspections added to tree under SERVICES / Consulting & Design
+- Sources column added to TABLE
+- Week 43 fresh start: IQP Inspections, AI in Surveillance, Expert Opinion,
+  Career Growth, NZSA Accreditation, Security Awareness Month
 
 ## VERSION 1 — 2026-10-13 16:18 NZT
 
