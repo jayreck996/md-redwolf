@@ -2,6 +2,40 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Cloudflare Tunnel created for py-redwolf; one stray DNS record needs manual cleanup
+
+**Created:** tunnel `py-redwolf` (id `973ee4ee-8089-41f1-be79-d87102cba334`),
+hostname `redwolf.toigroup.co.nz` routed to it via
+`cloudflared tunnel route dns`. Local config at
+`~/.cloudflared/py-redwolf.yml` (gitignored, not in either repo) points
+that hostname at `http://127.0.0.1:8787` — where `listener.py` will
+listen once it's running.
+
+**Mistake made and partly cleaned up:** first created the route as
+`linkedin-fetch.toigroup.co.nz` before being asked to use
+`redwolf.toigroup.co.nz` instead. Routed the correct hostname
+immediately after — both now point at the same tunnel. Attempted to
+delete the stray `linkedin-fetch.toigroup.co.nz` CNAME via the
+Cloudflare API: failed every attempt (DELETE and PUT both returned
+"Authentication error") — the available `$CLOUDFLARE_API_TOKEN` can
+read DNS records on this zone but not edit/delete them. `cloudflared`
+itself has no DNS-record-removal subcommand (`tunnel delete` removes
+the whole tunnel, not one DNS record, and would also kill the correct
+hostname's route).
+
+**Still needs manual cleanup:** delete the `linkedin-fetch.toigroup.co.nz`
+CNAME from the Cloudflare dashboard (DNS → records for `toigroup.co.nz`),
+or supply a token with DNS-edit scope on that zone. Harmless as-is —
+nothing is live behind either hostname yet, and whatever ends up
+gating this (Access, the shared secret) will cover both identically
+until it's removed — but it shouldn't be left long-term.
+
+**Status:** tunnel + correct DNS route DONE. Nothing running yet —
+no `cloudflared tunnel run` process is live, so neither hostname is
+actually reachable right now. Still open: the stray-record cleanup
+above, Cloudflare Access (blocked — not enabled on the account),
+and everything else already logged as PLANNED in prior entries.
+
 ## ASSET:redwolf 2026-10-22 -> Partial E2E test of py-redwolf: plumbing verified, real bug found + fixed
 
 **What was tested, locally, on this machine, no Cloudflare/GitHub Action
