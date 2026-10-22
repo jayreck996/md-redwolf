@@ -69,7 +69,15 @@ def fetch_one(base_url: str, slug: str, company_name: str, url: str,
               cf_client_id: str, cf_client_secret: str, shared_secret: str) -> bytes | None:
     qs = urllib.parse.urlencode({"slug": slug, "companyName": company_name, "url": url})
     full_url = f"{base_url}?{qs}"
-    headers = {}
+    # urllib's default User-Agent ("Python-urllib/x.y") gets blocked
+    # outright before reaching the tunnel at all — confirmed live: every
+    # connection came back HTTP 403 on the first real run, and curl with
+    # that same UA spoofed got blocked identically, while a normal UA
+    # (or this custom one) passes. Most likely Cloudflare's Bot Fight
+    # Mode or a similar default WAF rule blocking known bot/script UAs.
+    headers = {
+        "User-Agent": "redwolf-linkedin-fetch/1.0 (+https://github.com/redwolfnz/md-redwolf)",
+    }
     if cf_client_id and cf_client_secret:
         headers["CF-Access-Client-Id"] = cf_client_id
         headers["CF-Access-Client-Secret"] = cf_client_secret
