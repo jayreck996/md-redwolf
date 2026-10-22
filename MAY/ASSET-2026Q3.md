@@ -2,28 +2,46 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
-## ASSET:redwolf 2026-10-22 -> Claude skill plan: LinkedIn fetch via dedicated server
+## ASSET:redwolf 2026-10-22 -> Claude skill plan: LinkedIn fetch via macnimi server + GitHub Action
 
-**Plan:** Replace step 1a fetch() — which LinkedIn blocks unauthenticated — with a Claude skill
-that calls a dedicated server endpoint running Puppeteer with an authenticated LinkedIn session.
+**Plan:** Replace step 1a fetch() — which LinkedIn blocks unauthenticated — with a weekly
+GitHub Action that calls a macnimi server running Puppeteer, caches results as TREE-<SLUG>
+files in CAN/, and Claude reads those files during step 1a.
 
-**Architecture:**
+**Architecture (Option B — scheduled cache):**
+  GitHub Action (cron — weekly, before batch day)
+    → calls macnimi server: GET /linkedin?slug=<slug> for each connection
+        → macnimi runs Puppeteer with authenticated LinkedIn session
+            → returns JSON { recentPosts[], bio, followerCount }
+    → Action commits CAN/TREE-<SLUG>-2026Q3.json to repo
+
   Claude (step 1a)
-    → WebFetch(your-server.com/linkedin?slug=<slug>)
-        → server runs Puppeteer, logged-in session
-            → returns structured JSON (recent posts, bio)
-    → agent reads JSON, informs 1b subtype selection
+    → reads CAN/TREE-<SLUG>-2026Q3.json (same pattern as CAN/TREE-2026Q3.json)
+    → extracts recent posts/announcements per connection
+    → informs 1b subtype selection
+
+**Cache files (CAN/, per connection):**
+  TREE-REDWOLF-2026Q3.json
+  TREE-NZSA-2026Q3.json
+  TREE-ASIS-2026Q3.json
+  TREE-NZPOLICE-2026Q3.json
+  TREE-JOHNSON-2026Q3.json
+  TREE-GALLAGHER-2026Q3.json
+  TREE-INNERRANGE-2026Q3.json
+  TREE-BOSCH-2026Q3.json
+  TREE-ICT-2026Q3.json
+  TREE-JACQUES-2026Q3.json
 
 **To build:**
-  1. Server endpoint — Node.js + Puppeteer on existing PM2 server
+  1. macnimi server endpoint — Node.js + Puppeteer
      GET /linkedin?slug=<slug> → JSON { recentPosts[], bio, followerCount }
-  2. Claude skill — .claude/skills/fetch-linkedin/SKILL.md
-     Instructs agent: call WebFetch(server/linkedin?slug=...), parse response,
-     extract relevant activity for each connection before selecting subtopics in 1b
-  3. README update — step 1a references the skill by name
-
-**Why server over claude-in-chrome:** Fully autonomous — agent calls endpoint
-without human present. Chrome extension requires browser open at run time.
+     Must be publicly reachable by GitHub Actions (Cloudflare tunnel or similar)
+  2. GitHub Action — .github/workflows/fetch-linkedin.yml
+     Cron schedule, loops all slugs from TREE-2026Q3.json connections{},
+     commits each TREE-<SLUG>-2026Q3.json result to CAN/
+  3. Claude skill — .claude/skills/fetch-linkedin/SKILL.md
+     Instructs agent to read CAN/TREE-*-2026Q3.json files in step 1a
+  4. README update — step 1a references the skill and TREE-<SLUG> files
 
 **Risk:** LinkedIn ToS prohibits scraping; run conservatively (one fetch per
 connection per week, human-like delays) to reduce detection risk.
