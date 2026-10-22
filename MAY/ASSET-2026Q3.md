@@ -2,6 +2,62 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Partial E2E test of py-redwolf: plumbing verified, real bug found + fixed
+
+**What was tested, locally, on this machine, no Cloudflare/GitHub Action
+involved:**
+  1. `browse_linkedin.py`'s missing-session guard — correctly returns
+     `{slug, error: "linkedin_storage_state.json missing..."}` with no
+     session file present.
+  2. `listener.py`'s full HTTP path — started it, curled `/fetch` with
+     real query params: confirmed it shells out to `browse_linkedin.py`,
+     parses its JSON, and returns it verbatim. Also confirmed 400 on
+     missing params, 404 on an unknown path.
+  3. The `LISTENER_SHARED_SECRET` auth gate — 401 with no header, 401
+     with the wrong value, 200 with the correct one (a throwaway test
+     value, never committed).
+  4. Real navigation against a real, public LinkedIn page
+     (linkedin.com/company/microsoft) using an anonymous/empty session —
+     LinkedIn serves a public preview without login, so this exercised
+     real extraction, not a mock.
+
+**Bug found and fixed:** `followerCount` came back `0` on the first
+real fetch. Investigation found the CSS-class selector was matching a
+"People also viewed" sidebar card's follower count instead of
+Microsoft's own — LinkedIn's classes here are generic utility classes
+with no stable semantic hook, and the same "N followers" text repeats
+on those cards further down the page. Fixed by taking the first "N
+followers" match in the page's plain visible text instead of a CSS
+selector — the company's own count is reliably in the header, before
+any sidebar content. Re-verified: correct count came back
+(29,344,015, matching the real live figure). `bio` extraction was
+correct on the first try, no fix needed. `recentPosts` remains an
+untested stub — not exercised by this test.
+
+**Also found:** 3 rapid real requests to the same page triggered a
+timeout on the 4th — concrete confirmation of the ASSET log's existing
+"run conservatively, one fetch per connection" guidance; not just a
+theoretical risk. Also: Homebrew's Python on this machine is
+externally-managed and refuses global `pip install` — README and the
+launchd plist template now use a venv (`.venv/bin/python3`) instead of
+system python3.
+
+**What this did NOT test — still needs you:** everything here ran
+against an anonymous session (empty storage state), since creating a
+real one requires `login_linkedin.py`'s interactive LinkedIn login
+(including any 2FA), which only you can do. Untested: the real
+authenticated-session path, the "session expired" detection logic
+(never triggered — anonymous view never hit an authwall for this
+public page), and whether `recentPosts` extraction works at all
+(still a stub). Also untested: the actual Cloudflare Tunnel, Access,
+and the fetch-linkedin.yml GitHub Action — none of those exist yet.
+
+**Status:** local plumbing + one real selector bug CONFIRMED FIXED
+(py-redwolf commits c8787f1, f854a7d). Still open, unchanged in kind
+from prior entries: real authenticated-session test, recentPosts
+extraction, Cloudflare Access (blocked — not enabled on the account),
+tunnel creation, GitHub Action.
+
 ## ASSET:redwolf 2026-10-22 -> claude-in-chrome retired for real; py-redwolf now uses Playwright (supersedes commits 145504d/fd4291c below)
 
 **Why this entry exists:** commits 145504d and fd4291c (below, from a
