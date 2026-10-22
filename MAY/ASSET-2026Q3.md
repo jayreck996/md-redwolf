@@ -2,6 +2,50 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> fetch-linkedin.yml built; everything automatable without Cloudflare Access is now done
+
+**GitHub secrets added (2 of the 4):** `LISTENER_SHARED_SECRET` (the
+real value from py-redwolf's `.env`) and `LINKEDIN_FETCH_URL`
+(`https://redwolf.toigroup.co.nz/fetch`) — both addable without
+Access, since they don't depend on it.
+
+**Built:** `.github/workflows/fetch-linkedin.yml` (item 2 of the
+original plan) — weekly cron (Sun 20:00 UTC) + `workflow_dispatch` for
+manual runs, plus `.github/scripts/fetch_linkedin_cache.py`: reads
+`CAN/TREE-2026Q3.json`'s `connections{}`, maps each to its fixed slug
+(same table as the `fetch-linkedin` skill — keep both in sync if
+connections{} ever changes), calls the listener once per connection
+30s apart (stdlib `urllib`, no pip install needed), writes successes to
+`CAN/TREE-<SLUG>-2026Q3.json`. A failed/unreachable connection is
+logged and skipped, never fails the job.
+
+**Bug caught before shipping:** `git add CAN/TREE-*-2026Q3.json` with
+zero matches — the current actual state, since nothing is fetchable
+yet — would have errored and failed the whole job. Guarded with
+`nullglob` + an explicit empty check before committing.
+
+**Confirmed blocked, not just assumed:** tried enabling Cloudflare
+Access via the API directly (`PUT .../access/organizations`) — same
+"Authentication error" as the earlier DNS-write attempts. This
+account's API token has no Zero Trust/Access scope at all; this one
+genuinely needs the dashboard (or a token with that scope), not just
+more scripting.
+
+**Status:** every piece buildable without touching Cloudflare's
+dashboard or a real LinkedIn login is now done. What's left is
+entirely on the user's side:
+  1. Enable Access (dashboard) → create the Access application +
+     service token for `redwolf.toigroup.co.nz` → gives
+     `CF_ACCESS_CLIENT_ID`/`CF_ACCESS_CLIENT_SECRET`, the last 2
+     GitHub secrets
+  2. `login_linkedin.py`, run by hand — the real authenticated session
+  3. Set up both LaunchAgents (listener + cloudflared) so the tunnel
+     survives reboots instead of running as loose background processes
+  4. Delete the stray `linkedin-fetch.toigroup.co.nz` CNAME (logged
+     earlier, still outstanding)
+  Once 1–3 are done, `workflow_dispatch` on `fetch-linkedin.yml` can
+  be used to test the real, fully-automated path end to end.
+
 ## ASSET:redwolf 2026-10-22 -> Real E2E test over the public tunnel — full round trip confirmed, 4th GitHub secret needed
 
 **What was done:** generated a real `LISTENER_SHARED_SECRET` (`openssl
