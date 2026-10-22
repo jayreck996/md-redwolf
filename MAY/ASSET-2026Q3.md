@@ -2,6 +2,80 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Post-cycle refinements: real recentPosts quality, account swap, connections{} drift protection
+
+Follow-up to the prior entry's "9/10 connections, most posts empty"
+result — pushed on whether that was really "enough," which it wasn't.
+
+**recentPosts fixes (py-redwolf, several commits), each caught by
+testing against real pages before shipping:**
+  - "Follow" button text leaking into post content (pages not already
+    followed show it inline) — stripped.
+  - Biggest gap: the extraction only recognized small pages' "Feed
+    post" label layout. Large/corporate pages (e.g. Johnson Controls,
+    3.8M followers, posts multiple times a day) use a completely
+    different layout — one "Page posts" header, no per-post label —
+    and silently returned 0 posts, which looked like a quiet account
+    but wasn't. Rewrote to detect posts by pattern (company name
+    directly followed by a date-shaped line) instead of either page's
+    specific label. Fixed all 7 connections that had shown 0 posts.
+  - Acronym mismatch: "Inner Range ANZ" (official) vs. "Inner Range
+    Australia & New Zealand" (displayed) — fixed with an
+    initials-based check, but only after catching that a naive
+    "2+ shared words" version would have misattributed a REPOST from
+    a different region ("Inner Range North America") as this
+    connection's own words.
+  - Last post on a page (no "more" marker, no next post to bound it)
+    ran into sidebar/footer content — added explicit stops.
+  - Reposts are now captured (not filtered out) — tagged with
+    `repostOf` so they're never confused with the connection's own
+    words. Schema documented in the skill.
+
+**Re-ran fetch-linkedin.yml 3 times** as these landed, each getting
+closer to complete; final run: all 10 connections have real data,
+INNERRANGE (previously 0) now has 5 real posts including one correctly
+excluded-then-correctly-included repost.
+
+**Real operational mistake made and fixed:** triggered a new run,
+then kept committing to md-redwolf while it was still in flight — its
+own `git push` got rejected (unrelated commits had moved `main`) and
+the entire run's fetched data was lost, not just delayed. Root-caused
+and fixed below.
+
+**Account swap:** switched which LinkedIn account `browse_linkedin.py`
+authenticates as. `login_linkedin.py` now backs up the previous
+session before overwriting it (new, since this was the first real
+account change) rather than discarding it silently.
+
+**connections{} can change at any time — caches could silently drift
+from it.** Raised directly: `CAN/TREE-2026Q3.json`'s `connections{}`
+can be edited whenever (a partner's page migrating, a corrected
+slug), but nothing checked whether a cache file's `url` still matched
+the CURRENT entry — only time-based staleness existed, which can't
+catch this. Fixed three things together:
+  1. `fetch-linkedin` skill: a cache whose `url` no longer matches
+     `connections{}`'s current entry for that slug is now STALE
+     regardless of `fetchedAt`'s age.
+  2. `fetch_linkedin_cache.py`: removes `CAN/TREE-<SLUG>-2026Q3.json`
+     for any slug no longer in `connections{}`, instead of leaving
+     orphaned files indefinitely.
+  3. The git-push race above: the commit step now retries with
+     fetch+rebase instead of a bare push that fails outright.
+  Confirmed a URL *change* (same slug) already worked correctly
+  without any fix — the Action reads `connections{}` fresh every run.
+  Flagged but not yet fixed: a *rename* (not just URL/content change)
+  breaks `SLUG_MAP`'s name-keyed lookup and would cause the new
+  orphan-cleanup to delete that connection's cache as if it were
+  genuinely removed, even though it still conceptually exists.
+
+**README fixes along the way:** a stale fallback note still said the
+pipeline was "pending" after it had gone live; STEP 1a never mentioned
+reading the base `CAN/TREE-2026Q3.json` for the connection list itself,
+only the per-slug cache files.
+
+**Status:** real, complete data for all 10 connections, verified.
+`SLUG_MAP` rename-safety is an open, flagged gap, not yet fixed.
+
 ## ASSET:redwolf 2026-10-22 -> Full cycle completed for real: GitHub Action → Cloudflare → py-redwolf → real LinkedIn data → committed
 
 **login_linkedin.py run successfully** (by the user). First attempt
