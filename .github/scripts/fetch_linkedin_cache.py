@@ -134,8 +134,30 @@ def main() -> int:
         if i < len(connections) - 1:
             time.sleep(SECONDS_BETWEEN_CALLS)
 
-    print(f"Done: {fetched} written, {skipped} skipped.")
+    removed = _remove_orphaned_cache_files(connections)
+
+    print(f"Done: {fetched} written, {skipped} skipped, {removed} orphaned removed.")
     return 0  # never fail the job over individual connection failures
+
+
+def _remove_orphaned_cache_files(connections: list) -> int:
+    """connections{} in CAN/TREE-2026Q3.json can change at any time —
+    a connection being removed/renamed shouldn't leave its old cache
+    file sitting in CAN/ forever, where it'd never be read (the skill
+    only looks up slugs it finds in the CURRENT connections{}) but
+    would clutter the repo indefinitely. Removes any
+    CAN/TREE-<SLUG>-2026Q3.json whose slug isn't in this run's
+    connections list."""
+    current_slugs = {slug for slug, _, _ in connections}
+    removed = 0
+    for path in (REPO_ROOT / "CAN").glob(f"TREE-*-{QUARTER}.json"):
+        slug = path.stem[len("TREE-"):-len(f"-{QUARTER}")]
+        if slug not in current_slugs:
+            print(f"slug={slug}: connection no longer in connections{{}} — "
+                  f"removing orphaned {path.relative_to(REPO_ROOT)}")
+            path.unlink()
+            removed += 1
+    return removed
 
 
 if __name__ == "__main__":

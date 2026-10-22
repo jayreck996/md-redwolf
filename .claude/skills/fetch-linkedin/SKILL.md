@@ -72,6 +72,13 @@ replaces the old instruction to `fetch()` each LinkedIn page URL directly.
    - **Missing file** — the Action hasn't run for this slug yet, or the
      connection is new. Treat as 1a's "inactive page" case: do not tag this
      connection in STEP 2, and note it as MISSING in the 1a findings.
+   - **URL mismatch** — compare the cache file's own `url` field against
+     that slug's URL in `CAN/TREE-2026Q3.json`'s `connections{}` *right
+     now*. If they differ, treat as STALE regardless of `fetchedAt`'s
+     age — `connections{}` can be edited at any time (a partner's page
+     migrating, a corrected slug), and a day-old snapshot of the WRONG
+     page is worse than a week-old snapshot of the right one. This is
+     the only way to catch that case; `fetchedAt` alone can't.
    - **Stale (`fetchedAt` more than 7 days old)** — flag as STALE in the 1a
      findings but still use the data; a week-old snapshot is still more
      current than guessing.

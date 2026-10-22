@@ -42,12 +42,28 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          shopt -s nullglob
-          files=(CAN/TREE-*-2026Q3.json)
-          if [ ${#files[@]} -eq 0 ]; then
-            echo "No cache files were written this run — nothing to commit."
+          # -A (not a shell glob) so this also stages orphan removals
+          # (see fetch_linkedin_cache.py) -- a plain glob only matches
+          # files that still exist on disk, so a deletion would never
+          # get staged by it at all.
+          git add -A -- 'CAN/TREE-*-2026Q3.json'
+          if git diff --cached --quiet; then
+            echo "No cache changes this run — nothing to commit."
             exit 0
           fi
-          git add "${files[@]}"
-          git diff --cached --quiet || git commit -m "chore(linkedin-cache): weekly fetch-linkedin snapshot update"
-          git push
+          git commit -m "chore(linkedin-cache): weekly fetch-linkedin snapshot update"
+          # Retry with rebase on a rejected push -- confirmed this
+          # happens for real: a run's entire fetched batch was lost
+          # once already when an unrelated commit landed on main
+          # while this ~6-minute job was still running, and the bare
+          # `git push` here had no fallback.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) -- rebasing onto origin/main and retrying..."
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::git push failed after 5 attempts"
+          exit 1
