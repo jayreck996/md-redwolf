@@ -2,6 +2,54 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Dropped Cloudflare Access; honest note on what Plan B actually fixes (not full autonomy)
+
+**Decision: Access is not required.** `listener.py`'s existing
+`LISTENER_SHARED_SECRET` check (`X-Listener-Secret` header) is a
+sufficient auth layer on its own — already built, already confirmed
+working over the real tunnel (401 without it, 200 with it).
+`fetch_linkedin_cache.py` already degrades gracefully if
+`CF_ACCESS_CLIENT_ID`/`CF_ACCESS_CLIENT_SECRET` are unset (just skips
+those headers) — no code changes needed to drop Access. Residual risk:
+the hostname `redwolf.toigroup.co.nz` isn't truly secret (any TLS cert
+Cloudflare issues for it is discoverable via public Certificate
+Transparency logs), but without the 256-bit shared secret nothing can
+be done with it — the same security shape as any bearer-token API over
+TLS. This removes the entire Zero Trust/service-token setup from the
+remaining steps; only 2 GitHub secrets are needed, not 4, and both are
+already set.
+
+**Honest correction — Plan B does not achieve "fully autonomous."**
+Re-examined after being asked directly whether manually running
+`login_linkedin.py` just reintroduces the same human-dependency problem
+claude-in-chrome had. It's a fair challenge, and the straight answer is
+no design here achieves zero-touch-forever: any approach depending on
+an authenticated LinkedIn session needs re-auth eventually, including
+a dedicated bot account. What Plan B actually improves is frequency and
+reliability of that dependency, not its existence:
+  - claude-in-chrome: human needed on essentially every run (bridge
+    connection found to drop during any idle period, no reliable
+    keepalive after several attempts logged in md-repo), AND fails
+    silently (headless claude -p has no Chrome tools at all under
+    API-key auth — no error, just nothing).
+  - Playwright + saved session: human needed only when the session
+    actually expires (unpredictable timing, but infrequent, not
+    per-run), AND fails loudly — `browse_linkedin.py` explicitly
+    returns `{"error": "session expired"}` instead of guessing or
+    silently breaking.
+The original plan's "fully autonomous — agent calls endpoint without
+human present" framing (very first entry, before any revision) was
+aspirational even then. The real claim for Plan B is: autonomous most
+weeks, with an explicit signal instead of silent/unreliable failure
+when it isn't — not autonomous forever.
+
+**Status:** Access dropped from the design (not just deferred).
+Remaining steps unchanged in substance, reduced in count:
+  1. `login_linkedin.py`, run by hand — accepted as a recurring,
+     infrequent cost, not a one-time setup step
+  2. Set up both LaunchAgents (listener + cloudflared)
+  3. Delete the stray `linkedin-fetch.toigroup.co.nz` CNAME
+
 ## ASSET:redwolf 2026-10-22 -> fetch-linkedin.yml built; everything automatable without Cloudflare Access is now done
 
 **GitHub secrets added (2 of the 4):** `LISTENER_SHARED_SECRET` (the
