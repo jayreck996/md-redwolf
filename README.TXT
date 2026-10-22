@@ -49,9 +49,8 @@ STEP 1 — RESEARCH
       How the cache is built (separate private repo py-redwolf):
         GitHub Action (weekly cron)
           → Cloudflare Tunnel → py-redwolf/listener.py on mac mini
-              → runs: claude -p browse-linkedin skill
-                  → chrome session (authenticated LinkedIn)
-                      → returns JSON per slug
+              → runs: browse_linkedin.py (Playwright, saved LinkedIn session)
+                  → returns JSON per slug
           → Action commits CAN/TREE-<SLUG>-2026Q3.json to this repo
 
       For each TREE-<SLUG> file:

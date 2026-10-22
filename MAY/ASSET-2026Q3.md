@@ -2,6 +2,66 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> claude-in-chrome retired for real; py-redwolf now uses Playwright (supersedes commits 145504d/fd4291c below)
+
+**Why this entry exists:** commits 145504d and fd4291c (below, from a
+separate session) re-confirmed the `claude -p browse-linkedin skill →
+chrome session` design in README.TXT and this log — written a few
+minutes before the finding that kills that design was found. Per the
+append-only rule those entries are left as-is; this entry documents
+what actually changed and why.
+
+**Finding (from a separate repo, md-repo's chrome/could/ASSET-2026Q3.md,
+not this project):** two independent problems make claude-in-chrome
+unworkable for an unattended weekly cron:
+  1. Headless Claude Code invocations (`claude -p`) normally run on
+     API-key auth, which silently disables Chrome integration — no
+     error, just no `mcp__claude-in-chrome__*` tools available.
+  2. Even with interactive OAuth, that repo's own operational history
+     found no reliable automated keepalive after several attempts
+     (PowerShell UI automation clicking the extension, WebSocket bridge
+     interception, cron-agent tab access — all retired as non-viable).
+     The extension's service worker goes idle and the bridge drops;
+     reconnecting needs a human to type `/chrome` → Reconnect.
+
+Both are fundamentally incompatible with "GitHub Action fires on a
+cron, no one is present."
+
+**What changed in py-redwolf (private, commit 5073f65):**
+  removed:  .claude/skills/browse-linkedin/SKILL.md
+  added:    browse_linkedin.py   — Playwright, headless Chromium,
+              loads linkedin_storage_state.json (a saved, pre-
+              authenticated session), same JSON contract as before
+              (slug/companyName/url/fetchedAt/followerCount/bio/
+              recentPosts, or {slug, error})
+            login_linkedin.py   — run by hand to create/refresh that
+              session file (visible browser, manual login incl. 2FA)
+            requirements.txt    — playwright only; kept pure Python,
+              no Node/Puppeteer, matching why this repo is named
+              py-redwolf and not ts-redwolf
+  listener.py now shells out to browse_linkedin.py instead of
+  `claude -p` — no claude CLI dependency on the mac mini at all for
+  this piece anymore.
+
+**What changed here in md-redwolf:** README.TXT step 1a's "How the
+cache is built" block updated to say `browse_linkedin.py (Playwright,
+saved LinkedIn session)` instead of `claude -p browse-linkedin skill →
+chrome session`. Step 1a itself (reading CAN/TREE-<SLUG>-2026Q3.json)
+is unchanged — this only affects how py-redwolf produces those files.
+
+**Note on 145504d/fd4291c's "not claude-in-chrome" framing:** that
+framing was correct about step 1a specifically (md-redwolf's
+fetch-linkedin skill only ever read cache files, never called
+claude-in-chrome itself) but didn't carry through to py-redwolf's write
+side, which — per those same commits' own diagrams — still was `claude
+-p` + a chrome session. This entry closes that gap for real.
+
+**Status:** py-redwolf side DONE (pushed). Still open: verify the
+placeholder CSS selectors in browse_linkedin.py against a real logged-in
+LinkedIn page; the mac-mini setup steps (Playwright install, session
+login, tunnel, LaunchAgents) and the fetch-linkedin.yml GitHub Action
+remain PLANNED, same as logged previously.
+
 ## ASSET:redwolf 2026-10-22 -> Step 1a plan confirmed and documented in README.TXT (commit 145504d)
 
 **Confirmed:** Step 1a does NOT use claude-in-chrome from this session and does NOT
