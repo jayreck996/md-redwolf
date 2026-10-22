@@ -2,6 +2,34 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Claude skill plan: LinkedIn fetch via dedicated server
+
+**Plan:** Replace step 1a fetch() — which LinkedIn blocks unauthenticated — with a Claude skill
+that calls a dedicated server endpoint running Puppeteer with an authenticated LinkedIn session.
+
+**Architecture:**
+  Claude (step 1a)
+    → WebFetch(your-server.com/linkedin?slug=<slug>)
+        → server runs Puppeteer, logged-in session
+            → returns structured JSON (recent posts, bio)
+    → agent reads JSON, informs 1b subtype selection
+
+**To build:**
+  1. Server endpoint — Node.js + Puppeteer on existing PM2 server
+     GET /linkedin?slug=<slug> → JSON { recentPosts[], bio, followerCount }
+  2. Claude skill — .claude/skills/fetch-linkedin/SKILL.md
+     Instructs agent: call WebFetch(server/linkedin?slug=...), parse response,
+     extract relevant activity for each connection before selecting subtopics in 1b
+  3. README update — step 1a references the skill by name
+
+**Why server over claude-in-chrome:** Fully autonomous — agent calls endpoint
+without human present. Chrome extension requires browser open at run time.
+
+**Risk:** LinkedIn ToS prohibits scraping; run conservatively (one fetch per
+connection per week, human-like delays) to reduce detection risk.
+
+**Status:** PLANNED — not yet built.
+
 ## ASSET:redwolf 2026-10-22 16:20 -> Week 43 media generated for fresh batch (commit 64f00b7)
 
 **Why:** 64f00b7 replaced all six week 43 posts again; five media URLs pointed to placeholders that did not exist (404). Media now lives in COULD/media/2026Q3/ after the folder rename (6c99c42). None of the 20 Oct week 43 graphics fit the new posts; removed (still in git history): post-007-survey-diagnostic, post-008-nzsa-departing-staff, post-009-nzsa-membership, post-011-gov-case-study-carousel (+ slides 1–5), post-012-protect-the-experience, post-010-PLACEHOLDER.md.
