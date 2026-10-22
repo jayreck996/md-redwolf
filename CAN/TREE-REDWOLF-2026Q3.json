@@ -1,0 +1,4 @@
+{
+  "slug": "REDWOLF",
+  "error": "page load failed: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.linkedin.com/company/red-wolf-high-level-security-ltd\", waiting until \"domcontentloaded\"\n"
+}
