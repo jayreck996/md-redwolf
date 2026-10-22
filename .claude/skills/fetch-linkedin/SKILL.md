@@ -58,10 +58,15 @@ replaces the old instruction to `fetch()` each LinkedIn page URL directly.
      "followerCount": 0,
      "bio": "string",
      "recentPosts": [
-       { "date": "2026-10-18", "text": "string", "url": "string" }
+       { "date": "2026-10-18", "text": "string", "url": "string" },
+       { "date": "2026-10-17", "text": "string", "url": "string", "repostOf": "Other Company Name" }
      ]
    }
    ```
+   `repostOf` is present only when the connection reposted someone
+   else's content rather than posting their own — the text is still
+   worth reading for relevance, but it's that other company's words,
+   not the connection's own.
 
 4. **Check freshness before trusting the data.**
    - **Missing file** — the Action hasn't run for this slug yet, or the
