@@ -2,6 +2,38 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-22 -> Step 1a plan confirmed and documented in README.TXT (commit 145504d)
+
+**Confirmed:** Step 1a does NOT use claude-in-chrome from this session and does NOT
+fetch LinkedIn directly. Claude only reads pre-cached TREE-<SLUG> JSON files.
+
+**Full chain (as documented in README.TXT step 1a):**
+  GitHub Action (weekly cron, fetch-linkedin.yml)
+    → Cloudflare Tunnel → py-redwolf/listener.py on mac mini
+        → runs: claude -p browse-linkedin skill (ts-redwolf/.claude/skills/)
+            → chrome session on mac mini (authenticated LinkedIn)
+                → returns JSON { recentPosts[], bio, followerCount } per slug
+    → Action commits CAN/TREE-<SLUG>-2026Q3.json to md-redwolf repo
+
+  Claude step 1a (md-redwolf)
+    → reads CAN/TREE-<SLUG>-2026Q3.json (same pattern as TREE-2026Q3.json)
+    → informs 1b subtype selection
+    → fallback: web search per slug while cache is not yet live
+
+**Cache file naming (CAN/, one per connection):**
+  TREE-REDWOLF-2026Q3.json, TREE-NZSA-2026Q3.json, TREE-ASIS-2026Q3.json,
+  TREE-NZPOLICE-2026Q3.json, TREE-JOHNSON-2026Q3.json, TREE-GALLAGHER-2026Q3.json,
+  TREE-INNERRANGE-2026Q3.json, TREE-BOSCH-2026Q3.json, TREE-ICT-2026Q3.json,
+  TREE-JACQUES-2026Q3.json
+
+**Still to build:**
+  - fetch-linkedin.yml GitHub Action (md-redwolf)
+  - CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET / LINKEDIN_FETCH_URL GitHub secrets
+  - fetch-linkedin Claude skill (.claude/skills/fetch-linkedin/SKILL.md)
+  - mac mini setup: cloudflared tunnel, LaunchAgents, .env
+
+**Status:** PLANNED — README updated, architecture confirmed, nothing built yet.
+
 ## ASSET:redwolf 2026-10-22 -> Org transfer completed (redwolfnz); ts-redwolf renamed to py-redwolf
 
 **Org transfer:** both repos moved from the jayreck996 personal account
