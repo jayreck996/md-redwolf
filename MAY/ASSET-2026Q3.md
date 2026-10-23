@@ -2,6 +2,27 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-23 22:40 -> Week 43 v3 media generated from briefs (commit 906a677)
+
+**Media (COULD/media/2026Q3/, 1080x1350, replaces the .png.md placeholders; table URLs unchanged):**
+- post-007 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-007-access-control-layers.png — 4 layers (credentials, door hardware, zone logic, integrations) + self-service scheduling callout. No partner brand colours used (avoids implying endorsement).
+- post-008 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-008-psr-govt-policy.png — PSR covers / applies to / why it matters now.
+- post-009 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-009-partner-updates-ir-gallagher.png — IR Connect 3.9.0 vs Gallagher SMB features.
+- post-010 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-010-culture-high-level.png — Precision, Ownership, Availability, Accountability (brief wording).
+- post-011 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-011-govt-case-study-carousel.pdf + post-011-slide-1..5.png — brief, approach, system, outcome, CTA.
+- post-012 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-012-poll-results.png — **DRAFT, watermarked**, no percentages.
+
+**Verified against CAN/ caches:** Gallagher Self-service Access Schedules + Duress Code (TREE-GALLAGHER 2026-10-16); IR Connect 3.9.0 camera search, performance, Android/iOS (TREE-INNERRANGE 2026-10-14); Mark Mitchell ASIS NZ chapter meeting (TREE-NZSA 2026-10-15, reposting ASIS NZ).
+
+**Deviations from brief:**
+- post-008: PSR shown with its 4 areas (governance, personnel, information, physical), not 3. "Who it applies to" corrected: mandated for public service agencies, NZ Police, NZDF, NZSIS; benchmark for Crown entities, suppliers, critical infrastructure. Column 3 shows only what the cache supports — the cache announces the Minister *will* attend; it says nothing about PSR changes. CTA softened from "We design to PSR" to "Ask us how we can help".
+- post-012: brief values were labelled mock. Rendered as a DRAFT with "??%" bars and placeholder commentary. Options taken from the post-006 graphic (Outdated CCTV, Weak access control, No 24/7 monitoring, No security assessment) — brief listed different options; confirm which options the live LinkedIn poll actually used. Re-render with real numbers before publishing (POLL list in build script).
+
+**Verify before publishing:**
+- post-008 copy says the Minister "recently addressed" ASIS NZ — cache only confirms he was due to attend in October. Confirm it happened. Copy also says "The PSR framework is evolving" — no source found.
+- post-011: confirm project facts (Inner Range Integriti, zone segregation, encrypted audit trail, single credential, operations uninterrupted) and client approval; no client named.
+- post-010: "After 20 years" in copy still unverified.
+
 ## ASSET:redwolf 2026-10-23 -> Week 43 media briefs (v3 redo — live cache batch)
 
 All six posts BLOCKED pending media. Placeholders created in COULD/media/2026Q3/.
