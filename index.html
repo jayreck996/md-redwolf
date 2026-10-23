@@ -206,6 +206,10 @@ function mediaLink(row) {
     return `<div class="media-box"><iframe class="pdf-preview" src="${viewer}" title="${label}"></iframe><span class="media-type-badge">PDF</span></div>
             <div class="post-media"><a href="${url}" target="_blank">${label}</a></div>`;
   }
+  if (/\.mp4$/i.test(url)) {
+    return `<div class="media-box"><video class="media-preview" controls preload="metadata" src="${url}"></video><span class="media-type-badge">MP4</span></div>
+            <div class="post-media"><a href="${url}" target="_blank">${label}</a></div>`;
+  }
   return `<div class="post-media"><a href="${url}" target="_blank">${label}</a></div>`;
 }
 
