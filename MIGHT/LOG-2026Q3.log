@@ -2,6 +2,30 @@ LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW LOG ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## VERSION 3 — 2026-10-23 NZT
+
+Week 43 redone — post-007 to post-012 replaced (all BLOCKED).
+First batch generated using live LinkedIn cache data (fetch-linkedin pipeline confirmed live).
+
+Step 1a findings that drove selection:
+- GALLAGHER: Self-service Access Schedules + Duress Code (Oct 16) → SERVICES / Access Control
+- NZSA + ASIS: Mark Mitchell (Minister of Police) at ASIS NZ chapter meeting → INDUSTRY / Government Policy
+- INNERRANGE: IR Connect 3.9.0 (Oct 14) + IDEMIA biometrics 1.6 → AUTHORITY / Supplier Partnerships
+- REDWOLF: Oct 20 poll promised results "next week" → ENGAGEMENT / Questions & Debates
+- INNERRANGE SAGE expo + ICT banking security → TRUST / Govt & Critical Infrastructure
+- PEOPLE: Company Culture selected for quarter balance (no direct cache signal)
+
+Flag from 1a: Bosch Security page is dead (rebranded to Keenfinity Group / IQSIGHT + Radionix since July 2026).
+Connections{} in TREE-2026Q3.json should be updated before Q4 rollover.
+
+New subtypes (none repeat from w42):
+  post-007 SERVICES / Electronic Security / Access Control (score 7)
+  post-008 INDUSTRY / Regulation & Compliance / Government Policy (score 8)
+  post-009 AUTHORITY / Accreditations & Partnerships / Supplier Partnerships (score 8)
+  post-010 PEOPLE / Culture & Values / Company Culture (score 8)
+  post-011 TRUST / Case Studies / Government & Critical Infrastructure (score 9)
+  post-012 ENGAGEMENT / Interactive / Questions & Debates (score 7)
+
 ## VERSION 2 — 2026-10-22 15:56 NZT
 
 Commit: 64f00b7
