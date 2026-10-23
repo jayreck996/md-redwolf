@@ -48,7 +48,8 @@ STEP 1 — RESEARCH
       Claude does not fetch LinkedIn directly and does not use
       claude-in-chrome.
 
-      How the cache is built (separate private repo py-redwolf):
+      How the cache is built (private repo py-redwolf, included here as the
+      py-redwolf/ submodule; the listener runs from that checkout):
         GitHub Action (weekly cron)
           → Cloudflare Tunnel → py-redwolf/listener.py on mac mini
               → runs: browse_linkedin.py (Playwright, saved LinkedIn session)
