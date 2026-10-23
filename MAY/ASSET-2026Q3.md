@@ -2,6 +2,35 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-23 -> py-redwolf added as a submodule of md-redwolf; listener now runs from it
+
+**Change:** `redwolfnz/py-redwolf` (private) is now a git submodule of `md-redwolf` at
+`py-redwolf/`, pinned to `c25b9ca` (md-redwolf commit `097717f`). README.TXT updated to
+match (`a594857`).
+
+**Listener migration:**
+1. Built a fresh `.venv` inside the submodule from `requirements.txt` (Playwright).
+2. Copied `.env` and `linkedin_storage_state.json*` (all gitignored, never committed)
+   from the standalone `~/Documents/GitHub/py-redwolf` into the submodule.
+3. Rewrote `~/Library/LaunchAgents/com.redwolf.linkedin-listener.plist` so the venv
+   Python, `listener.py`, WorkingDirectory and log paths point at
+   `md-redwolf/py-redwolf/`. Old plist kept as `.plist.bak-standalone`.
+4. Reloaded the agent. It is running from the new path and answers on
+   `127.0.0.1:8787`.
+
+**Unchanged:** the tunnel plist and `~/.cloudflared/py-redwolf.yml` (they don't
+reference the repo path), and all three workflows (none use `submodules:`, and
+`md-redwolf` is public while `py-redwolf` is private, so Actions can't and
+shouldn't fetch it).
+
+**Verified:** manual `fetch-linkedin` run (workflow_dispatch, run 39899910704)
+succeeded end to end from the submodule listener: 10/10 connections returned
+3-5 real recentPosts each, committed as `b859a3a`; `py-redwolf/listener.log`
+shows every slug served from the new path.
+
+**Cleanup:** the standalone `~/Documents/GitHub/py-redwolf` was deleted after the
+verified run (it had no uncommitted or unpushed work).
+
 ## ASSET:redwolf 2026-10-23 -> Fix: GitHub Pages legacy mode was bypassing PAT injection — 401 resolved
 
 **Root cause:** After the org transfer, GitHub Pages was set to `build_type: legacy` (serve
