@@ -2,6 +2,21 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-23 23:15 -> Week 43 v4 media: post-007 gif, post-008 png, post-011 pdf (commit 514bbd7)
+
+**Generated (1080x1080, per briefs):**
+- post-007 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-007-failover-animation.gif — 6.2 s loop: Ethernet connected → connection lost → 4G LTE takes over → "Zero interruption. Dual-SIM failover built in." → primary restoring. Alarms / video / remote access stay ONLINE throughout. Footer credits Inner Range T4000 Pro (features per CAN/TREE-INNERRANGE 2026-10-02: 4G LTE + Ethernet + Wi-Fi, dual-SIM automatic failover, uninterrupted alarm reporting).
+- post-008 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-008-itot-convergence.png — Physical security vs IT/OT Venn with the governance gap questions.
+- post-011 https://raw.githubusercontent.com/redwolfnz/md-redwolf/main/COULD/media/2026Q3/post-011-residential-case-study.pdf (+ post-011-residential-slide-1..5.png) — brief, challenge (indicative floor plan), system, install, outcome + CTA.
+
+**Still placeholders (cannot be generated):** post-009 jpg (real team photo with NZSA certificate), post-010 mp4 (real team footage), post-012 png (needs real poll results).
+
+**Deviations from briefs:**
+- post-008: "Most NZ organisations have no answer." replaced with "Does your organisation have an answer?" (no source for the claim). No URL added (redwolf.net.nz still unverified).
+- post-011: camera count "[X]" omitted (unknown). Anonymised client quote "We didn't know security could look like this." NOT used — add only if it is the client's real words with written approval. No install photos available; slide 4 uses a step list instead. Floor plan is indicative, not the real layout.
+
+**Verify before publishing:** post-011 project facts (Wellington, neighbouring incidents, heritage constraints, concealed install, systems installed) and client approval. post-010 copy "grown 11%" comes from LinkedIn hiring insights in the REDWOLF cache — confirm.
+
 ## ASSET:redwolf 2026-10-23 -> Week 43 v4 redo — media briefs (v4, live cache batch)
 
 v2 media files removed (orphaned by redo). New placeholders created for v4 angles.
