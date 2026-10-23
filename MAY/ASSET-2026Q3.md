@@ -2,6 +2,57 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-23 -> Week 43 media briefs (v3 redo — live cache batch)
+
+All six posts BLOCKED pending media. Placeholders created in COULD/media/2026Q3/.
+
+**post-007** SERVICES / Electronic Security / Access Control — score 7
+File: post-007-access-control-layers.png
+Brief: Layered diagram showing a complete access control system — four horizontal layers:
+  1. Credentials (key card, PIN, mobile, biometric)
+  2. Door hardware (reader, strike, controller)
+  3. Zone logic (permission maps, time schedules, Gallagher self-service scheduling callout)
+  4. Integrations (CCTV link, alarm link, audit trail / reporting)
+Branded Red Wolf style. Subtle Gallagher and Inner Range colour accents in the hardware layer.
+Tone: clear, technical, confidence-building.
+
+**post-008** INDUSTRY / Regulation & Compliance / Government Policy — score 8
+File: post-008-psr-govt-policy.png
+Brief: PSR framework summary card. Headline: "Protective Security Requirements — What Organisations Need to Know Now."
+Three columns: (1) What the PSR covers (people, information, physical), (2) Who it applies to (government agencies, critical infrastructure, suppliers), (3) What's changing (legislative context from Mark Mitchell ASIS NZ appearance). Red Wolf brand footer: "We design to PSR. Ask us how." Clean, authoritative layout.
+
+**post-009** AUTHORITY / Accreditations & Partnerships / Supplier Partnerships — score 8
+File: post-009-partner-updates-ir-gallagher.png
+Brief: Side-by-side partner update card. Left panel (Inner Range): headline "IR Connect 3.9.0" with three bullet callouts — camera search across large deployments, performance improvements, Android + iOS. Right panel (Gallagher): headline "New SMB Features" — Self-service Access Schedules (facility managers, no callout needed), Duress Code (silent distress signal). Both panels share Red Wolf brand footer: "We install and support both. Ask us what's right for your site."
+
+**post-010** PEOPLE / Culture & Values / Company Culture — score 8
+File: post-010-culture-high-level.png
+Brief: Values card. Headline: "What High Level Security Means to Us." Four quadrants, each with a bold one-word value and one supporting sentence:
+  PRECISION — "Every system we design is spec'd for the site, not off a shelf."
+  OWNERSHIP — "We take responsibility for outcomes, not just deliverables."
+  AVAILABILITY — "Our clients can reach us when something goes wrong, not just when it's convenient."
+  ACCOUNTABILITY — "Every install is documented. Every outcome is measurable."
+Red Wolf brand colours. Clean, confident. No stock imagery.
+
+**post-011** TRUST / Case Studies / Government & Critical Infrastructure — score 9
+File: post-011-govt-case-study-carousel.pdf (+ slides 1–5 as separate PNGs)
+Brief — 5 slides:
+  Slide 1 (Challenge): Wellington government facility. Ageing access control, no PSR-compliant audit trail, multiple legacy credential types in use. Headline: "The Brief: PSR Compliance Without Disruption."
+  Slide 2 (Approach): Site assessment → zone mapping → phased replacement → integration with existing CCTV. Headline: "Designed Around Their Operational Constraints."
+  Slide 3 (System): Inner Range Integriti platform, zone segregation, encrypted audit trail, CCTV integration. Hardware list. Headline: "The System We Delivered."
+  Slide 4 (Outcome): PSR-compliant documentation, full audit trail, single-credential access across all zones. Headline: "The Outcome."
+  Slide 5 (CTA): "Facing a PSR review or upgrade? We have done this before." Contact prompt + Red Wolf logo.
+All slides branded. No client name used.
+
+**post-012** ENGAGEMENT / Interactive / Questions & Debates — score 7
+File: post-012-poll-results.png
+Brief: Poll results graphic. Headline: "NZ Businesses Told Us Their Biggest Physical Security Gap." Four horizontal percentage bars (mock values until real poll data available — update before publishing):
+  Outdated credentials / no access review — 38%
+  Unmonitored visitor access — 27%
+  Propped or tailgated doors — 22%
+  No 24/7 monitoring — 13%
+Below bars: Red Wolf commentary box — "Our take: the top answer is fixable in a day. Most organisations just haven't prioritised it yet." Red Wolf brand colours. Feels data-driven, not promotional.
+
 ## ASSET:redwolf 2026-10-23 -> py-redwolf added as a submodule of md-redwolf; listener now runs from it
 
 **Change:** `redwolfnz/py-redwolf` (private) is now a git submodule of `md-redwolf` at
