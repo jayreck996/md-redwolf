@@ -2,6 +2,26 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-23 -> Fix: GitHub Pages legacy mode was bypassing PAT injection — 401 resolved
+
+**Root cause:** After the org transfer, GitHub Pages was set to `build_type: legacy` (serve
+directly from the main branch). The `deploy-pages.yml` workflow was running and succeeding, but
+its artifact was never served — Pages was reading `index.html` straight from the committed file,
+which contains the literal string `__REVIEW_PAT__`. TOKEN resolved to `""` on every page load,
+causing HTTP 401 on every feedback dispatch.
+
+**Fix applied:**
+1. Switched Pages build type from `legacy` to `workflow` via the GitHub API (`PUT /repos/redwolfnz/md-redwolf/pages` with `build_type=workflow`).
+2. Updated `MD_REDWOLF` secret to the known-good PAT (config.js value confirmed working).
+3. Added `workflow_dispatch` trigger to `deploy-pages.yml` so redeploys can be triggered without a push.
+4. Triggered a fresh deploy — Actions artifact now served at https://redwolfnz.github.io/md-redwolf/ with PAT injected.
+
+**Other fixes in same session:**
+- `index.html` OWNER constant: `jayreck996` → `redwolfnz` (dispatch and CSV fetch were hitting wrong org).
+- `COULD/TABLE-2026Q3.csv` + `MAY/ASSET-2026Q3.md`: all functional `raw.githubusercontent.com/jayreck996` URLs updated to `redwolfnz`.
+- `update-feedback.yml`: added `git pull --rebase` before `git push` to fix push-rejection race condition on concurrent feedback events.
+- Local git remote updated from `jayreck996/md-redwolf` to `redwolfnz/md-redwolf`.
+
 ## ASSET:redwolf 2026-10-23 -> Owner references updated from jayreck996 to redwolfnz
 
 Post-org-transfer cleanup: all functional `jayreck996` references replaced with `redwolfnz`.
