@@ -2,6 +2,35 @@ ASSET LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW ASSET ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## ASSET:redwolf 2026-10-23 -> Week 43 v4 redo — media briefs (v4, live cache batch)
+
+v2 media files removed (orphaned by redo). New placeholders created for v4 angles.
+5 distinct media types this batch: gif, png, jpg, mp4, pdf, png — satisfies rule 8.
+
+**post-007** SERVICES / Monitoring & Response / Systems Monitoring — score 7
+File: post-007-failover-animation.gif
+Brief: Looping animated diagram — Ethernet primary path active, Ethernet drops (red flash), 4G LTE failover kicks in (green), alarm/video/remote access icons stay lit throughout. Inner Range T4000 Pro label. Approx 4–6s loop. Red Wolf brand palette.
+
+**post-008** INDUSTRY / Threat Intelligence / Cybersecurity Convergence — score 8
+File: post-008-itot-convergence.png
+Brief: Venn/split diagram — Physical Security (CCTV, access, alarm icons) overlapping IT/OT (server, firewall, switch icons). Overlap zone labelled "Governance Gap" with three questions: who owns firmware updates, network credentials, device audits. Headline: "Your CCTV is on the network. Is your IT team responsible for it?" Dark background. Red Wolf branded.
+
+**post-009** AUTHORITY / Accreditations & Partnerships / NZSA Membership — score 8
+File: post-009-nzsa-membership.jpg
+Brief: Real team photo — Red Wolf staff in uniform or professional attire, Wellington or Auckland setting. NZSA membership context visible (certificate, logo). No stock photography. Optional overlay: NZSA member badge corner, Red Wolf logo bottom right.
+
+**post-010** PEOPLE / Careers / Career Growth — score 8
+File: post-010-career-growth.mp4
+Brief: 30–60s recruitment video. Opening: Red Wolf van on site. Team member 1: career path (8–10s). B-roll: install work. Team member 2: culture (8–10s). Closing card: "We're growing. Join the team." + CTA. Subtitles required (muted-play). Real team, real sites only.
+
+**post-011** TRUST / Case Studies / Residential — score 9
+File: post-011-residential-case-study.pdf
+Brief: 5-slide carousel — (1) client context/brief, (2) security challenges (multi-entry, heritage constraints, family usability), (3) system components (CCTV, access control, alarm, single-app integration), (4) installation highlights (concealed cabling, aesthetic hardware), (5) outcome + anonymised quote. Anonymise all client-identifying details. Red Wolf palette throughout.
+
+**post-012** ENGAGEMENT / Interactive / Questions & Debates — score 7
+File: post-012-poll-results.png
+Brief: Poll results graphic — 4 percentage bars for poll answers (DRAFT: bars empty until real results available). Red Wolf commentary below top result. Note: DO NOT publish until actual poll results from LinkedIn post-006 are confirmed.
+
 ## ASSET:redwolf 2026-10-23 22:40 -> Week 43 v3 media generated from briefs (commit 906a677)
 
 **Media (COULD/media/2026Q3/, 1080x1350, replaces the .png.md placeholders; table URLs unchanged):**

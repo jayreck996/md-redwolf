@@ -78,6 +78,7 @@ STEP 1 — RESEARCH
       For each selected post decide the media-type:
         png  — branded graphic, infographic, diagram, card, timeline
         jpg  — photo (staff, site, event)
+        gif  — short looping animation (diagram, flow, before/after)
         pdf  — multi-slide carousel / document
         mp4  — video
 
@@ -115,10 +116,12 @@ CONTENT GENERATION RULES
 6. Set media-type to the expected output file format:
      png  — branded graphic, infographic, diagram, card, timeline
      jpg  — photo (staff, site, event)
+     gif  — short looping animation (diagram, flow, before/after)
      pdf  — multi-slide carousel / document
      mp4  — video
 7. All new posts go into TABLE-2026Q3.csv with status BLOCKED
    until media and any required approvals are in place.
+8. Each batch must use at least 3 distinct media types.
 
 ============================================================
 SCORING GUIDE

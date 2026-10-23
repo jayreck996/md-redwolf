@@ -2,6 +2,29 @@ LOG
 
 ####### <!-- ANCHOR MARKER - ADD ALL NEW LOG ENTRIES DIRECTLY BELOW THIS LINE -->
 
+## VERSION 4 — 2026-10-23 NZT
+
+Week 43 redone again (v3 → v4) — post-007 to post-012 replaced (all BLOCKED).
+README updated: gif added as media type; rule 8 added (≥3 distinct media types per batch).
+v2 media files (actual PNGs/PDF pushed by web Claude) removed — orphaned by the redo.
+
+Step 1a findings that drove v4 selection:
+- INNERRANGE: T4000 Pro (Oct 02) — 4G LTE + dual-SIM failover → SERVICES / Systems Monitoring
+- ASIS: IT/OT governance gap session (Oct 20) + banking deepfakes event (Oct 21) → INDUSTRY / Cybersecurity Convergence
+- NZSA: position statement on confidential info when staff leave (Oct 12) → AUTHORITY / NZSA Membership
+- REDWOLF: 11% employee growth, recent hires (Jul 21 cache) → PEOPLE / Career Growth
+- TRUST: Residential not yet used in quarter — editorial selection for variety
+- REDWOLF: poll post (Oct 20) promised results next week → ENGAGEMENT / Questions & Debates (poll results follow-through)
+- BOSCH: confirmed dead (Keenfinity Group since Jul 2026) — not tagged
+
+Media spread (5 distinct types — satisfies new rule 8):
+  post-007 SERVICES / Monitoring & Response / Systems Monitoring (score 7, gif)
+  post-008 INDUSTRY / Threat Intelligence / Cybersecurity Convergence (score 8, png)
+  post-009 AUTHORITY / Accreditations & Partnerships / NZSA Membership (score 8, jpg)
+  post-010 PEOPLE / Careers / Career Growth (score 8, mp4)
+  post-011 TRUST / Case Studies / Residential (score 9, pdf)
+  post-012 ENGAGEMENT / Interactive / Questions & Debates (score 7, png)
+
 ## VERSION 3 — 2026-10-23 NZT
 
 Week 43 redone — post-007 to post-012 replaced (all BLOCKED).
