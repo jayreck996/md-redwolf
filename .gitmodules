@@ -1,0 +1,3 @@
+[submodule "py-redwolf"]
+	path = py-redwolf
+	url = git@github.com:redwolfnz/py-redwolf.git
